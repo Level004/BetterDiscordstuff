@@ -151,8 +151,10 @@
 .avatar-3EQepX[data-user-id="314467927799627776"] + .headerInfo-30uryT > .nameTag-2IFDfL > .username-2b1r56::after,
 [style*="314467927799627776"] + .usernameFont-23TX-h::after,
 [aria-label*="pog"] > div > .content-3QAtGj > .nameAndDecorators-5FJ2dg > .name-uJV0GL .overflow-WK9Ogt::after {
-    content: " ";
-    background: url(https://cdn.discordapp.com/attachments/778713288099889154/781818967173627944/chihiro_messagebar.png) center/110% no-repeat;
+    content: "      Theme creator";
+    background: url(https://cdn.discordapp.com/attachments/778713288099889154/781818967173627944/chihiro_messagebar.png) no-repeat;
+    background-size: contain;
+    color: yellow;
 }
 
 /*mystic badge*/
