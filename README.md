@@ -1,2 +1,2 @@
 # BetterDiscordstuff
-Some stuff i use for betterdiscord :)
+Here is everything theme i use for betterdiscor :)
