@@ -1,0 +1,294 @@
+/**
+ * @name Extra stuff
+ * @description Some extra small stuff
+ * @author Level 4
+ * @version 1.0.0
+ * @authorId 278543574059057154
+ * @invite 
+ * @donate 
+ * @patreon
+ * @website 
+ * @source
+ */
+
+
+/*
+For testing
+https://cdn.discordapp.com/attachments/778713288099889154/781818967173627944/chihiro_messagebar.png
+
+*/
+
+.headerText-3Uvj1Y > span:first-child::after,
+.username-2b1r56::after,
+.usernameFont-23TX-h::after,
+.name-uJV0GL::after {
+    padding: 0 10px 0 10px;
+    margin-left: 2px;
+}
+
+.theme-dark,
+.inspector-S2gM3e,
+.inspector-3LQtX9,
+.children-rWhLdy,
+.background-1QDuV2,
+.fieldList-21DyL8,
+.children-3rEycc,
+.iconVisibility-sTNpHs,
+.container-2fRDfG {
+    background-color: transparent;
+
+}
+
+.container-2fRDfG {
+    position: fixed;
+    top: 70px;
+    left: 900px;
+    width: 340px;
+    padding-top: 400px;
+    background: url("https://media.discordapp.net/attachments/339880946826346498/782460396099469323/chihiro_spin.gif");
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 2;
+}
+
+.colorHeaderSecondary-3Sp3Ft,
+.actions-NlfMQc {
+    position: relative;
+    bottom: 40px;
+    color: aqua;
+    font-weight: bold;
+}
+
+.jumpToPresentBar-G1R9s6,
+.newMessagesBar-265mhP {
+    background-color: black;
+}
+
+.textArea-12jD-V,
+.slateTextArea-1Mkdgw .hljs-comment,
+.slateTextArea-1Mkdgw .hljs-quote {
+    background-image: url("https://cdn.discordapp.com/attachments/778713288099889154/781897544266547240/messagebar.png");
+    background-repeat: no-repeat;
+    position: relative;
+    left: 0;
+}
+
+
+.buttons-3JBrkn {
+    position: relative;
+}
+
+.form-2fGMdU {
+    position: relative;
+    bottom: 0;
+    width: 800px;
+}
+
+.membersWrap-2h-GB4 {
+    padding-bottom: 69px;
+}
+
+.content-98HsJk {
+    background-image: url("https://cdn.discordapp.com/attachments/778713288099889154/781877270251044915/chihiro_chiaki_sleep.gif");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.content-yTz4x3 {
+    background-image: url("https://cdn.discordapp.com/attachments/778713288099889154/781886632370372658/Nagito_mining.gif");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+.container-3w7J-x {
+    background-image: url(https://cdn.discordapp.com/attachments/778713288099889154/782450525500604426/totodile.gif);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-bottom: 60px;
+    content: "YOOOOOOOOOO POG?!!?!";
+
+}
+
+.panel-24C3ux,
+.body-GmmuPm,
+.gameIconWrapper-1YByCI > svg {
+    padding: 0;
+    margin: 0;
+    background: none;
+    height: 0;
+    width: 0;
+    color: none;
+}
+
+.actions-aUdUfC {
+    padding-left: 105px;
+    padding-top: 55px;
+}
+
+.headerPlaying-j0WQBV > .flex-1xMQg5 {
+    background: url("https://cdn.discordapp.com/attachments/778713288099889154/782476330771677194/pop_out.png") center/102%;
+    background-repeat: no-repeat;
+    color: black;
+}
+
+.infoScroller-3EYYns > .userInfoSection-2acyCx > .userInfoSectionHeader-CBvMDh,
+.infoScroller-3EYYns > .userInfoSection-2acyCx > .note-QfFU8y {
+    padding: 0;
+    margin: 0;
+    background: none;
+    height: 0;
+    width: 0;
+    color: none;
+    position: fixed;
+    bottom: -999px;
+}
+
+.actionButton-3W1xZa {
+    position: relative;
+    bottom: -45px;
+    right: 310px;
+    padding: 0;
+    background: none;
+}
+
+.infoScroller-3EYYns > .userInfoSection-2acyCx:first-child {
+    padding: 0;
+}
+
+.inner-1ilYF7 > .flex-1xMQg5 {
+    padding-bottom: 70px;
+    background: url("https://cdn.discordapp.com/attachments/778713288099889154/782596918885875732/Untitled-1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* ~~~~		 		Badges next to name							~~~~ */
+
+
+/*Gil badge*/
+[src*="314467927799627776"] + .header-23xsNx > .headerText-3Uvj1Y > span:first-child::after,
+.avatar-3EQepX[data-user-id="314467927799627776"] + .headerInfo-30uryT > .nameTag-2IFDfL > .username-2b1r56::after,
+[style*="314467927799627776"] + .usernameFont-23TX-h::after,
+[aria-label*="pog"] > div > .content-3QAtGj > .nameAndDecorators-5FJ2dg > .name-uJV0GL .overflow-WK9Ogt::after {
+    content: " ";
+    background: url(https://cdn.discordapp.com/attachments/778713288099889154/781818967173627944/chihiro_messagebar.png) center/110% no-repeat;
+}
+
+/*mystic badge*/
+[src*="272659788536479754"] + .header-23xsNx > .headerText-3Uvj1Y > span:first-child::after,
+[src*="279216251597750272"] + .header-23xsNx > .headerText-3Uvj1Y > span:first-child::after,
+.avatar-3EQepX[data-user-id="279216251597750272"] + .headerInfo-30uryT > .nameTag-2IFDfL > .username-2b1r56::after,
+[style*="279216251597750272"] + .usernameFont-23TX-h::after,
+[aria-label*="mystic"] > div > .content-3QAtGj > .nameAndDecorators-5FJ2dg > .name-uJV0GL > .overflow-WK9Ogt::after {
+    content: " ";
+    background: url(https://i.redd.it/y4fpd8f8zr321.gif) center/150% no-repeat;
+}
+
+/*Mystic pfp replacement*/
+[style*="https://cdn.discordapp.com/avatars/279216251597750272/42c96ee9cc43632ee7ac1d92c4579637.webp?size=128"],
+[src*="https://cdn.discordapp.com/avatars/279216251597750272/42c96ee9cc43632ee7ac1d92c4579637.webp?size=128"],
+[style*="https://cdn.discordapp.com/avatars/279216251597750272/42c96ee9cc43632ee7ac1d92c4579637.png?size=128"],
+[src*="https://cdn.discordapp.com/avatars/279216251597750272/42c96ee9cc43632ee7ac1d92c4579637.png?size=128"] {
+    object-position: -999px -999px !important;
+    background: url("https://cdn.discordapp.com/attachments/434252964643733504/713463837482811402/unknown.png") center/cover no-repeat !important;
+}
+
+/* Kristal badge */
+[src*="226482523876622336"] + .header-23xsNx > .headerText-3Uvj1Y > span:first-child::after,
+.avatar-3EQepX[data-user-id="226482523876622336"] + .headerInfo-30uryT > .nameTag-2IFDfL > .username-2b1r56::after,
+[style*="226482523876622336"] + .usernameFont-23TX-h::after,
+[aria-label*="pog"] > div > .content-3QAtGj > .nameAndDecorators-5FJ2dg > .name-uJV0GL::after {
+    content: " ";
+    background: url(https://cdn.discordapp.com/attachments/778713288099889154/782231830019178506/360.png) center/90% no-repeat;
+}
+
+/* Saitsu badge */
+[src*="209823773833166850"] + .header-23xsNx > .headerText-3Uvj1Y > span:first-child::after,
+.avatar-3EQepX[data-user-id="209823773833166850"] + .headerInfo-30uryT > .nameTag-2IFDfL > .username-2b1r56::after,
+[style*="209823773833166850"] + .usernameFont-23TX-h::after,
+[aria-label*="pog"] > div > .content-3QAtGj > .nameAndDecorators-5FJ2dg > .name-uJV0GL > .overflow-WK9Ogt::after {
+    content: " ";
+    background: url(https://cdn.discordapp.com/attachments/778713288099889154/782246120516354068/Danganronpa_V3_Bonus_Mode_Nagito_Komaeda_Pixel_Icon_1.png) center/130% no-repeat;
+}
+
+/* Ultima badge */
+[src*="246777959212515328"] + .header-23xsNx > .headerText-3Uvj1Y > span:first-child::after,
+.avatar-3EQepX[data-user-id="246777959212515328"] + .headerInfo-30uryT > .nameTag-2IFDfL > .username-2b1r56::after,
+[style*="246777959212515328"] + .usernameFont-23TX-h::after,
+[aria-label*="ultima"] > div > .content-3QAtGj > .nameAndDecorators-5FJ2dg > .name-uJV0GL > .overflow-WK9Ogt::after {
+    content: " ";
+    background: url(https://cdn.discordapp.com/attachments/778713288099889154/782246132843282442/Gonta_Gokuhara_Bonus_Mode_Pixel_Icon_1.png) center/150% no-repeat;
+}
+
+/* Raiser badge */
+[src*="213462239812911105"] + .header-23xsNx > .headerText-3Uvj1Y > span:first-child::after,
+.avatar-3EQepX[data-user-id="213462239812911105"] + .headerInfo-30uryT > .nameTag-2IFDfL > .username-2b1r56::after,
+[style*="213462239812911105"] + .usernameFont-23TX-h::after,
+[aria-label*="pog"] > div > .content-3QAtGj > .nameAndDecorators-5FJ2dg > .name-uJV0GL > .overflow-WK9Ogt::after {
+    content: " ";
+    background: url(https://cdn.discordapp.com/attachments/778713288099889154/782257998697070622/Roystock.png) center/90% no-repeat;
+}
+
+/* Jet badge */
+[src*="520040843785011225"] + .header-23xsNx > .headerText-3Uvj1Y > span:first-child::after,
+.avatar-3EQepX[data-user-id="520040843785011225"] + .headerInfo-30uryT > .nameTag-2IFDfL > .username-2b1r56::after,
+[style*="520040843785011225"] + .usernameFont-23TX-h::after,
+[aria-label*="pog"] > div > .content-3QAtGj > .nameAndDecorators-5FJ2dg > .name-uJV0GL > .overflow-WK9Ogt::after {
+    content: " ";
+    background: url(https://cdn.discordapp.com/attachments/778713288099889154/782269045088714772/Byakuya_Togami_Bonus_Mode_Pixel_Icon_1.png) center/130% no-repeat;
+}
+
+/* Lean badge */
+[src*="322149483154636810"] + .header-23xsNx > .headerText-3Uvj1Y > span:first-child::after,
+.avatar-3EQepX[data-user-id="322149483154636810"] + .headerInfo-30uryT > .nameTag-2IFDfL > .username-2b1r56::after,
+[style*="322149483154636810"] + .usernameFont-23TX-h::after,
+[aria-label*="pog"] > div > .content-3QAtGj > .nameAndDecorators-5FJ2dg > .name-uJV0GL > .overflow-WK9Ogt::after {
+    content: " ";
+    background: url(https://cdn.discordapp.com/attachments/778713288099889154/782271342392770600/Kaede_Akamatsu_Bonus_Mode_Pixel_Icon_1.png) center/90% no-repeat;
+}
+
+/* Five badge */
+[src*="618538419932364831"] + .header-23xsNx > .headerText-3Uvj1Y > span:first-child::after,
+.avatar-3EQepX[data-user-id="618538419932364831"] + .headerInfo-30uryT > .nameTag-2IFDfL > .username-2b1r56::after,
+[style*="618538419932364831"] + .usernameFont-23TX-h::after,
+[aria-label*="pog"] > div > .content-3QAtGj > .nameAndDecorators-5FJ2dg > .name-uJV0GL > .overflow-WK9Ogt::after {
+    content: " ";
+    background: url(https://cdn.discordapp.com/attachments/334077784953716736/782443207043973130/crazy_diamond.png) center/110% no-repeat;
+}
+
+/* math server badge/for multiple users place src above original*/
+[src*=""] + .header-23xsNx > .headerText-3Uvj1Y > span:first-child::after,
+[src*=""] + .header-23xsNx > .headerText-3Uvj1Y > span:first-child::after,
+[src*=""] + .header-23xsNx > .headerText-3Uvj1Y > span:first-child::after,
+[src*=""] + .header-23xsNx > .headerText-3Uvj1Y > span:first-child::after,
+[src*="326426187037540352"] + .header-23xsNx > .headerText-3Uvj1Y > span:first-child::after,
+[src*="295315437770768384"] + .header-23xsNx > .headerText-3Uvj1Y > span:first-child::after,
+[src*="327086812403204097"] + .header-23xsNx > .headerText-3Uvj1Y > span:first-child::after,
+[src*="172743171715891200"] + .header-23xsNx > .headerText-3Uvj1Y > span:first-child::after,
+[src*="593922537268969504"] + .header-23xsNx > .headerText-3Uvj1Y > span:first-child::after,
+[src*="304062143114903552"] + .header-23xsNx > .headerText-3Uvj1Y > span:first-child::after,
+[src*="349852633542164480"] + .header-23xsNx > .headerText-3Uvj1Y > span:first-child::after,
+.avatar-3EQepX[data-user-id="349852633542164480"] + .headerInfo-30uryT > .nameTag-2IFDfL > .username-2b1r56::after,
+[style*="349852633542164480"] + .usernameFont-23TX-h::after,
+[aria-label*="pog"] > div > .content-3QAtGj > .nameAndDecorators-5FJ2dg > .name-uJV0GL > .overflow-WK9Ogt::after {
+    content: "   epic person 😎";
+    background: url(https://cdn.discordapp.com/attachments/778713288099889154/782275525715558411/b1ea3e729883794.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: red;
+}
+
+
+/*
+if it has a edit users pfp use this
+
+[style*="https://cdn.discordapp.com/avatars/279216251597750272/42c96ee9cc43632ee7ac1d92c4579637.webp?size=128"],
+[src*="https://cdn.discordapp.com/avatars/279216251597750272/42c96ee9cc43632ee7ac1d92c4579637.webp?size=128"],
+[style*="https://cdn.discordapp.com/avatars/279216251597750272/42c96ee9cc43632ee7ac1d92c4579637.png?size=128"],
+[src*="https://cdn.discordapp.com/avatars/279216251597750272/42c96ee9cc43632ee7ac1d92c4579637.png?size=128"] {
+    object-position: -999px -999px !important;
+    background: url("https://cdn.discordapp.com/attachments/434252964643733504/713463837482811402/unknown.png") center/cover no-repeat !important;
+}
+
+*/
