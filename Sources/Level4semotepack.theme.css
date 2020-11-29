@@ -1,0 +1,474 @@
+/**
+ * @name level 4's Emote Pack
+ * @description replaces emojis to something i like
+ * @author Level4
+ * @version 1.0.0
+ * @authorId 278543574059057154
+ * @invite 
+ * @donate 
+ * @patreon
+ * @website 
+ * @source
+ */
+
+/*Emoji picker list*/
+.emojiSpriteImage-TcJnG8[style*='background-image: url("/assets/6d04effea3c8fc7941c28d7aedd9f793.png")'] {
+    background-image: url("https://cdn.discordapp.com/attachments/772409023978405888/781889761446985800/emoji.png") !important;
+}
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/                                                                                                                                /
+/                                                        defualt Emotes                                                          /
+/                                                                                                                                /
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/* heart */
+.diversityEmojiItemImage-2gPNoS[src='/assets/0483f2b648dcc986d01385062052ae1c.svg'],
+.diversityEmojiItemImage-2gPNoS[style*='background-image: url("/assets/0483f2b648dcc986d01385062052ae1c.svg")'],
+.emoji-AAbs8r[src='/assets/0483f2b648dcc986d01385062052ae1c.svg'],
+.emoji-AAbs8r[style*='background-image: url("/assets/0483f2b648dcc986d01385062052ae1c.svg")'],
+.icon-3ZzoN7[src='/assets/0483f2b648dcc986d01385062052ae1c.svg'],
+.icon-3ZzoN7[style*='background-image: url("/assets/0483f2b648dcc986d01385062052ae1c.svg")'],
+.image-3v3Wjg[src='/assets/0483f2b648dcc986d01385062052ae1c.svg'],
+.image-3v3Wjg[style*='background-image: url("/assets/0483f2b648dcc986d01385062052ae1c.svg")'],
+.icon-QGKz8T[src='/assets/0483f2b648dcc986d01385062052ae1c.svg'],
+.icon-QGKz8T[style*='background-image: url("/assets/0483f2b648dcc986d01385062052ae1c.svg")'],
+.emoji-236_Ij[src='/assets/0483f2b648dcc986d01385062052ae1c.svg'],
+.emoji-236_Ij[style*='background-image: url("/assets/0483f2b648dcc986d01385062052ae1c.svg")'],
+.emoji[src='/assets/0483f2b648dcc986d01385062052ae1c.svg'],
+.emoji[style*='background-image: url("/assets/0483f2b648dcc986d01385062052ae1c.svg")'] {
+    background: transparent !important;
+    content: url("https://cdn.discordapp.com/attachments/570848364162187265/771474295418257419/oytjnivv53w51.png") !important;
+}
+
+/* pensive */
+.diversityEmojiItemImage-2gPNoS[src='/assets/2ea1f6bba4448fa4e8d9504fe976095d.svg'],
+.diversityEmojiItemImage-2gPNoS[style*='background-image: url("/assets/2ea1f6bba4448fa4e8d9504fe976095d.svg")'],
+.emoji-AAbs8r[src='/assets/2ea1f6bba4448fa4e8d9504fe976095d.svg'],
+.emoji-AAbs8r[style*='background-image: url("/assets/2ea1f6bba4448fa4e8d9504fe976095d.svg")'],
+.icon-3ZzoN7[src='/assets/2ea1f6bba4448fa4e8d9504fe976095d.svg'],
+.icon-3ZzoN7[style*='background-image: url("/assets/2ea1f6bba4448fa4e8d9504fe976095d.svg")'],
+.image-3v3Wjg[src='/assets/2ea1f6bba4448fa4e8d9504fe976095d.svg'],
+.image-3v3Wjg[style*='background-image: url("/assets/2ea1f6bba4448fa4e8d9504fe976095d.svg")'],
+.icon-QGKz8T[src='/assets/2ea1f6bba4448fa4e8d9504fe976095d.svg'],
+.icon-QGKz8T[style*='background-image: url("/assets/2ea1f6bba4448fa4e8d9504fe976095d.svg")'],
+.emoji-236_Ij[src='/assets/2ea1f6bba4448fa4e8d9504fe976095d.svg'],
+.emoji-236_Ij[style*='background-image: url("/assets/2ea1f6bba4448fa4e8d9504fe976095d.svg")'],
+.emoji[src='/assets/2ea1f6bba4448fa4e8d9504fe976095d.svg'],
+.emoji[style*='background-image: url("/assets/2ea1f6bba4448fa4e8d9504fe976095d.svg")'] {
+    background: transparent !important;
+    content: url("https://cdn.discordapp.com/attachments/772409023978405888/772415302302040114/chiaki_pensive.png") !important;
+}
+
+/* rage */
+.diversityEmojiItemImage-2gPNoS[src='/assets/3f4e3f10b0a177426ca14b381445ca3b.svg'],
+.diversityEmojiItemImage-2gPNoS[style*='background-image: url("/assets/3f4e3f10b0a177426ca14b381445ca3b.svg")'],
+.emoji-AAbs8r[src='/assets/3f4e3f10b0a177426ca14b381445ca3b.svg'],
+.emoji-AAbs8r[style*='background-image: url("/assets/3f4e3f10b0a177426ca14b381445ca3b.svg")'],
+.icon-3ZzoN7[src='/assets/3f4e3f10b0a177426ca14b381445ca3b.svg'],
+.icon-3ZzoN7[style*='background-image: url("/assets/3f4e3f10b0a177426ca14b381445ca3b.svg")'],
+.image-3v3Wjg[src='/assets/3f4e3f10b0a177426ca14b381445ca3b.svg'],
+.image-3v3Wjg[style*='background-image: url("/assets/3f4e3f10b0a177426ca14b381445ca3b.svg")'],
+.icon-QGKz8T[src='/assets/3f4e3f10b0a177426ca14b381445ca3b.svg'],
+.icon-QGKz8T[style*='background-image: url("/assets/3f4e3f10b0a177426ca14b381445ca3b.svg")'],
+.emoji-236_Ij[src='/assets/3f4e3f10b0a177426ca14b381445ca3b.svg'],
+.emoji-236_Ij[style*='background-image: url("/assets/3f4e3f10b0a177426ca14b381445ca3b.svg")'],
+.emoji[src='/assets/3f4e3f10b0a177426ca14b381445ca3b.svg'],
+.emoji[style*='background-image: url("/assets/3f4e3f10b0a177426ca14b381445ca3b.svg")'] {
+    background: transparent !important;
+    content: url("https://cdn.discordapp.com/attachments/772409023978405888/772416632135745536/Chiaki_rage.png") !important;
+}
+
+/* slight_smile */
+.diversityEmojiItemImage-2gPNoS[src='/assets/da3651e59d6006dfa5fa07ec3102d1f3.svg'],
+.diversityEmojiItemImage-2gPNoS[style*='background-image: url("/assets/da3651e59d6006dfa5fa07ec3102d1f3.svg")'],
+.emoji-AAbs8r[src='/assets/da3651e59d6006dfa5fa07ec3102d1f3.svg'],
+.emoji-AAbs8r[style*='background-image: url("/assets/da3651e59d6006dfa5fa07ec3102d1f3.svg")'],
+.icon-3ZzoN7[src='/assets/da3651e59d6006dfa5fa07ec3102d1f3.svg'],
+.icon-3ZzoN7[style*='background-image: url("/assets/da3651e59d6006dfa5fa07ec3102d1f3.svg")'],
+.image-3v3Wjg[src='/assets/da3651e59d6006dfa5fa07ec3102d1f3.svg'],
+.image-3v3Wjg[style*='background-image: url("/assets/da3651e59d6006dfa5fa07ec3102d1f3.svg")'],
+.icon-QGKz8T[src='/assets/da3651e59d6006dfa5fa07ec3102d1f3.svg'],
+.icon-QGKz8T[style*='background-image: url("/assets/da3651e59d6006dfa5fa07ec3102d1f3.svg")'],
+.emoji-236_Ij[src='/assets/da3651e59d6006dfa5fa07ec3102d1f3.svg'],
+.emoji-236_Ij[style*='background-image: url("/assets/da3651e59d6006dfa5fa07ec3102d1f3.svg")'],
+.emoji[src='/assets/da3651e59d6006dfa5fa07ec3102d1f3.svg'],
+.emoji[style*='background-image: url("/assets/da3651e59d6006dfa5fa07ec3102d1f3.svg")'] {
+    background: transparent !important;
+    content: url("https://cdn.discordapp.com/attachments/772409023978405888/772424369157701652/Danganronpa_V3_Nagito_Komaeda_Bonus_Mode_Sprites_15.png") !important;
+}
+
+/* thinking */
+.diversityEmojiItemImage-2gPNoS[src='/assets/263a7f4eeb6f69e46d969fa479188592.svg'],
+.diversityEmojiItemImage-2gPNoS[style*='background-image: url("/assets/263a7f4eeb6f69e46d969fa479188592.svg")'],
+.emoji-AAbs8r[src='/assets/263a7f4eeb6f69e46d969fa479188592.svg'],
+.emoji-AAbs8r[style*='background-image: url("/assets/263a7f4eeb6f69e46d969fa479188592.svg")'],
+.icon-3ZzoN7[src='/assets/263a7f4eeb6f69e46d969fa479188592.svg'],
+.icon-3ZzoN7[style*='background-image: url("/assets/263a7f4eeb6f69e46d969fa479188592.svg")'],
+.image-3v3Wjg[src='/assets/263a7f4eeb6f69e46d969fa479188592.svg'],
+.image-3v3Wjg[style*='background-image: url("/assets/263a7f4eeb6f69e46d969fa479188592.svg")'],
+.icon-QGKz8T[src='/assets/263a7f4eeb6f69e46d969fa479188592.svg'],
+.icon-QGKz8T[style*='background-image: url("/assets/263a7f4eeb6f69e46d969fa479188592.svg")'],
+.emoji-236_Ij[src='/assets/263a7f4eeb6f69e46d969fa479188592.svg'],
+.emoji-236_Ij[style*='background-image: url("/assets/263a7f4eeb6f69e46d969fa479188592.svg")'],
+.emoji[src='/assets/263a7f4eeb6f69e46d969fa479188592.svg'],
+.emoji[style*='background-image: url("/assets/263a7f4eeb6f69e46d969fa479188592.svg")'] {
+    background: transparent !important;
+    content: url("https://cdn.discordapp.com/attachments/772409023978405888/772426630043271198/Danganronpa_V3_Hajime_Hinata_Bonus_Mode_Sprites_15.png") !important;
+}
+
+/* smile with tear */
+.diversityEmojiItemImage-2gPNoS[src='/assets/4fc5b1ef776d4ae648d813da6eb6704f.svg'],
+.diversityEmojiItemImage-2gPNoS[style*='background-image: url("/assets/4fc5b1ef776d4ae648d813da6eb6704f.svg")'],
+.emoji-AAbs8r[src='/assets/4fc5b1ef776d4ae648d813da6eb6704f.svg'],
+.emoji-AAbs8r[style*='background-image: url("/assets/4fc5b1ef776d4ae648d813da6eb6704f.svg")'],
+.icon-3ZzoN7[src='/assets/4fc5b1ef776d4ae648d813da6eb6704f.svg'],
+.icon-3ZzoN7[style*='background-image: url("/assets/4fc5b1ef776d4ae648d813da6eb6704f.svg")'],
+.image-3v3Wjg[src='/assets/4fc5b1ef776d4ae648d813da6eb6704f.svg'],
+.image-3v3Wjg[style*='/assets/4fc5b1ef776d4ae648d813da6eb6704f.svg")'],
+.icon-QGKz8T[src='/assets/4fc5b1ef776d4ae648d813da6eb6704f.svg'],
+.icon-QGKz8T[style*='/assets/4fc5b1ef776d4ae648d813da6eb6704f.svg")'],
+.emoji-236_Ij[src='/assets/4fc5b1ef776d4ae648d813da6eb6704f.svg'],
+.emoji-236_Ij[style*='background-image: url("/assets/4fc5b1ef776d4ae648d813da6eb6704f.svg")'],
+.emoji[src='/assets/4fc5b1ef776d4ae648d813da6eb6704f.svg'],
+.emoji[style*='background-image: url("/assets/4fc5b1ef776d4ae648d813da6eb6704f.svg")'] {
+    background: transparent !important;
+    content: url("https://cdn.discordapp.com/attachments/772409023978405888/774385857230667797/Hajime_Hinata_Halfbody_Sprite_11.png") !important;
+}
+
+/* upside_down */
+.diversityEmojiItemImage-2gPNoS[src='/assets/559c3311dcdb3f23b7fb745559207db9.svg'],
+.diversityEmojiItemImage-2gPNoS[style*='background-image: url("/assets/559c3311dcdb3f23b7fb745559207db9.svg")'],
+.emoji-AAbs8r[src='/assets/559c3311dcdb3f23b7fb745559207db9.svg'],
+.emoji-AAbs8r[style*='background-image: url("/assets/559c3311dcdb3f23b7fb745559207db9.svg")'],
+.icon-3ZzoN7[src='/assets/559c3311dcdb3f23b7fb745559207db9.svg'],
+.icon-3ZzoN7[style*='background-image: url("/assets/559c3311dcdb3f23b7fb745559207db9.svg")'],
+.image-3v3Wjg[src='/assets/559c3311dcdb3f23b7fb745559207db9.svg'],
+.image-3v3Wjg[style*='background-image: url("/assets/559c3311dcdb3f23b7fb745559207db9.svg")'],
+.icon-QGKz8T[src='/assets/559c3311dcdb3f23b7fb745559207db9.svg'],
+.icon-QGKz8T[style*='background-image: url("/assets/559c3311dcdb3f23b7fb745559207db9.svg")'],
+.emoji-236_Ij[src='/assets/559c3311dcdb3f23b7fb745559207db9.svg'],
+.emoji-236_Ij[style*='background-image: url("/assets/559c3311dcdb3f23b7fb745559207db9.svg")'],
+.emoji[src='/assets/559c3311dcdb3f23b7fb745559207db9.svg'],
+.emoji[style*='background-image: url("/assets/559c3311dcdb3f23b7fb745559207db9.svg")'] {
+    background: transparent !important;
+    content: url("https://cdn.discordapp.com/attachments/772409023978405888/775284550154584074/Danganronpa_V3_Kokichi_Oma_Halfbody_Sprite_21.png") !important;
+}
+
+/* disappointed */
+.diversityEmojiItemImage-2gPNoS[src='/assets/08b9e24092ee146b9e071e89049c1055.svg'],
+.diversityEmojiItemImage-2gPNoS[style*='background-image: url("/assets/08b9e24092ee146b9e071e89049c1055.svg")'],
+.emoji-AAbs8r[src='/assets/08b9e24092ee146b9e071e89049c1055.svg'],
+.emoji-AAbs8r[style*='background-image: url("/assets/08b9e24092ee146b9e071e89049c1055.svg")'],
+.icon-3ZzoN7[src='/assets/08b9e24092ee146b9e071e89049c1055.svg'],
+.icon-3ZzoN7[style*='background-image: url("/assets/08b9e24092ee146b9e071e89049c1055.svg")'],
+.image-3v3Wjg[src='/assets/08b9e24092ee146b9e071e89049c1055.svg'],
+.image-3v3Wjg[style*='background-image: url("/assets/08b9e24092ee146b9e071e89049c1055.svg")'],
+.icon-QGKz8T[src='/assets/08b9e24092ee146b9e071e89049c1055.svg'],
+.icon-QGKz8T[style*='background-image: url("/assets/08b9e24092ee146b9e071e89049c1055.svg")'],
+.emoji-236_Ij[src='/assets/08b9e24092ee146b9e071e89049c1055.svg'],
+.emoji-236_Ij[style*='background-image: url("/assets/08b9e24092ee146b9e071e89049c1055.svg")'],
+.emoji[src='/assets/08b9e24092ee146b9e071e89049c1055.svg'],
+.emoji[style*='background-image: url("/assets/08b9e24092ee146b9e071e89049c1055.svg")'] {
+    background: transparent !important;
+    content: url("https://cdn.discordapp.com/attachments/772409023978405888/776477141776334869/Danganronpa_V3_Makoto_Naegi_Bonus_Mode_15.png") !important;
+}
+
+/* smiling_imp */
+.diversityEmojiItemImage-2gPNoS[src='/assets/54b9902837fed72b7551edb77b30b96e.svg'],
+.diversityEmojiItemImage-2gPNoS[style*='background-image: url("/assets/54b9902837fed72b7551edb77b30b96e.svg")'],
+.emoji-AAbs8r[src='/assets/54b9902837fed72b7551edb77b30b96e.svg'],
+.emoji-AAbs8r[style*='background-image: url("/assets/54b9902837fed72b7551edb77b30b96e.svg")'],
+.icon-3ZzoN7[src='/assets/54b9902837fed72b7551edb77b30b96e.svg'],
+.icon-3ZzoN7[style*='background-image: url("/assets/54b9902837fed72b7551edb77b30b96e.svg")'],
+.image-3v3Wjg[src='/assets/54b9902837fed72b7551edb77b30b96e.svg'],
+.image-3v3Wjg[style*='background-image: url("/assets/54b9902837fed72b7551edb77b30b96e.svg")'],
+.icon-QGKz8T[src='/assets/54b9902837fed72b7551edb77b30b96e.svg'],
+.icon-QGKz8T[style*='background-image: url("/assets/54b9902837fed72b7551edb77b30b96e.svg")'],
+.emoji-236_Ij[src='/assets/54b9902837fed72b7551edb77b30b96e.svg'],
+.emoji-236_Ij[style*='background-image: url("/assets/54b9902837fed72b7551edb77b30b96e.svg")'],
+.emoji[src='/assets/54b9902837fed72b7551edb77b30b96e.svg'],
+.emoji[style*='background-image: url("/assets/54b9902837fed72b7551edb77b30b96e.svg")'] {
+    background: transparent !important;
+    content: url("https://cdn.discordapp.com/attachments/772409023978405888/778628982303883264/Danganronpa_V3_Tsumugi_Shirogane_Halfbody_Sprite_Junko_Enoshima_19.png") !important;
+}
+
+/* moyai */
+.diversityEmojiItemImage-2gPNoS[src='/assets/295860beaa5c80f427ca012b50e46634.svg'],
+.diversityEmojiItemImage-2gPNoS[style*='background-image: url("/assets/295860beaa5c80f427ca012b50e46634.svg")'],
+.emoji-AAbs8r[src='/assets/295860beaa5c80f427ca012b50e46634.svg'],
+.emoji-AAbs8r[style*='background-image: url("/assets/295860beaa5c80f427ca012b50e46634.svg")'],
+.icon-3ZzoN7[src='/assets/295860beaa5c80f427ca012b50e46634.svg'],
+.icon-3ZzoN7[style*='background-image: url("/assets/295860beaa5c80f427ca012b50e46634.svg")'],
+.image-3v3Wjg[src='/assets/295860beaa5c80f427ca012b50e46634.svg'],
+.image-3v3Wjg[style*='background-image: url("/assets/295860beaa5c80f427ca012b50e46634.svg")'],
+.icon-QGKz8T[src='/assets/295860beaa5c80f427ca012b50e46634.svg'],
+.icon-QGKz8T[style*='background-image: url("/assets/295860beaa5c80f427ca012b50e46634.svg")'],
+.emoji-236_Ij[src='/assets/295860beaa5c80f427ca012b50e46634.svg'],
+.emoji-236_Ij[style*='background-image: url("/assets/295860beaa5c80f427ca012b50e46634.svg")'],
+.emoji[src='/assets/295860beaa5c80f427ca012b50e46634.svg'],
+.emoji[style*='background-image: url("/assets/295860beaa5c80f427ca012b50e46634.svg")'] {
+    background: transparent !important;
+    content: url("https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/emojis/Apple/travel/moyai.png") !important;
+}
+
+/* flushed */
+.diversityEmojiItemImage-2gPNoS[src='/assets/fd077d826b040d6c8b895de3b7585c25.svg'],
+.diversityEmojiItemImage-2gPNoS[style*='background-image: url("/assets/fd077d826b040d6c8b895de3b7585c25.svg")'],
+.emoji-AAbs8r[src='/assets/fd077d826b040d6c8b895de3b7585c25.svg'],
+.emoji-AAbs8r[style*='background-image: url("/assets/fd077d826b040d6c8b895de3b7585c25.svg")'],
+.icon-3ZzoN7[src='/assets/fd077d826b040d6c8b895de3b7585c25.svg'],
+.icon-3ZzoN7[style*='background-image: url("/assets/fd077d826b040d6c8b895de3b7585c25.svg")'],
+.image-3v3Wjg[src='/assets/fd077d826b040d6c8b895de3b7585c25.svg'],
+.image-3v3Wjg[style*='background-image: url("/assets/fd077d826b040d6c8b895de3b7585c25.svg")'],
+.icon-QGKz8T[src='/assets/fd077d826b040d6c8b895de3b7585c25.svg'],
+.icon-QGKz8T[style*='background-image: url("/assets/fd077d826b040d6c8b895de3b7585c25.svg")'],
+.emoji-236_Ij[src='/assets/fd077d826b040d6c8b895de3b7585c25.svg'],
+.emoji-236_Ij[style*='background-image: url("/assets/fd077d826b040d6c8b895de3b7585c25.svg")'],
+.emoji[src='/assets/fd077d826b040d6c8b895de3b7585c25.svg'],
+.emoji[style*='background-image: url("/assets/fd077d826b040d6c8b895de3b7585c25.svg")'] {
+    background: transparent !important;
+    content: url("https://cdn.discordapp.com/attachments/772409023978405888/781662978063728650/ChihiroFlushed.png") !important;
+}
+
+/* sunglasses */
+.diversityEmojiItemImage-2gPNoS[src='/assets/5f80f04e6ee97feebdd00feff92ced82.svg'],
+.diversityEmojiItemImage-2gPNoS[style*='background-image: url("/assets/5f80f04e6ee97feebdd00feff92ced82.svg")'],
+.emoji-AAbs8r[src='/assets/5f80f04e6ee97feebdd00feff92ced82.svg'],
+.emoji-AAbs8r[style*='background-image: url("/assets/5f80f04e6ee97feebdd00feff92ced82.svg")'],
+.icon-3ZzoN7[src='/assets/5f80f04e6ee97feebdd00feff92ced82.svg'],
+.icon-3ZzoN7[style*='background-image: url("/assets/5f80f04e6ee97feebdd00feff92ced82.svg")'],
+.image-3v3Wjg[src='/assets/5f80f04e6ee97feebdd00feff92ced82.svg'],
+.image-3v3Wjg[style*='background-image: url("/assets/5f80f04e6ee97feebdd00feff92ced82.svg")'],
+.icon-QGKz8T[src='/assets/5f80f04e6ee97feebdd00feff92ced82.svg'],
+.icon-QGKz8T[style*='background-image: url("/assets/5f80f04e6ee97feebdd00feff92ced82.svg")'],
+.emoji-236_Ij[src='/assets/5f80f04e6ee97feebdd00feff92ced82.svg'],
+.emoji-236_Ij[style*='background-image: url("/assets/5f80f04e6ee97feebdd00feff92ced82.svg")'],
+.emoji[src='/assets/5f80f04e6ee97feebdd00feff92ced82.svg'],
+.emoji[style*='background-image: url("/assets/5f80f04e6ee97feebdd00feff92ced82.svg")'] {
+    background: transparent !important;
+    content: url("https://cdn.discordapp.com/attachments/772409023978405888/781673328132751360/HajimeSunglasses.png") !important;
+}
+
+/* scream */
+.diversityEmojiItemImage-2gPNoS[src='/assets/81195a9847a459acbb2b680a70357728.svg'],
+.diversityEmojiItemImage-2gPNoS[style*='background-image: url("/assets/81195a9847a459acbb2b680a70357728.svg")'],
+.emoji-AAbs8r[src='/assets/81195a9847a459acbb2b680a70357728.svg'],
+.emoji-AAbs8r[style*='background-image: url("/assets/81195a9847a459acbb2b680a70357728.svg")'],
+.icon-3ZzoN7[src='/assets/81195a9847a459acbb2b680a70357728.svg'],
+.icon-3ZzoN7[style*='background-image: url("/assets/81195a9847a459acbb2b680a70357728.svg")'],
+.image-3v3Wjg[src='/assets/81195a9847a459acbb2b680a70357728.svg'],
+.image-3v3Wjg[style*='background-image: url("/assets/81195a9847a459acbb2b680a70357728.svg")'],
+.icon-QGKz8T[src='/assets/81195a9847a459acbb2b680a70357728.svg'],
+.icon-QGKz8T[style*='background-image: url("/assets/81195a9847a459acbb2b680a70357728.svg")'],
+.emoji-236_Ij[src='/assets/81195a9847a459acbb2b680a70357728.svg'],
+.emoji-236_Ij[style*='background-image: url("/assets/81195a9847a459acbb2b680a70357728.svg")'],
+.emoji[src='/assets/81195a9847a459acbb2b680a70357728.svg'],
+.emoji[style*='background-image: url("/assets/81195a9847a459acbb2b680a70357728.svg")'] {
+    background: transparent !important;
+    content: url("https://cdn.discordapp.com/attachments/772409023978405888/781957209894289418/unknown.png") !important;
+}
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/                                                                                                                                /
+/                                                        Non-defualt Emotes                                                      /
+/                                                                                                                                /
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/* dab */
+.diversityEmojiItemImage-2gPNoS[src='https://cdn.discordapp.com/emojis/408280804675026965.png?v=1'],
+.diversityEmojiItemImage-2gPNoS[style*='background-image: url("https://cdn.discordapp.com/emojis/408280804675026965.png?v=1")'],
+.emoji-AAbs8r[src='https://cdn.discordapp.com/emojis/408280804675026965.png?v=1'],
+.emoji-AAbs8r[style*='background-image: url("https://cdn.discordapp.com/emojis/408280804675026965.png?v=1")'],
+.icon-3ZzoN7[src='https://cdn.discordapp.com/emojis/408280804675026965.png?v=1'],
+.icon-3ZzoN7[style*='background-image: url("/assets/ec0bba62895ee2423aed0aabf5fb3c83.svg")'],
+.image-3v3Wjg[src='https://cdn.discordapp.com/emojis/408280804675026965.png?v=1'],
+.image-3v3Wjg[style*='background-image: url("https://cdn.discordapp.com/emojis/408280804675026965.png?v=1")'],
+.icon-QGKz8T[src='https://cdn.discordapp.com/emojis/408280804675026965.png?v=1'],
+.icon-QGKz8T[style*='background-image: url("https://cdn.discordapp.com/emojis/408280804675026965.png?v=1")'],
+.emoji-236_Ij[src='https://cdn.discordapp.com/emojis/408280804675026965.png?v=1'],
+.emoji-236_Ij[style*='background-image: url(https://cdn.discordapp.com/emojis/408280804675026965.png?v=1)'],
+.emoji[src='https://cdn.discordapp.com/emojis/408280804675026965.png?v=1'],
+.emoji[style*='background-image: url("https://cdn.discordapp.com/emojis/408280804675026965.png?v=1")'] {
+    background: transparent !important;
+    content: url("https://cdn.discordapp.com/attachments/334077784953716736/772407097493159956/491686632010022923.png") !important;
+}
+
+/* pog */
+.diversityEmojiItemImage-2gPNoS[src='https://cdn.discordapp.com/emojis/402867853906280450.png?v=1'],
+.diversityEmojiItemImage-2gPNoS[style*='background-image: url("https://cdn.discordapp.com/emojis/402867853906280450.png?v=1")'],
+.emoji-AAbs8r[src='https://cdn.discordapp.com/emojis/402867853906280450.png?v=1'],
+.emoji-AAbs8r[style*='background-image: url(https://cdn.discordapp.com/emojis/402867853906280450.png?v=1")'],
+.icon-3ZzoN7[src='https://cdn.discordapp.com/emojis/402867853906280450.png?v=1'],
+.icon-3ZzoN7[style*='background-image: url(https://cdn.discordapp.com/emojis/402867853906280450.png?v=1")'],
+.image-3v3Wjg[src='https://cdn.discordapp.com/emojis/402867853906280450.png?v=1'],
+.image-3v3Wjg[style*='background-image: url("https://cdn.discordapp.com/emojis/402867853906280450.png?v=1")'],
+.icon-QGKz8T[src='https://cdn.discordapp.com/emojis/402867853906280450.png?v=1'],
+.icon-QGKz8T[style*='background-image: url("")'],
+.emoji-236_Ij[src='https://cdn.discordapp.com/emojis/402867853906280450.png?v=1'],
+.emoji-236_Ij[style*='background-image: url("https://cdn.discordapp.com/emojis/402867853906280450.png?v=1")'],
+.emoji[src='https://cdn.discordapp.com/emojis/402867853906280450.png?v=1'],
+.emoji[style*='background-image: url("https://cdn.discordapp.com/emojis/402867853906280450.png?v=1")'] {
+    background: transparent !important;
+    content: url(https://cdn.discordapp.com/attachments/772409023978405888/772411142043336724/3x.png) !important;
+}
+
+/* peepothink */
+.diversityEmojiItemImage-2gPNoS[src='https://cdn.discordapp.com/emojis/402867838580293643.png?v=1'],
+.diversityEmojiItemImage-2gPNoS[style*='background-image: url("https://cdn.discordapp.com/emojis/402867838580293643.png?v=1")'],
+.emoji-AAbs8r[src='https://cdn.discordapp.com/emojis/402867838580293643.png?v=1'],
+.emoji-AAbs8r[style*='background-image: url(https://cdn.discordapp.com/emojis/402867838580293643.png?v=1")'],
+.icon-3ZzoN7[src='https://cdn.discordapp.com/emojis/402867838580293643.png?v=1'],
+.icon-3ZzoN7[style*='background-image: url(https://cdn.discordapp.com/emojis/402867838580293643.png?v=1")'],
+.image-3v3Wjg[src='https://cdn.discordapp.com/emojis/402867838580293643.png?v=1'],
+.image-3v3Wjg[style*='background-image: url("https://cdn.discordapp.com/emojis/402867838580293643.png?v=1")'],
+.icon-QGKz8T[src='https://cdn.discordapp.com/emojis/402867838580293643.png?v=1'],
+.icon-QGKz8T[style*='background-image: url("https://cdn.discordapp.com/emojis/402867838580293643.png?v=1")'],
+.emoji-236_Ij[src='https://cdn.discordapp.com/emojis/402867838580293643.png?v=1'],
+.emoji-236_Ij[style*='background-image: url(https://cdn.discordapp.com/emojis/402867838580293643.png?v=1)'],
+.emoji[src='https://cdn.discordapp.com/emojis/402867838580293643.png?v=1'],
+.emoji[style*='background-image: url("https://cdn.discordapp.com/emojis/402867838580293643.png?v=1")'] {
+    background: transparent !important;
+    content: url(https://cdn.discordapp.com/attachments/772409023978405888/772426630043271198/Danganronpa_V3_Hajime_Hinata_Bonus_Mode_Sprites_15.png) !important;
+}
+
+/* peepocheer */
+.diversityEmojiItemImage-2gPNoS[src='https://cdn.discordapp.com/emojis/405951688885665792.png?v=1'],
+.diversityEmojiItemImage-2gPNoS[style*='background-image: url("https://cdn.discordapp.com/emojis/405951688885665792.png?v=1")'],
+.emoji-AAbs8r[src='https://cdn.discordapp.com/emojis/405951688885665792.png?v=1'],
+.emoji-AAbs8r[style*='background-image: url(https://cdn.discordapp.com/emojis/405951688885665792.png?v=1")'],
+.icon-3ZzoN7[src='https://cdn.discordapp.com/emojis/405951688885665792.png?v=1'],
+.icon-3ZzoN7[style*='background-image: url(https://cdn.discordapp.com/emojis/405951688885665792.png?v=1")'],
+.image-3v3Wjg[src='https://cdn.discordapp.com/emojis/405951688885665792.png?v=1'],
+.image-3v3Wjg[style*='background-image: url("https://cdn.discordapp.com/emojis/405951688885665792.png?v=1")'],
+.icon-QGKz8T[src=''],
+.icon-QGKz8T[style*='background-image: url("https://cdn.discordapp.com/emojis/405951688885665792.png?v=1")'],
+.emoji-236_Ij[src=''],
+.emoji-236_Ij[style*='background-image: url(https://cdn.discordapp.com/emojis/405951688885665792.png?v=1)'],
+.emoji[src='https://cdn.discordapp.com/emojis/405951688885665792.png?v=1'],
+.emoji[style*='background-image: url("https://cdn.discordapp.com/emojis/405951688885665792.png?v=1")'] {
+    background: transparent !important;
+    content: url(https://cdn.discordapp.com/attachments/334077784953716736/770714854096371712/Danganronpa_2_Island_Mode_Chiaki_Nanami_Pixel_Icon_3.gif) !important;
+}
+
+/* hityeah */
+.diversityEmojiItemImage-2gPNoS[src='https://cdn.discordapp.com/emojis/603713279864471564.png?v=1'],
+.diversityEmojiItemImage-2gPNoS[style*='background-image: url("https://cdn.discordapp.com/emojis/603713279864471564.png?v=1")'],
+.emoji-AAbs8r[src='https://cdn.discordapp.com/emojis/603713279864471564.png?v=1'],
+.emoji-AAbs8r[style*='background-image: url("https://cdn.discordapp.com/emojis/603713279864471564.png?v=1")'],
+.icon-3ZzoN7[src='https://cdn.discordapp.com/emojis/603713279864471564.png?v=1'],
+.icon-3ZzoN7[style*='background-image: url("https://cdn.discordapp.com/emojis/603713279864471564.png?v=1")'],
+.image-3v3Wjg[src='https://cdn.discordapp.com/emojis/603713279864471564.png?v=1'],
+.image-3v3Wjg[style*='background-image: url("https://cdn.discordapp.com/emojis/603713279864471564.png?v=1")'],
+.icon-QGKz8T[src='https://cdn.discordapp.com/emojis/603713279864471564.png?v=1'],
+.icon-QGKz8T[style*='background-image: url("https://cdn.discordapp.com/emojis/603713279864471564.png?v=1")'],
+.emoji-236_Ij[src='https://cdn.discordapp.com/emojis/603713279864471564.png?v=1'],
+.emoji-236_Ij[style*='background-image: url("https://cdn.discordapp.com/emojis/603713279864471564.png?v=1")'],
+.emoji[src='https://cdn.discordapp.com/emojis/603713279864471564.png?v=1'],
+.emoji[style*='background-image: url("https://cdn.discordapp.com/emojis/603713279864471564.png?v=1")'],
+.imageLoading-image-1CmAz0[style*='background-image: url("https://cdn.discordapp.com/emojis/603713279864471564.png?+v=1")'],
+.imageLoading-image-1CmAz0[src='https://cdn.discordapp.com/emojis/603713279864471564.png?v=1'],
+.emojiItem-14v6tW[style*='background-image: url("https://cdn.discordapp.com/emojis/603713279864471564.png?v=1")'],
+.emojiItem-14v6tW[src='https://cdn.discordapp.com/emojis/603713279864471564.png?v=1'],
+.emojiItemLarge-sa0X3P[style*='background-image: url("https://cdn.discordapp.com/emojis/603713279864471564.png?v=1")'],
+.emojiItemLarge-sa0X3P[src='https://cdn.discordapp.com/emojis/603713279864471564.png?v=1'],
+.emojiItemSelected-1aLkfV[style*='background-image: url("https://cdn.discordapp.com/emojis/603713279864471564.png?v=1")'],
+.emojiItemSelected-1aLkfV[src='https://cdn.discordapp.com/emojis/603713279864471564.png?v=1'],
+.image-1CmAz0[style*='background-image: url("https://cdn.discordapp.com/emojis/603713279864471564.png?v=1")'],
+.image-1CmAz0[src='https://cdn.discordapp.com/emojis/603713279864471564.png?v=1'] {
+    background: transparent !important;
+    content: url("https://cdn.discordapp.com/attachments/334077784953716736/776037525139226624/Danganronpa_V3_Chiaki_Nanami_Bonus_Mode_Sprites_05.png") !important;
+}
+
+/*huehue*/
+.diversityEmojiItemImage-2gPNoS[src='https://cdn.discordapp.com/emojis/642159652989042728.png?v=1'],
+.diversityEmojiItemImage-2gPNoS[style*='background-image: url("https://cdn.discordapp.com/emojis/642159652989042728.png?v=1")'],
+.emoji-AAbs8r[src='https://cdn.discordapp.com/emojis/642159652989042728.png?v=1'],
+.emoji-AAbs8r[style*='background-image: url("https://cdn.discordapp.com/emojis/642159652989042728.png?v=1")'],
+.icon-3ZzoN7[src='https://cdn.discordapp.com/emojis/642159652989042728.png?v=1'],
+.icon-3ZzoN7[style*='background-image: url("https://cdn.discordapp.com/emojis/642159652989042728.png?v=1")'],
+.image-3v3Wjg[src='https://cdn.discordapp.com/emojis/642159652989042728.png?v=1'],
+.image-3v3Wjg[style*='background-image: url("https://cdn.discordapp.com/emojis/642159652989042728.png?v=1")'],
+.icon-QGKz8T[src='https://cdn.discordapp.com/emojis/642159652989042728.png?v=1'],
+.icon-QGKz8T[style*='background-image: url("https://cdn.discordapp.com/emojis/642159652989042728.png?v=1")'],
+.emoji-236_Ij[src='https://cdn.discordapp.com/emojis/642159652989042728.png?v=1'],
+.emoji-236_Ij[style*='background-image: url("https://cdn.discordapp.com/emojis/642159652989042728.png?v=1")'],
+.emoji[src='https://cdn.discordapp.com/emojis/642159652989042728.png?v=1'],
+.emoji[style*='background-image: url("https://cdn.discordapp.com/emojis/642159652989042728.png?v=1")'],
+.imageLoading-image-1CmAz0[style*='https://cdn.discordapp.com/emojis/642159652989042728.png?v=1")'],
+.imageLoading-image-1CmAz0[src='https://cdn.discordapp.com/emojis/642159652989042728.png?v=1'],
+.emojiItem-14v6tW[style*='background-image: url("https://cdn.discordapp.com/emojis/642159652989042728.png?v=1")'],
+.emojiItem-14v6tW[src='https://cdn.discordapp.com/emojis/642159652989042728.png?v=1'],
+.emojiItemLarge-sa0X3P[style*='background-image: url("https://cdn.discordapp.com/emojis/642159652989042728.png?v=1")'],
+.emojiItemLarge-sa0X3P[src='https://cdn.discordapp.com/emojis/642159652989042728.png?v=1'],
+.emojiItemSelected-1aLkfV[style*='https://cdn.discordapp.com/emojis/642159652989042728.png?v=1")'],
+.emojiItemSelected-1aLkfV[src='https://cdn.discordapp.com/emojis/642159652989042728.png?v=1'],
+.image-1CmAz0[style*='background-image: url("https://cdn.discordapp.com/emojis/642159652989042728.png?v=1")'],
+.image-1CmAz0[src='https://cdn.discordapp.com/emojis/642159652989042728.png?v=1'] {
+    background: transparent !important;
+    content: url("https://cdn.discordapp.com/attachments/772409023978405888/781641829769674762/huehuenagito.png") !important;
+}
+
+/* vheart */
+.diversityEmojiItemImage-2gPNoS[src='https://cdn.discordapp.com/emojis/366410126099218435.png?v=1'],
+.diversityEmojiItemImage-2gPNoS[style*='background-image: url("https://cdn.discordapp.com/emojis/366410126099218435.png?v=1")'],
+.emoji-AAbs8r[src='https://cdn.discordapp.com/emojis/366410126099218435.png?v=1'],
+.emoji-AAbs8r[style*='background-image: url("https://cdn.discordapp.com/emojis/366410126099218435.png?v=1")'],
+.icon-3ZzoN7[src='https://cdn.discordapp.com/emojis/366410126099218435.png?v=1'],
+.icon-3ZzoN7[style*='background-image: url("https://cdn.discordapp.com/emojis/366410126099218435.png?v=1")'],
+.image-3v3Wjg[src='https://cdn.discordapp.com/emojis/366410126099218435.png?v=1'],
+.image-3v3Wjg[style*='background-image: url("https://cdn.discordapp.com/emojis/366410126099218435.png?v=1")'],
+.icon-QGKz8T[src='https://cdn.discordapp.com/emojis/366410126099218435.png?v=1'],
+.icon-QGKz8T[style*='background-image: url("https://cdn.discordapp.com/emojis/366410126099218435.png?v=1")'],
+.emoji-236_Ij[src='https://cdn.discordapp.com/emojis/366410126099218435.png?v=1'],
+.emoji-236_Ij[style*='background-image: url("https://cdn.discordapp.com/emojis/366410126099218435.png?v=1")'],
+.emoji[src='https://cdn.discordapp.com/emojis/366410126099218435.png?v=1'],
+.emoji[style*='background-image: url("https://cdn.discordapp.com/emojis/366410126099218435.png?v=1")'],
+.imageLoading-image-1CmAz0[style*='https://cdn.discordapp.com/emojis/366410126099218435.png?v=1")'],
+.imageLoading-image-1CmAz0[src='https://cdn.discordapp.com/emojis/366410126099218435.png?v=1'],
+.emojiItem-14v6tW[style*='background-image: url("https://cdn.discordapp.com/emojis/366410126099218435.png?v=1")'],
+.emojiItem-14v6tW[src='https://cdn.discordapp.com/emojis/366410126099218435.png?v=1'],
+.emojiItemLarge-sa0X3P[style*='background-image: url("https://cdn.discordapp.com/emojis/366410126099218435.png?v=1")'],
+.emojiItemLarge-sa0X3P[src='https://cdn.discordapp.com/emojis/366410126099218435.png?v=1'],
+.emojiItemSelected-1aLkfV[style*='https://cdn.discordapp.com/emojis/366410126099218435.png?v=1")'],
+.emojiItemSelected-1aLkfV[src='https://cdn.discordapp.com/emojis/366410126099218435.png?v=1'],
+.image-1CmAz0[style*='background-image: url("https://cdn.discordapp.com/emojis/366410126099218435.png?v=1")'],
+.image-1CmAz0[src='https://cdn.discordapp.com/emojis/366410126099218435.png?v=1'] {
+    background: transparent !important;
+    content: url("https://cdn.discordapp.com/attachments/570848364162187265/771474295418257419/oytjnivv53w51.png") !important;
+}
+
+/* template
+  
+.diversityEmojiItemImage-2gPNoS[src=''],
+.diversityEmojiItemImage-2gPNoS[style*='background-image: url("")'],
+.emoji-AAbs8r[src=''],
+.emoji-AAbs8r[style*='background-image: url("")'],
+.icon-3ZzoN7[src=''],
+.icon-3ZzoN7[style*='background-image: url("")'],
+.image-3v3Wjg[src=''],
+.image-3v3Wjg[style*='background-image: url("")'],
+.icon-QGKz8T[src=''],
+.icon-QGKz8T[style*='background-image: url("")'],
+.emoji-236_Ij[src=''],
+.emoji-236_Ij[style*='background-image: url("")'],
+.emoji[src=''],
+.emoji[style*='background-image: url("")'] {
+    background: transparent !important;
+    content: url("") !important;
+}
+
+Emoji picker icon ***ONLY FOR NON DEFAULT EMOTES***
+.imageLoading-image-1CmAz0[style*='")'],
+.imageLoading-image-1CmAz0[src=''],
+.emojiItem-14v6tW[style*='background-image: url("")'],
+.emojiItem-14v6tW[src=''],
+.emojiItemLarge-sa0X3P[style*='background-image: url("")'],
+.emojiItemLarge-sa0X3P[src=''],
+.emojiItemSelected-1aLkfV[style*='")'],
+.emojiItemSelected-1aLkfV[src=''],
+.image-1CmAz0[style*='background-image: url("")'],
+.image-1CmAz0[src=''] {
+    background: transparent !important;
+    content: url("") !important;
+*/
