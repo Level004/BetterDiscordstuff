@@ -5,7 +5,7 @@
 
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /                                                                                                                                /
-/                                                        defualt Emotes                                                          /
+/                                                       default Emotes                                                          /
 /                                                                                                                                /
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
@@ -258,7 +258,7 @@
 
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /                                                                                                                                /
-/                                                        Non-defualt Emotes                                                      /
+/                                                        Non-default Emotes                                                      /
 /                                                                                                                                /
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
@@ -425,37 +425,89 @@
     content: url("https://cdn.discordapp.com/attachments/570848364162187265/771474295418257419/oytjnivv53w51.png") !important;
 }
 
-/* template
-  
-.diversityEmojiItemImage-2gPNoS[src=''],
-.diversityEmojiItemImage-2gPNoS[style*='background-image: url("")'],
-.emoji-AAbs8r[src=''],
-.emoji-AAbs8r[style*='background-image: url("")'],
-.icon-3ZzoN7[src=''],
-.icon-3ZzoN7[style*='background-image: url("")'],
-.image-3v3Wjg[src=''],
-.image-3v3Wjg[style*='background-image: url("")'],
-.icon-QGKz8T[src=''],
-.icon-QGKz8T[style*='background-image: url("")'],
-.emoji-236_Ij[src=''],
-.emoji-236_Ij[style*='background-image: url("")'],
-.emoji[src=''],
-.emoji[style*='background-image: url("")'] {
+/* kevon */
+.diversityEmojiItemImage-2gPNoS[src='https://cdn.discordapp.com/emojis/761690926162640896.png?v=1'],
+.diversityEmojiItemImage-2gPNoS[style*='background-image: url("https://cdn.discordapp.com/emojis/761690926162640896.png?v=1")'],
+.emoji-AAbs8r[src='https://cdn.discordapp.com/emojis/761690926162640896.png?v=1'],
+.emoji-AAbs8r[style*='background-image: url("https://cdn.discordapp.com/emojis/761690926162640896.png?v=1")'],
+.icon-3ZzoN7[src='https://cdn.discordapp.com/emojis/761690926162640896.png?v=1'],
+.icon-3ZzoN7[style*='background-image: url("https://cdn.discordapp.com/emojis/761690926162640896.png?v=1")'],
+.image-3v3Wjg[src='https://cdn.discordapp.com/emojis/761690926162640896.png?v=1'],
+.image-3v3Wjg[style*='background-image: url("https://cdn.discordapp.com/emojis/761690926162640896.png?v=1")'],
+.icon-QGKz8T[src='https://cdn.discordapp.com/emojis/761690926162640896.png?v=1'],
+.icon-QGKz8T[style*='background-image: url("https://cdn.discordapp.com/emojis/761690926162640896.png?v=1")'],
+.emoji-236_Ij[src='https://cdn.discordapp.com/emojis/761690926162640896.png?v=1'],
+.emoji-236_Ij[style*='background-image: url("https://cdn.discordapp.com/emojis/761690926162640896.png?v=1")'],
+.emoji[src='https://cdn.discordapp.com/emojis/761690926162640896.png?v=1'],
+.emoji[style*='background-image: url("https://cdn.discordapp.com/emojis/761690926162640896.png?v=1")'],
+.imageLoading-image-1CmAz0[style*='https://cdn.discordapp.com/emojis/761690926162640896.png?v=1")'],
+.imageLoading-image-1CmAz0[src='https://cdn.discordapp.com/emojis/761690926162640896.png?v=1'],
+.emojiItem-14v6tW[style*='background-image: url("https://cdn.discordapp.com/emojis/761690926162640896.png?v=1")'],
+.emojiItem-14v6tW[src='https://cdn.discordapp.com/emojis/761690926162640896.png?v=1'],
+.emojiItemLarge-sa0X3P[style*='background-image: url("https://cdn.discordapp.com/emojis/761690926162640896.png?v=1")'],
+.emojiItemLarge-sa0X3P[src='https://cdn.discordapp.com/emojis/761690926162640896.png?v=1'],
+.emojiItemSelected-1aLkfV[style*='https://cdn.discordapp.com/emojis/761690926162640896.png?v=1")'],
+.emojiItemSelected-1aLkfV[src='https://cdn.discordapp.com/emojis/761690926162640896.png?v=1'],
+.image-1CmAz0[style*='background-image: url(https://cdn.discordapp.com/emojis/761690926162640896.png?v=1"")'],
+.image-1CmAz0[src='https://cdn.discordapp.com/emojis/761690926162640896.png?v=1']{
     background: transparent !important;
-    content: url("") !important;
+    content: url("https://cdn.discordapp.com/attachments/334077784953716736/773860128634044416/D-46fszXUAAzR7R.png") !important;
 }
 
-Emoji picker icon ***ONLY FOR NON DEFAULT EMOTES***
-.imageLoading-image-1CmAz0[style*='")'],
-.imageLoading-image-1CmAz0[src=''],
-.emojiItem-14v6tW[style*='background-image: url("")'],
-.emojiItem-14v6tW[src=''],
-.emojiItemLarge-sa0X3P[style*='background-image: url("")'],
-.emojiItemLarge-sa0X3P[src=''],
-.emojiItemSelected-1aLkfV[style*='")'],
-.emojiItemSelected-1aLkfV[src=''],
-.image-1CmAz0[style*='background-image: url("")'],
-.image-1CmAz0[src=''] {
+/*kevin*/
+.diversityEmojiItemImage-2gPNoS[src='https://cdn.discordapp.com/emojis/761690890586030130.png?v=1'],
+.diversityEmojiItemImage-2gPNoS[style*='background-image: url("https://cdn.discordapp.com/emojis/761690890586030130.png?v=1")'],
+.emoji-AAbs8r[src='https://cdn.discordapp.com/emojis/761690890586030130.png?v=1'],
+.emoji-AAbs8r[style*='background-image: url("https://cdn.discordapp.com/emojis/761690890586030130.png?v=1")'],
+.icon-3ZzoN7[src='https://cdn.discordapp.com/emojis/761690890586030130.png?v=1'],
+.icon-3ZzoN7[style*='background-image: url("https://cdn.discordapp.com/emojis/761690890586030130.png?v=1")'],
+.image-3v3Wjg[src='https://cdn.discordapp.com/emojis/761690890586030130.png?v=1'],
+.image-3v3Wjg[style*='background-image: url("https://cdn.discordapp.com/emojis/761690890586030130.png?v=1")'],
+.icon-QGKz8T[src='https://cdn.discordapp.com/emojis/761690890586030130.png?v=1'],
+.icon-QGKz8T[style*='background-image: url("https://cdn.discordapp.com/emojis/761690890586030130.png?v=1")'],
+.emoji-236_Ij[src='https://cdn.discordapp.com/emojis/761690890586030130.png?v=1'],
+.emoji-236_Ij[style*='background-image: url("https://cdn.discordapp.com/emojis/761690890586030130.png?v=1")'],
+.emoji[src='https://cdn.discordapp.com/emojis/761690890586030130.png?v=1'],
+.emoji[style*='background-image: url("https://cdn.discordapp.com/emojis/761690890586030130.png?v=1")'],
+.imageLoading-image-1CmAz0[style*='https://cdn.discordapp.com/emojis/761690890586030130.png?v=1")'],
+.imageLoading-image-1CmAz0[src='https://cdn.discordapp.com/emojis/761690890586030130.png?v=1'],
+.emojiItem-14v6tW[style*='background-image: url("https://cdn.discordapp.com/emojis/761690890586030130.png?v=1")'],
+.emojiItem-14v6tW[src='https://cdn.discordapp.com/emojis/761690890586030130.png?v=1'],
+.emojiItemLarge-sa0X3P[style*='background-image: url("https://cdn.discordapp.com/emojis/761690890586030130.png?v=1")'],
+.emojiItemLarge-sa0X3P[src='https://cdn.discordapp.com/emojis/761690890586030130.png?v=1'],
+.emojiItemSelected-1aLkfV[style*='https://cdn.discordapp.com/emojis/761690890586030130.png?v=1")'],
+.emojiItemSelected-1aLkfV[src='https://cdn.discordapp.com/emojis/761690890586030130.png?v=1'],
+.image-1CmAz0[style*='background-image: url("https://cdn.discordapp.com/emojis/761690890586030130.png?v=1")'],
+.image-1CmAz0[src='https://cdn.discordapp.com/emojis/761690890586030130.png?v=1']{
     background: transparent !important;
-    content: url("") !important;
-*/
+    content: url("https://cdn.discordapp.com/attachments/334077784953716736/773872890391035914/wadance_1.png") !important;
+}
+
+/*frogleaf*/
+.diversityEmojiItemImage-2gPNoS[src='https://cdn.discordapp.com/emojis/773704664222531625.png?v=1'],
+.diversityEmojiItemImage-2gPNoS[style*='background-image: url("https://cdn.discordapp.com/emojis/773704664222531625.png?v=1")'],
+.emoji-AAbs8r[src='https://cdn.discordapp.com/emojis/773704664222531625.png?v=1'],
+.emoji-AAbs8r[style*='background-image: url("https://cdn.discordapp.com/emojis/773704664222531625.png?v=1")'],
+.icon-3ZzoN7[src='https://cdn.discordapp.com/emojis/773704664222531625.png?v=1'],
+.icon-3ZzoN7[style*='background-image: url("https://cdn.discordapp.com/emojis/773704664222531625.png?v=1")'],
+.image-3v3Wjg[src='https://cdn.discordapp.com/emojis/773704664222531625.png?v=1'],
+.image-3v3Wjg[style*='background-image: url("https://cdn.discordapp.com/emojis/773704664222531625.png?v=1")'],
+.icon-QGKz8T[src='https://cdn.discordapp.com/emojis/773704664222531625.png?v=1'],
+.icon-QGKz8T[style*='background-image: url("https://cdn.discordapp.com/emojis/773704664222531625.png?v=1")'],
+.emoji-236_Ij[src='https://cdn.discordapp.com/emojis/773704664222531625.png?v=1'],
+.emoji-236_Ij[style*='background-image: url("https://cdn.discordapp.com/emojis/773704664222531625.png?v=1")'],
+.emoji[src='https://cdn.discordapp.com/emojis/773704664222531625.png?v=1'],
+.emoji[style*='background-image: url("https://cdn.discordapp.com/emojis/773704664222531625.png?v=1")'],
+.imageLoading-image-1CmAz0[style*='https://cdn.discordapp.com/emojis/773704664222531625.png?v=1")'],
+.imageLoading-image-1CmAz0[src='https://cdn.discordapp.com/emojis/773704664222531625.png?v=1'],
+.emojiItem-14v6tW[style*='background-image: url("https://cdn.discordapp.com/emojis/773704664222531625.png?v=1")'],
+.emojiItem-14v6tW[src='https://cdn.discordapp.com/emojis/773704664222531625.png?v=1'],
+.emojiItemLarge-sa0X3P[style*='background-image: url("https://cdn.discordapp.com/emojis/773704664222531625.png?v=1")'],
+.emojiItemLarge-sa0X3P[src='https://cdn.discordapp.com/emojis/773704664222531625.png?v=1'],
+.emojiItemSelected-1aLkfV[style*='https://cdn.discordapp.com/emojis/773704664222531625.png?v=1")'],
+.emojiItemSelected-1aLkfV[src='https://cdn.discordapp.com/emojis/773704664222531625.png?v=1'],
+.image-1CmAz0[style*='background-image: url("https://cdn.discordapp.com/emojis/773704664222531625.png?v=1")'],
+.image-1CmAz0[src='https://cdn.discordapp.com/emojis/773704664222531625.png?v=1']{
+    background: transparent !important;
+    content: url("https://cdn.discordapp.com/attachments/334077784953716736/773880375238983720/iu.png") !important;
+}
