@@ -1,3 +1,14 @@
+.wordmarkWindows-1v0lYD::after {
+    content: "- Chiaki Gaming";
+    font-size: 14px;
+    font-weight: 700;
+    width: 200px;
+    position: absolute;
+    top: 5px;
+    padding-left: 5px;
+    color: pink;
+}
+
 .headerText-3Uvj1Y > span:first-child::after,
 .username-2b1r56::after,
 .usernameFont-23TX-h::after,
