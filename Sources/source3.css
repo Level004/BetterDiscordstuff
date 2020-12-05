@@ -273,6 +273,8 @@
 .emoji[style*='background-image: url("/assets/762f76a5eef7c38bde88c1888726e75d.svg")'] {
     background: transparent !important;
     content: url("https://media.discordapp.net/attachments/339880946826346498/782460396099469323/chihiro_spin.gif") !important;
+    height: 110px;
+    width: 110px;
 }
 
 /* male dancer */
@@ -292,7 +294,10 @@
 .emoji[style*='background-image: url("/assets/b839169ecf4b7b147129f96e369e055a.svg")'] {
     background: transparent !important;
     content: url("https://cdn.discordapp.com/attachments/772409023978405888/783836026187677696/1chiak_rotation.gif") !important;
+    height: 110px;
+    width: 110px;
 }
+
 
 
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
