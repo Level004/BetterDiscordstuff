@@ -1,0 +1,7 @@
+/* Level 4 badge */
+[src*="314467927799627776"] + .header-23xsNx > .headerText-3Uvj1Y > span:first-child::after {
+    content: " ";
+    background: url(https://cdn.discordapp.com/attachments/778713288099889154/781818967173627944/chihiro_messagebar.png) center/110% no-repeat;
+    padding: 0 10px 0 10px;
+    margin-left: 2px; 
+}
