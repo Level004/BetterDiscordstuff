@@ -1,0 +1,49 @@
+/**
+ * @name Make your own badges
+ * @description Create your very own badges for users!
+ * @author Level4
+ * @version 1.0.0
+ * @authorId 314467927799627776
+ * @invite 
+ * @donate 
+ * @patreon
+ * @website 
+ * @source
+ */
+
+@import url("https://raw.githack.com/Level004/BetterDiscordstuff/main/Sources/Level4Badge.css");
+
+/* 
+Guide: 
+
+1. Put the user id inside the quotes of the src.
+2. Put the image link that you want as the badge inside of the quotes of teh url.
+
+And that's it! You've now added a badge to a user!
+
+if the badge is either too big or too small change the % to something bigger or smaller to suit your needs.
+*/
+
+[src*=""] + .header-23xsNx > .headerText-3Uvj1Y > span:first-child::after {
+    content: " ";
+    background: url("") center/90% no-repeat;
+}
+
+/*
+A new empty template for if you want to add more badges!
+
+[src*=""] + .header-23xsNx > .headerText-3Uvj1Y > span:first-child::after {
+    content: " ";
+    background: url("") center/90% no-repeat;
+}
+
+*/
+
+/* ignroe this */
+.headerText-3Uvj1Y > span:first-child::after,
+.username-2b1r56::after,
+.usernameFont-23TX-h::after,
+.name-uJV0GL::after {
+    padding: 0 10px 0 10px;
+    margin-left: 2px;
+}
