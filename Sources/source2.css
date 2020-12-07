@@ -1,12 +1,14 @@
-.wordmarkWindows-1v0lYD::after {
-    content: "- Chiaki Gaming";
+.wordmarkWindows-1v0lYD::before {
+    content: "Chiaki Gaming";
     font-size: 14px;
     font-weight: 700;
     width: 200px;
     position: absolute;
-    top: 5px;
-    padding-left: 5px;
     color: pink;
+}
+
+.wordmarkWindows-1v0lYD {
+    color: transparent;
 }
 
 .headerText-3Uvj1Y > span:first-child::after,
