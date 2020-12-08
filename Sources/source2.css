@@ -63,9 +63,13 @@
     background-image: url("https://cdn.discordapp.com/attachments/778713288099889154/781897544266547240/messagebar.png");
     background-repeat: no-repeat;
     position: relative;
+    background-position: right 0;
     left: 0;
 }
 
+.textArea-12jD-V > .placeholder-37qJjk > .markup-2BOw-j {
+    width: 470px;
+}
 
 .buttons-3JBrkn {
     position: relative;
@@ -74,7 +78,7 @@
 .form-2fGMdU {
     position: relative;
     bottom: 0;
-    width: 800px;
+    max-width: 800px;
 }
 
 .membersWrap-2h-GB4 {
