@@ -155,13 +155,14 @@
     padding: 0;
 }
 
-.inner-1ilYF7 > .flex-1xMQg5 {
-    padding-bottom: 70px;
+.inner-1ilYF7 {
+    padding-bottom: 67px;
     background: url("https://cdn.discordapp.com/attachments/778713288099889154/782596918885875732/Untitled-1.png");
     background-size: cover;
     background-repeat: no-repeat;
+    position: relative;
+    height: 610px;
 }
-
 /* ~~~~		 		Badges next to name							~~~~ */
 
 
