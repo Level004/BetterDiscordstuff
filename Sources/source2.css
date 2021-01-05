@@ -1,3 +1,5 @@
+/* ~~~~		 			CSS						~~~~ */
+
 /* Replace the discord watermark with 'chiaki gaming' */
 .wordmarkWindows-1v0lYD::before {
     content: "Chiaki Gaming";
@@ -42,8 +44,8 @@
 /* Puts in this gif when replying to someone */
 .container-2fRDfG {
     position: fixed;
-    top: 70px;
-    left: 900px;
+    top: var(--spintop);
+    left: var(--spinleft);
     width: 340px;
     padding-top: 400px;
     background: url("https://media.discordapp.net/attachments/339880946826346498/782460396099469323/chihiro_spin.gif");
@@ -57,7 +59,7 @@
 .actions-NlfMQc {
     position: relative;
     top: 15px;
-    color: aqua;
+    color: rgb(var(--spintextcolor));
     font-weight: bold;
 }
 
@@ -104,9 +106,10 @@
 
 /* Places this gif on the screen */
 .content-yTz4x3 {
-    background-image: url("https://cdn.discordapp.com/attachments/778713288099889154/781886632370372658/Nagito_mining.gif");
+    background-image: var(--mining);
     background-repeat: no-repeat;
     background-size: relative;
+    background-position: var(--miningposition);
 }
 
 /* Places this gif at the bottom left corner of the channel list */
@@ -138,18 +141,15 @@
 }
 
 /* Adds this image when in the extra details screen of a user */
-.inner-1ilYF7 {
-    padding-bottom: 67px;
-    background: url("https://cdn.discordapp.com/attachments/778713288099889154/782596918885875732/Untitled-1.png");
-    background-size: cover;
+.inner-1ilYF7 > .flex-1xMQg5 {
+    background: url("https://cdn.discordapp.com/attachments/778713288099889154/782596918885875732/Untitled-1.png") !important;
     background-repeat: no-repeat;
     position: relative;
-    height: 610px;
+    background-position: bottom;
+    padding-bottom: 65px;
 }
-
-.topSectionPlaying-1J5E4n,
-.topSectionNormal-2-vo2m {
-    height: 336px;
+.inner-1ilYF7 > .flex-1xMQg5 > .body-3ND3kc{
+    margin-top: -32px !important;
 }
 
 /* ~~~~		 		Badges next to name							~~~~ */
