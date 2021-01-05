@@ -1,3 +1,4 @@
+/* Replace the discord watermark with 'chiaki gaming' */
 .wordmarkWindows-1v0lYD::before {
     content: "Chiaki Gaming";
     font-size: 14px;
@@ -11,6 +12,12 @@
     color: transparent;
 }
 
+/* Removes the invite users button so you don't accidently click it >:( */
+#user-context-invite-to-server {
+    display: none;
+}
+
+/* Places the custom badge in the right place */
 .headerText-3Uvj1Y > span:first-child::after,
 .username-2b1r56::after,
 .usernameFont-23TX-h::after,
@@ -32,6 +39,7 @@
 
 }
 
+/* Puts in this gif when replying to someone */
 .container-2fRDfG {
     position: fixed;
     top: 70px;
@@ -44,19 +52,22 @@
     z-index: 2;
 }
 
-.colorHeaderSecondary-3Sp3Ft,
+/* Replaces the font so that it becomes easier to see */
+.container-2fRDfG > .colorHeaderSecondary-3Sp3Ft,
 .actions-NlfMQc {
     position: relative;
-    bottom: 40px;
+    top: 15px;
     color: aqua;
     font-weight: bold;
 }
 
+/* Makes the reply bar black */
 .jumpToPresentBar-G1R9s6,
 .newMessagesBar-265mhP {
     background-color: black;
 }
 
+/* Puts this image inside of the message bar */
 .textArea-12jD-V,
 .slateTextArea-1Mkdgw .hljs-comment,
 .slateTextArea-1Mkdgw .hljs-quote {
@@ -67,12 +78,9 @@
     left: 0;
 }
 
+/* Makes it so it doesn't overlap the message bar with the gif from the members list while DMing */
 .textArea-12jD-V > .placeholder-37qJjk > .markup-2BOw-j {
     width: 470px;
-}
-
-.buttons-3JBrkn {
-    position: relative;
 }
 
 .form-2fGMdU {
@@ -81,80 +89,55 @@
     max-width: 800px;
 }
 
+/* Makes extra space for the Gif so that it doesn't overlap onto users */
 .membersWrap-2h-GB4 {
     padding-bottom: 69px;
 }
 
+/* Places this gif at the bottom right corner */
 .content-98HsJk {
     background-image: url("https://cdn.discordapp.com/attachments/778713288099889154/781877270251044915/chihiro_chiaki_sleep.gif");
     background-repeat: no-repeat;
     background-size: contain;
+    background-position: right bottom;
 }
 
+/* Places this gif on the screen */
 .content-yTz4x3 {
     background-image: url("https://cdn.discordapp.com/attachments/778713288099889154/781886632370372658/Nagito_mining.gif");
     background-repeat: no-repeat;
     background-size: relative;
 }
 
-
+/* Places this gif at the bottom left corner of the channel list */
 .container-3w7J-x {
     background-image: url(https://cdn.discordapp.com/attachments/778713288099889154/782450525500604426/totodile.gif);
     background-repeat: no-repeat;
     background-size: contain;
     padding-bottom: 60px;
-    content: "YOOOOOOOOOO POG?!!?!";
-
 }
 
-.panel-24C3ux,
-.body-GmmuPm,
-.gameIconWrapper-1YByCI > svg {
-    padding: 0;
-    margin: 0;
-    background: none;
-    height: 0;
-    width: 0;
-    color: none;
-}
-
-.actions-aUdUfC {
-    padding-left: 105px;
-    padding-top:234px;
-    position: fixed;
-}
-
-
+/* adds this picture to the pop-out */
 .headerPlaying-j0WQBV > .flex-1xMQg5 {
     background: url("https://cdn.discordapp.com/attachments/778713288099889154/782476330771677194/pop_out.png") center/102%;
     background-repeat: no-repeat;
-    color: black;
-}
-
-.infoScroller-3EYYns > .userInfoSection-2acyCx > .userInfoSectionHeader-CBvMDh,
-.infoScroller-3EYYns > .userInfoSection-2acyCx > .note-QfFU8y {
-    padding: 0;
-    margin: 0;
-    background: none;
-    height: 0;
-    width: 0;
-    color: none;
-    position: fixed;
-    bottom: -999px;
-}
-
-.actionButton-3W1xZa {
     position: relative;
-    bottom: -45px;
-    right: 310px;
-    padding: 0;
-    background: none;
+    height: 212px;
+}
+
+/* Same as the one above */
+.headerNormal-T_seeN > .flex-1xMQg5 {
+    background: url("https://cdn.discordapp.com/attachments/778713288099889154/782476330771677194/pop_out.png") center/102%;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 212px;
 }
 
 .infoScroller-3EYYns > .userInfoSection-2acyCx:first-child {
     padding: 0;
 }
 
+/* Adds this image when in the extra details screen of a user */
 .inner-1ilYF7 {
     padding-bottom: 67px;
     background: url("https://cdn.discordapp.com/attachments/778713288099889154/782596918885875732/Untitled-1.png");
@@ -163,6 +146,12 @@
     position: relative;
     height: 610px;
 }
+
+.topSectionPlaying-1J5E4n,
+.topSectionNormal-2-vo2m {
+    height: 336px;
+}
+
 /* ~~~~		 		Badges next to name							~~~~ */
 
 
