@@ -150,21 +150,21 @@
 }
 
 .activity-1ythUs {
-    position: fixed;
-    left: 363px;
+    position: absolute;
+    left: -3.3%;
 }
 
-.size12-3cLvbJ,
-.headerTextNormal-2mGWX3 {
+.activity-1ythUs > .size12-3cLvbJ,
+.activity-1ythUs > .headerTextNormal-2mGWX3 {
     display: none;
 
 }
 
-.customStatus-154i-H {
+.activity-1ythUs > .size16-1P40sf > .customStatus-154i-H {
     position: fixed;
     top: 210px;
     right: 500px;
-    
+
 }
 
 .activityProfile-2bJRaP > .bodyNormal-2D39hT,
