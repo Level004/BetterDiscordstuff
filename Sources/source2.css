@@ -148,8 +148,34 @@
     background-position: bottom;
     padding-bottom: 65px;
 }
-.inner-1ilYF7 > .flex-1xMQg5 > .body-3ND3kc{
-    margin-top: -32px !important;
+
+.activity-1ythUs {
+    position: fixed;
+    left: 363px;
+}
+
+.size12-3cLvbJ,
+.headerTextNormal-2mGWX3 {
+    display: none;
+
+}
+
+.customStatus-154i-H {
+    position: fixed;
+    top: 210px;
+    right: 500px;
+    
+}
+
+.activityProfile-2bJRaP > .bodyNormal-2D39hT,
+.activityProfile-2bJRaP > .bodyAlignCenter-1KzvJk {
+    position: fixed;
+    top: 63px;
+    background-color: rgb(var(--vaccentcolor));
+    height: auto;
+    min-height: 60px;
+    width: 600px;
+    border-radius: 25px 25px 0 0 ;
 }
 
 /* ~~~~		 		Badges next to name							~~~~ */
