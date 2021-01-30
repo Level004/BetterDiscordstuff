@@ -2,7 +2,7 @@
  * @name level 4's super mega ultra short pack
  * @description this is everything but very small :)
  * @author Level4
- * @version 1.0.1
+ * @version 1.0.2
  * @authorId 278543574059057154
  * @invite 
  * @donate 
@@ -25,4 +25,5 @@
     --mining: url("https://cutt.ly/Nagito_mining"); /* default Nagito. change the name at the end for a different character (case sensitive) */
     --miningposition: 710px 510px; /* default 710px 510px. changes the position of the gif */
     --defaultpfp: url("https://cdn.discordapp.com/attachments/434252964643733504/781911333175164977/nopfp.png") center/cover no-repeat !important; /* changes the default pfp to something else */
+    --v1_0_2: none; /* DO NOT CHANGE! THIS REMOVES THE UPDATE NOTICE!! */
 }
