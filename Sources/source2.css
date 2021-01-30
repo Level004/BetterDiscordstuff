@@ -55,12 +55,19 @@
 }
 
 /* Replaces the font so that it becomes easier to see */
-.container-2fRDfG > .colorHeaderSecondary-3Sp3Ft,
-.actions-NlfMQc {
+.container-2fRDfG > div > .colorHeaderSecondary-3Sp3Ft,
+.container-2fRDfG > .actions-NlfMQc {
     position: relative;
     top: 15px;
     color: rgb(var(--spintextcolor));
     font-weight: bold;
+}
+
+.container-2fRDfG > .actions-NlfMQc {
+    top: 16px;
+    background: black;
+    height: 15px;
+    width: 90px;
 }
 
 /* Makes the reply bar black */
@@ -202,15 +209,6 @@
     background: url(https://i.redd.it/y4fpd8f8zr321.gif) center/150% no-repeat;
 }
 
-/*Mystic pfp replacement*/
-[style*="https://cdn.discordapp.com/avatars/279216251597750272/42c96ee9cc43632ee7ac1d92c4579637.webp?size=128"],
-[src*="https://cdn.discordapp.com/avatars/279216251597750272/42c96ee9cc43632ee7ac1d92c4579637.webp?size=128"],
-[style*="https://cdn.discordapp.com/avatars/279216251597750272/42c96ee9cc43632ee7ac1d92c4579637.png?size=128"],
-[src*="https://cdn.discordapp.com/avatars/279216251597750272/42c96ee9cc43632ee7ac1d92c4579637.png?size=128"] {
-    object-position: -999px -999px !important;
-    background: url("https://cdn.discordapp.com/attachments/434252964643733504/713463837482811402/unknown.png") center/cover no-repeat !important;
-}
-
 /* Kristal badge */
 [src*="226482523876622336"] + .header-23xsNx > .headerText-3Uvj1Y > span:first-child::after,
 .avatar-3EQepX[data-user-id="226482523876622336"] + .headerInfo-30uryT > .nameTag-2IFDfL > .username-2b1r56::after,
@@ -272,26 +270,4 @@
 [aria-label*="pog"] > div > .content-3QAtGj > .nameAndDecorators-5FJ2dg > .name-uJV0GL > .overflow-WK9Ogt::after {
     content: " ";
     background: url(https://cdn.discordapp.com/attachments/334077784953716736/782443207043973130/crazy_diamond.png) center/110% no-repeat;
-}
-
-/* math server badge/for multiple users place src above original*/
-[src*=""] + .header-23xsNx > .headerText-3Uvj1Y > span:first-child::after,
-[src*=""] + .header-23xsNx > .headerText-3Uvj1Y > span:first-child::after,
-[src*=""] + .header-23xsNx > .headerText-3Uvj1Y > span:first-child::after,
-[src*=""] + .header-23xsNx > .headerText-3Uvj1Y > span:first-child::after,
-[src*="326426187037540352"] + .header-23xsNx > .headerText-3Uvj1Y > span:first-child::after,
-[src*="295315437770768384"] + .header-23xsNx > .headerText-3Uvj1Y > span:first-child::after,
-[src*="327086812403204097"] + .header-23xsNx > .headerText-3Uvj1Y > span:first-child::after,
-[src*="172743171715891200"] + .header-23xsNx > .headerText-3Uvj1Y > span:first-child::after,
-[src*="593922537268969504"] + .header-23xsNx > .headerText-3Uvj1Y > span:first-child::after,
-[src*="304062143114903552"] + .header-23xsNx > .headerText-3Uvj1Y > span:first-child::after,
-[src*="349852633542164480"] + .header-23xsNx > .headerText-3Uvj1Y > span:first-child::after,
-.avatar-3EQepX[data-user-id="349852633542164480"] + .headerInfo-30uryT > .nameTag-2IFDfL > .username-2b1r56::after,
-[style*="349852633542164480"] + .usernameFont-23TX-h::after,
-[aria-label*="pog"] > div > .content-3QAtGj > .nameAndDecorators-5FJ2dg > .name-uJV0GL > .overflow-WK9Ogt::after {
-    content: "   epic person 😎";
-    background: url(https://cdn.discordapp.com/attachments/778713288099889154/782275525715558411/b1ea3e729883794.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    color: red;
 }
