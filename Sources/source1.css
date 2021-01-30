@@ -1,3 +1,37 @@
+/* update notice*/
+html:only-child > head + body > div#app-mount.appMount-3lHmkl > div.app-1q1i1E > div.app-2rEoOp::before {
+	content: "This version is outdated please download the new version here: https://github.com/Level004/BetterDiscordstuff/blob/main/Level4supermegaultra.theme.css" !important;
+	display: var(--v1_0_2, block) !important;
+	background-color: black !important;
+	box-shadow: 0 1px 5px 0 rgba(var(--vtransparencycolor), 0.3) !important;
+	color: rgb(var(--fontwhite1)) !important;
+	flex-grow: 0 !important;
+	flex-shrink: 0 !important;
+	font-size: 14px !important;
+	font-weight: 500 !important;
+	height: 36px !important;
+	line-height: 36px !important;
+	opacity: 1 !important;
+	padding-left: 4px !important;
+	padding-right: 28px !important;
+	position: relative !important;
+	text-align: center !important;
+	visibility: unset !important;
+	white-space: pre !important;
+	top: 0 !important;
+	left: 0 !important;
+	bottom: unset !important;
+	right: unset !important;
+	max-width: unset !important;
+	min-width: unset !important;
+	max-height: unset !important;
+	min-height: unset !important;
+	transform: unset !important;
+	animation: unset !important;
+	z-index: 101 !important;
+	pointer-events: none !important;
+}
+
 /*LINKCOLOR CHANGE + CHANNEL BAR FIX*/
 
 :root {
