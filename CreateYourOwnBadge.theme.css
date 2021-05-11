@@ -16,7 +16,7 @@
 /* 
 Guide: 
 
-1. Put the user id inside the quotes of the src.
+1. Put the user id inside the quotes of the data-user-id.
 2. Put the image link that you want as the badge inside of the quotes of the url.
 
 And that's it! You've now added a badge to a user!
@@ -24,7 +24,10 @@ And that's it! You've now added a badge to a user!
 if the badge is either too big or too small change the % to something bigger or smaller to suit your needs.
 */
 
-[src*=""] + .header-23xsNx > .headerText-3Uvj1Y > span:first-child::after {
+[data-user-id=""] .username-1A8OIy::after,
+[data-user-id=""] .nameTag-m8r81H:not(.listName-3w10cx) .username-2b1r56::after,
+[data-user-id=""] .roleColor-rz2vM0::after,
+[data-user-id=""] .overflow-WK9Ogt::after {
     content: " ";
     background: url("") center/90% no-repeat;
 }
@@ -32,7 +35,10 @@ if the badge is either too big or too small change the % to something bigger or 
 /*
 A new empty template for if you want to add more badges!
 
-[src*=""] + .header-23xsNx > .headerText-3Uvj1Y > span:first-child::after {
+[data-user-id=""] .username-1A8OIy::after,
+[data-user-id=""] .nameTag-m8r81H:not(.listName-3w10cx) .username-2b1r56::after,
+[data-user-id=""] .roleColor-rz2vM0::after,
+[data-user-id=""] .overflow-WK9Ogt::after {
     content: " ";
     background: url("") center/90% no-repeat;
 }
@@ -40,10 +46,26 @@ A new empty template for if you want to add more badges!
 */
 
 /* ignroe this */
-.headerText-3Uvj1Y > span:first-child::after,
-.username-2b1r56::after,
-.usernameFont-23TX-h::after,
-.name-uJV0GL::after {
+#app-mount .wrapper-2a6GCs h2 .username-1A8OIy::after,
+#app-mount .listRow-hutiT_ .avatar-3W3CeO + div .username-2b1r56::after,
+#app-mount .nameTag-m8r81H:not(.listName-3w10cx) .username-2b1r56::after {
     padding: 0 10px 0 10px;
     margin-left: 2px;
+}
+
+#app-mount .channel-2QD9_O .overflow-WK9Ogt::after,
+#app-mount .member-3-YXUe .roleColor-rz2vM0::after {
+    padding: 0 9px 0 9px;
+    margin-left: 4px;
+}
+
+#app-mount .wrapper-3t9DeA + h1::after {
+    padding: 0 15px 0 15px;
+    margin-right: 3px;
+    margin-left: 1px;
+}
+
+#app-mount .listRow-hutiT_ .wrapper-3t9DeA + div .username-2b1r56::after {
+    padding: 0 8px 0 8px;
+    margin-right: 4px;
 }
