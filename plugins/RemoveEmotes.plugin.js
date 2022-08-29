@@ -1,7 +1,7 @@
 /**
  * @name Remove Emotes
  * @author Level 4
- * @description removes emotes from anywhere
+ * @description removes emotes from anywhere!
  * @version 1.0.2
  */
 
