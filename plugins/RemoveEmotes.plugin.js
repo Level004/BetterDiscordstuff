@@ -19,7 +19,7 @@ function checkMessagesForEmotes() {
                     const reactionCount = selectedMessage.querySelector('.reactions-3ryImn');
                     reaction.closest('.reaction-3vwAF2').style.display = "none";
                     if (reactionCount !== null) {
-                        if (reactionCount.childElementCount === 2 && reactionCount.querySelector(`[alt*=${CSS.escape(blackList)}]`)) {
+                        if (reactionCount.childElementCount === reactionCount.querySelectorAll(`[alt*=${CSS.escape(blackList)}]`).length + 1) {
                             reactionCount.style.display = "none";
                             selectedMessage.querySelector('.container-2sjPya').style.padding = "0px";
                         } else {
