@@ -136,36 +136,6 @@ https://cdn.discordapp.com/attachments/778713288099889154/781818967173627944/chi
 	background-position: 710px 510px, 780px -25px;
 }
 
-/* Places this gif at the bottom left corner of the channel list */
-/*
-.container-1NXEtd {
-	padding-bottom: 57px;
-}
-
-.container-1NXEtd::before {
-	content: '';
-	visibility: hidden;
-	position: absolute;
-	height: 100%;
-	width: 100%;
-	background-image: url(https://cdn.discordapp.com/attachments/778713288099889154/941803753055596645/mukuroclean.gif);
-	background-repeat: no-repeat;
-	background-position: -10px 101%;
-	animation: leftright 12s infinite;
-}
-
-.container-1NXEtd::after {
-	content: '';
-	visibility: hidden;
-	position: absolute;
-	height: 100%;
-	width: 100%;
-	background-image: url(https://cdn.discordapp.com/attachments/778713288099889154/941811082589245490/mukurocleanr.gif);
-	background-repeat: no-repeat;
-	background-position: 170px 101%;
-	animation: rightleft 12s infinite;
-}
-*/
 
 /* adds this picture to the pop-out + makes the pop-out like the old one */
 .userPopout-2j1gM4::before {
@@ -254,13 +224,6 @@ https://cdn.discordapp.com/attachments/778713288099889154/781818967173627944/chi
 	left: 110px;
 }
 
-/*
-.layer-2aCOJ3[style^="position: absolute; top: 12px;"] .avatarWrapperNormal-ahVUaC .headerNormal-3Zn_yu > .popoutBannerPremium-3i5EEI {
-	top: 191px;
-	left: 110px;
-}
-*/
-
 .avatarHint-k7pYop {
 	top: -0.1px;
 	left: -1px;
@@ -344,42 +307,6 @@ https://cdn.discordapp.com/attachments/778713288099889154/781818967173627944/chi
 
 .censoredStamp-fb2cYb {
 	display: none !important;
-}
-
-/* ~~~~		 				Animation						    ~~~~ */
-
-@keyframes leftright {
-	0% {
-		background-position: -10px 101%;
-		visibility: visible;
-	}
-
-	50% {
-		background-position: 170px 101%;
-		visibility: hidden;
-	}
-
-	49%,
-	51%,
-	52%,
-	60% {
-		visibility: hidden;
-		background-position: 170px 101%;
-	}
-
-}
-
-@keyframes rightleft {
-	0%,1%,2%,3%,4%,5%,6%,7%,8%,9%,10%,15%,20%,25%,30%,35%,45%,49% {
-		background-position: 170px 101%;
-		visibility: hidden;
-	}
-
-	100% {
-		background-position: -10px 101%;
-		visibility: visible;
-	}
-
 }
 
 /* ~~~~		 		Badges next to name							~~~~ */
