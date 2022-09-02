@@ -1,0 +1,12 @@
+/**
+ * @name dummy
+ * @description 
+ * @author Level 4
+ * @version 1.0.0
+ * @authorId 278543574059057154
+ * @invite 
+ * @donate 
+ * @patreon
+ * @website 
+ * @source
+ */

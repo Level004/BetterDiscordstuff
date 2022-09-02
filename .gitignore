@@ -1,0 +1,14 @@
+*.json
+/blob_storage/
+/Cache/
+/Code Cache/
+/Cookies
+/Cookies-journal
+/data/
+/Dictionaries/
+/GPUCache/
+/Local Storage/
+/Network Persistent State
+/Preferences
+/Session Storage/
+/plugins/
