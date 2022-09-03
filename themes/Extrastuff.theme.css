@@ -132,7 +132,6 @@ https://cdn.discordapp.com/attachments/778713288099889154/781818967173627944/chi
 .content-1jQy2l {
 	background-image: url("https://cdn.discordapp.com/attachments/778713288099889154/795956650916839470/Nagito_mining.gif"), url("https://cdn.discordapp.com/attachments/334077784953716736/808725225654321202/mukuroDR3.png");
 	background-repeat: no-repeat;
-	background-size: relative;
 	background-position: 710px 510px, 780px -25px;
 }
 
@@ -322,6 +321,10 @@ https://cdn.discordapp.com/attachments/778713288099889154/781818967173627944/chi
 
 .ontop {
 	order: -1;
+}
+
+h2.ontop {
+	order: -2;
 }
 
 /* ~~~~		 		Badges next to name							~~~~ */
