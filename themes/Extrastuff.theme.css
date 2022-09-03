@@ -87,7 +87,7 @@ https://cdn.discordapp.com/attachments/778713288099889154/781818967173627944/chi
 .attachedBars-2BCP3l,
 .clipContainer-31nYlH,
 .container-3i3IzO,
-.container-3XgAHv{
+.container-3XgAHv {
 	background-color: transparent !important;
 
 }
@@ -307,6 +307,21 @@ https://cdn.discordapp.com/attachments/778713288099889154/781818967173627944/chi
 
 .censoredStamp-fb2cYb {
 	display: none !important;
+}
+
+/* puts me on top */
+.members-3WRCEx.thin-31rlnD.scrollerBase-_bVAAt.fade-1R6FHN > div {
+	display: flex;
+	flex-direction: column;
+}
+
+.membersGroup-2eiWxl {
+	box-sizing: content-box;
+	max-height: 16px;
+}
+
+.ontop {
+	order: -1;
 }
 
 /* ~~~~		 		Badges next to name							~~~~ */
