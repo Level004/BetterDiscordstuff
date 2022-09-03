@@ -1,0 +1,4 @@
+*.js
+*.css
+!RemoveEmotes.plugin.js
+!OntopMemberLIst.plugin.js
