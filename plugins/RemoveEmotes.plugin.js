@@ -5,8 +5,13 @@
  * @version 1.0.3
  */
 
+const defaultSettings = {
+    "blackList": ["thisguy", "unko"]
+};
+
 const chatBox = document.querySelector('[data-list-id="chat-messages"]');
-const blackLisedEmotes = ["thisguy", "unko"];
+const loadedData = BdApi.loadData("RemoveEmotes", "settings");
+let blackLisedEmotes = Object.entries(BdApi.loadData("RemoveEmotes", "settings"))[0][1];
 
 function checkMessagesForEmotes() {
     const root = document.getElementById('app-mount');
