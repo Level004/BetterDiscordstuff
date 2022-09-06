@@ -321,10 +321,26 @@ https://cdn.discordapp.com/attachments/778713288099889154/781818967173627944/chi
 
 .ontop {
 	order: -1;
+	padding-top: 41px;
 }
 
-h2.ontop {
-	order: -2;
+
+.ontop::before {
+	position: absolute;
+	top: 0;
+	display: block;
+	content: "Guilliano — 1";
+	font-family: ABC Ginto Normal;
+	font-weight: 500;
+	font-size: 12px;
+	letter-spacing: 0.24px;
+	line-height: 16px;
+	text-overflow: ellipsis;
+	text-transform: uppercase;
+	vertical-align: baseline;
+	white-space: nowrap;
+	color: rgb(210, 210, 210);
+	padding: 24px 0 0 6px;
 }
 
 /* ~~~~		 		Badges next to name							~~~~ */
