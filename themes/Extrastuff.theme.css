@@ -175,12 +175,14 @@ https://cdn.discordapp.com/attachments/778713288099889154/781818967173627944/chi
 
 /* banners */
 .popoutBanner-3cqRD9:hover,
-.popoutBannerPremium-3i5EEI:hover {
+.popoutBannerPremium-3i5EEI:hover,
+.headerNormal-3Zn_yu:hover {
 	max-height: 500px;
 }
 
 .popoutBanner-3cqRD9,
-.popoutBannerPremium-3i5EEI {
+.popoutBannerPremium-3i5EEI,
+.headerNormal-3Zn_yu{
 	max-height: 16px;
 }
 
@@ -189,16 +191,22 @@ https://cdn.discordapp.com/attachments/778713288099889154/781818967173627944/chi
 	background-color: transparent !important;
 }
 
+header > .bannerSVGWrapper-qc0szY {
+	min-height: 0px !important;
+}
+
 .profileBanner-1owKI5,
-.profileBannerPremium-KD60EB {
-	max-height: 64px;
+.profileBannerPremium-KD60EB,
+header > .bannerSVGWrapper-qc0szY{
+	max-height: 100px !important;
 	background-color: transparent !important;
 	transition: max-height 0.2s ease-out;
 }
 
 .profileBanner-1owKI5:hover,
-.profileBannerPremium-KD60EB:hover {
-	max-height: 500px;
+.profileBannerPremium-KD60EB:hover,
+header > .bannerSVGWrapper-qc0szY:hover{
+	max-height: 500px !important;
 	transition: max-height 0.4s ease-in;
 }
 
@@ -208,6 +216,8 @@ https://cdn.discordapp.com/attachments/778713288099889154/781818967173627944/chi
 	position: absolute;
 	height: 100%;
 	width: 100%;
+    top: 25%;
+    transform: scale(150%);
 }
 
 .profileBanner-1owKI5:hover::after,
