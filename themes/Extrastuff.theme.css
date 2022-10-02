@@ -353,6 +353,29 @@ header > .bannerSVGWrapper-qc0szY:hover{
 	padding: 24px 0 0 6px;
 }
 
+/* Channel tabs plugin CSS */
+#channelTabs-container {
+	position: absolute;
+}
+
+.channelTabs-tabNav, a[href="https://support.discord.com"] {
+	display: none !important;
+}
+
+.channelTabs-tabContainer {
+	position: relative;
+	left: 665px;
+	top: 8px;
+}
+
+.channelTabs-tab.channelTabs-selected {
+	background: hsl(0, 14%, 15%) !important;
+}
+
+.title-31SJ6t.container-ZMc96U.themed-Hp1KC_ > .children-3xh0VB{
+	display: none;
+}
+
 /* ~~~~		 		Badges next to name							~~~~ */
 
 /* Gil badge */
