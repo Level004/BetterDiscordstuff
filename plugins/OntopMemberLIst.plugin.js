@@ -11,8 +11,7 @@ const membersList = root.querySelector('.content-2a4AW9[role="list"]');
 function putOntop() {
 	const members = root.querySelectorAll(".member-2gU6Ar.container-1oeRFJ.clickable-28SzVr");
 	for (const member of members) {
-		const name = member.querySelector('span.username-i5-wv-').firstChild.textContent;
-		if (name.includes('Guilliano')) {
+		if (member.querySelector('img[alt="chihirospin"]')) {
 			member.classList.add('ontop');
 		}
 	}
