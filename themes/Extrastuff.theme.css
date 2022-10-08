@@ -379,6 +379,11 @@ header > .bannerSVGWrapper-qc0szY:hover{
 	display: none;
 }
 
+.search-39IXmY,
+.search-39IXmY div {
+	max-width: 144px !important;
+}
+
 /* ~~~~		 		Badges next to name							~~~~ */
 
 /* Gil badge */
