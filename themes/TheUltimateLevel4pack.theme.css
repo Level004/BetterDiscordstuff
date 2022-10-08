@@ -96,8 +96,7 @@
 	/* font used in most places														*/
 	--textshadow: transparent;
 	/* default: transparent			(textshadow for text ontop of accentcolor nodes, ONLY accepts a color, no px)	*/
-
-	--background: url(https://cdn.discordapp.com/attachments/334077784953716736/772392061630021652/unknown.png);
+--background: url(https://cdn.discordapp.com/attachments/334077784953716736/772392061630021652/unknown.png);
 	/* general background image						*/
 	--backgroundsize: cover;
 	/* default: cover				(sizefit of general background - values: [cover/contain/auto])					*/

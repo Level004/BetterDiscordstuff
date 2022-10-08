@@ -70,7 +70,9 @@ https://cdn.discordapp.com/attachments/778713288099889154/781818967173627944/chi
 	margin-right: 4px;
 }
 
-.compact-2Nkcau .headerText-2z4IhQ, .cozy-VmLDNB .headerText-2z4IhQ, .roleDot-PzIfeF {
+.compact-2Nkcau .headerText-2z4IhQ,
+.cozy-VmLDNB .headerText-2z4IhQ,
+.roleDot-PzIfeF {
 	margin: 0;
 }
 
@@ -90,7 +92,7 @@ https://cdn.discordapp.com/attachments/778713288099889154/781818967173627944/chi
 .replyBar-1oi75v,
 .attachedBars-2BCP3l,
 .clipContainer-31nYlH,
-[class*="container"]{
+[class*="container"] {
 	background-color: transparent !important;
 
 }
@@ -185,7 +187,7 @@ https://cdn.discordapp.com/attachments/778713288099889154/781818967173627944/chi
 
 .popoutBanner-3cqRD9,
 .popoutBannerPremium-3i5EEI,
-.headerNormal-3Zn_yu{
+.headerNormal-3Zn_yu {
 	max-height: 16px;
 }
 
@@ -200,7 +202,7 @@ header > .bannerSVGWrapper-qc0szY {
 
 .profileBanner-1owKI5,
 .profileBannerPremium-KD60EB,
-header > .bannerSVGWrapper-qc0szY{
+header > .bannerSVGWrapper-qc0szY {
 	max-height: 100px !important;
 	background-color: transparent !important;
 	transition: max-height 0.2s ease-out;
@@ -208,7 +210,7 @@ header > .bannerSVGWrapper-qc0szY{
 
 .profileBanner-1owKI5:hover,
 .profileBannerPremium-KD60EB:hover,
-header > .bannerSVGWrapper-qc0szY:hover{
+header > .bannerSVGWrapper-qc0szY:hover {
 	max-height: 500px !important;
 	transition: max-height 0.4s ease-in;
 }
@@ -219,8 +221,8 @@ header > .bannerSVGWrapper-qc0szY:hover{
 	position: absolute;
 	height: 100%;
 	width: 100%;
-    top: 25%;
-    transform: scale(150%);
+	top: 25%;
+	transform: scale(150%);
 }
 
 .profileBanner-1owKI5:hover::after,
@@ -362,7 +364,8 @@ header > .bannerSVGWrapper-qc0szY:hover{
 	left: 665px;
 }
 
-.channelTabs-tabNav, a[href="https://support.discord.com"] {
+.channelTabs-tabNav,
+a[href="https://support.discord.com"] {
 	display: none !important;
 }
 
@@ -375,7 +378,7 @@ header > .bannerSVGWrapper-qc0szY:hover{
 	background: hsl(0, 14%, 15%) !important;
 }
 
-.title-31SJ6t.container-ZMc96U.themed-Hp1KC_ > .children-3xh0VB{
+.title-31SJ6t.container-ZMc96U.themed-Hp1KC_ > .children-3xh0VB {
 	display: none;
 }
 
