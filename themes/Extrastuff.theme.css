@@ -20,6 +20,10 @@ https://cdn.discordapp.com/attachments/778713288099889154/781818967173627944/chi
 
 /* ~~~~		 			CSS						~~~~ */
 
+:root {
+	--background-primary: transparent !important
+}
+
 /* Replace the discord watermark with 'chiaki gaming' */
 .wordmarkWindows-2dq6rw::before {
 	content: "Chiaki Gaming";
@@ -79,18 +83,14 @@ https://cdn.discordapp.com/attachments/778713288099889154/781818967173627944/chi
 .fieldList-in8WkP,
 .children-1MGS9G,
 .iconVisibility-vptxma,
-.container-A2jo65,
-.container-1oAagU,
 .scroller-WSmht3,
 .accountProfileCard-lbN7n-,
 .uploadArea-2Nu_Vc,
 .threadSidebar-1o3BTy,
-.container-A2jo65,
 .replyBar-1oi75v,
 .attachedBars-2BCP3l,
 .clipContainer-31nYlH,
-.container-3i3IzO,
-.container-3XgAHv {
+[class*="container"]{
 	background-color: transparent !important;
 
 }
@@ -115,7 +115,7 @@ https://cdn.discordapp.com/attachments/778713288099889154/781818967173627944/chi
 .form-3gdLxP {
 	position: relative;
 	bottom: 0;
-	max-width: 800px;
+	max-width: 80vw;
 }
 
 /* Makes extra space for the Gif so that it doesn't overlap onto users */
@@ -135,7 +135,7 @@ https://cdn.discordapp.com/attachments/778713288099889154/781818967173627944/chi
 .content-1jQy2l {
 	background-image: url("https://cdn.discordapp.com/attachments/778713288099889154/795956650916839470/Nagito_mining.gif"), url("https://cdn.discordapp.com/attachments/334077784953716736/808725225654321202/mukuroDR3.png");
 	background-repeat: no-repeat;
-	background-position: 710px 510px, 780px -25px;
+	background-position: 74% 90%, 76% -25px;
 }
 
 
