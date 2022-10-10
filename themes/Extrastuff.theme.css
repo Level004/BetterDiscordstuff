@@ -122,7 +122,7 @@ https://cdn.discordapp.com/attachments/778713288099889154/781818967173627944/chi
 
 /* Makes extra space for the Gif so that it doesn't overlap onto users */
 .membersWrap-3NUR2t {
-	height: 80vh;
+	height: calc(100vh - 135px);
 }
 
 /* Places this gif at the bottom right corner */
@@ -136,7 +136,7 @@ https://cdn.discordapp.com/attachments/778713288099889154/781818967173627944/chi
 .content-1jQy2l {
 	background-image: url("https://cdn.discordapp.com/attachments/778713288099889154/795956650916839470/Nagito_mining.gif"), url("https://cdn.discordapp.com/attachments/334077784953716736/808725225654321202/mukuroDR3.png");
 	background-repeat: no-repeat;
-	background-position: calc(100vw - 660px) 90%, calc(100vw - 586px) -25px;
+	background-position: calc(100vw - 660px) calc(100vh - 220px), calc(100vw - 586px) -25px;
 }
  
 /* adds this picture to the pop-out + makes the pop-out like the old one */
