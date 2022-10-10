@@ -24,6 +24,8 @@ https://cdn.discordapp.com/attachments/778713288099889154/781818967173627944/chi
 	--background-primary: transparent !important
 }
 
+
+
 /* Replace the discord watermark with 'chiaki gaming' */
 .wordmarkWindows-2dq6rw::before {
 	content: "Chiaki Gaming";
@@ -170,10 +172,14 @@ https://cdn.discordapp.com/attachments/778713288099889154/781818967173627944/chi
 	right: 99px;
 }
 
+.userPopout-2j1gM4.profileColors-3Y0XaR .body-2wLx-E.thin-31rlnD.scrollerBase-_bVAAt {
+	overflow: visible !important;
+}
+
 .customStatus-3XAoF9 > .emoji-V71N2V:only-child {
 	position: absolute;
 	left: 128px;
-
+	top: -40px;
 }
 
 /* banners */
