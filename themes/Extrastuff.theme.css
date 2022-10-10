@@ -117,7 +117,7 @@ https://cdn.discordapp.com/attachments/778713288099889154/781818967173627944/chi
 .form-3gdLxP {
 	position: relative;
 	bottom: 0;
-	max-width: 58.9vw;
+	max-width: calc(100vw - 568px);
 }
 
 /* Makes extra space for the Gif so that it doesn't overlap onto users */
@@ -129,7 +129,7 @@ https://cdn.discordapp.com/attachments/778713288099889154/781818967173627944/chi
 .content-1SgpWY {
 	background-image: url("https://cdn.discordapp.com/attachments/778713288099889154/781877270251044915/chihiro_chiaki_sleep.gif");
 	background-repeat: no-repeat;
-	background-size: contain;
+	
 	background-position: right bottom;
 }
 
@@ -137,10 +137,9 @@ https://cdn.discordapp.com/attachments/778713288099889154/781818967173627944/chi
 .content-1jQy2l {
 	background-image: url("https://cdn.discordapp.com/attachments/778713288099889154/795956650916839470/Nagito_mining.gif"), url("https://cdn.discordapp.com/attachments/334077784953716736/808725225654321202/mukuroDR3.png");
 	background-repeat: no-repeat;
-	background-position: 74% 90%, 76% -25px;
+	background-position: calc(100vw - 660px) 90%, calc(100vw - 586px) -25px;
 }
-
-
+ 
 /* adds this picture to the pop-out + makes the pop-out like the old one */
 .userPopout-2j1gM4::before {
 	content: "";
