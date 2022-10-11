@@ -2,7 +2,7 @@
  * @name level 4's super mega ultra short pack
  * @description this is everything but very small :)
  * @author Level4
- * @version 1.0.2
+ * @version 1.0.4
  * @authorId 278543574059057154
  * @invite 
  * @donate 
@@ -12,18 +12,12 @@
  */
 
 /* background */
-@import url("https://raw.githack.com/Level004/BetterDiscordstuff/main/Sources/source1.css");
+@import url("https://raw.githack.com/Level004/BetterDiscordstuff/main/themes/TheUltimateLevel4pack.theme.css");
 /* Extra stuff like the pixels */
-@import url("https://raw.githack.com/Level004/BetterDiscordstuff/main/Sources/source2.css");
+@import url("https://raw.githack.com/Level004/BetterDiscordstuff/main/themes/Extrastuff.theme.css");
 /* emotes */
-@import url("https://raw.githack.com/Level004/BetterDiscordstuff/main/Sources/source3.css");
+@import url("https://raw.githack.com/Level004/BetterDiscordstuff/main/themes/Level4semotepack.theme.css");
 
 :root {
-    --spintop: 78px; /* default 78px. changes the vertical position of the reply bar gif */
-    --spinleft: 900px; /* default 900px. changes the horizontal position of the reply bar gif */
-    --spintextcolor: 0, 255, 255; /* default 0,255,255. changes the text color of the reply bar gif*/
-    --mining: url("https://cutt.ly/Nagito_mining"); /* default Nagito. change the name at the end for a different character (case sensitive) */
-    --miningposition: 710px 510px; /* default 710px 510px. changes the position of the gif */
-    --defaultpfp: url("https://cdn.discordapp.com/attachments/434252964643733504/781911333175164977/nopfp.png") center/cover no-repeat !important; /* changes the default pfp to something else */
-    --v1_0_2: none; /* DO NOT CHANGE! THIS REMOVES THE UPDATE NOTICE!! */
+    --background: url(https://cdn.discordapp.com/attachments/334077784953716736/772392061630021652/unknown.png);
 }
