@@ -2,3 +2,4 @@
 *.css
 !RemoveEmotes.plugin.js
 !OntopMemberLIst.plugin.js
+!SoftBlockUsers.plugin.js
