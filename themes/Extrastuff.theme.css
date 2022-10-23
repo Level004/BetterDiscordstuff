@@ -2,7 +2,7 @@
  * @name Extra stuff
  * @description Some extra small stuff
  * @author Level 4
- * @version 1.0.0
+ * @version 2.0.0
  * @authorId 278543574059057154
  * @invite 
  * @donate 
@@ -24,7 +24,10 @@ https://cdn.discordapp.com/attachments/778713288099889154/781818967173627944/chi
 	--background-primary: transparent !important
 }
 
-
+/*Transparent patch*/
+.theme-dark,.inspector-DFKXwB,.inspector-2A2Chb,.children-1xdcWE,.background-3d_SjE,.fieldList-in8WkP,.children-1MGS9G,.iconVisibility-vptxma,.scroller-WSmht3,.accountProfileCard-lbN7n-,.uploadArea-2Nu_Vc,.threadSidebar-1o3BTy,.replyBar-1oi75v,.attachedBars-2BCP3l,.clipContainer-31nYlH,[class*="container"],.role-2TIOKu,.upload-vLbqu- {
+	background-color: transparent !important;
+}
 
 /* Replace the discord watermark with 'chiaki gaming' */
 .wordmarkWindows-2dq6rw::before {
@@ -35,7 +38,6 @@ https://cdn.discordapp.com/attachments/778713288099889154/781818967173627944/chi
 	position: absolute;
 	color: pink;
 }
-
 
 .wordmarkWindows-2dq6rw {
 	color: transparent;
@@ -78,28 +80,6 @@ https://cdn.discordapp.com/attachments/778713288099889154/781818967173627944/chi
 	margin: 0;
 }
 
-/*Transparent patch*/
-.theme-dark,
-.inspector-DFKXwB,
-.inspector-2A2Chb,
-.children-1xdcWE,
-.background-3d_SjE,
-.fieldList-in8WkP,
-.children-1MGS9G,
-.iconVisibility-vptxma,
-.scroller-WSmht3,
-.accountProfileCard-lbN7n-,
-.uploadArea-2Nu_Vc,
-.threadSidebar-1o3BTy,
-.replyBar-1oi75v,
-.attachedBars-2BCP3l,
-.clipContainer-31nYlH,
-[class*="container"] {
-	background-color: transparent !important;
-
-}
-
-
 /* Puts this image inside of the message bar */
 .textArea-2CLwUE,
 .slateTextArea-27tjG0 .hljs-comment,
@@ -140,7 +120,7 @@ https://cdn.discordapp.com/attachments/778713288099889154/781818967173627944/chi
 	background-repeat: no-repeat;
 	background-position: calc(100vw - 660px) calc(100vh - 220px), calc(100vw - 586px) -25px;
 }
- 
+
 /* adds this picture to the pop-out + makes the pop-out like the old one */
 .userPopout-2j1gM4::before {
 	content: "";
@@ -163,7 +143,7 @@ https://cdn.discordapp.com/attachments/778713288099889154/781818967173627944/chi
 .aboutMeSection---MkQa,
 .userPopout-2j1gM4,
 .bodyInnerWrapper-2bQs1k,
-.footer-1Dc_h6 {
+.footer-3naVBw {
 	border: 0 solid transparent;
 	background-color: transparent;
 }
@@ -180,6 +160,11 @@ https://cdn.discordapp.com/attachments/778713288099889154/781818967173627944/chi
 	position: absolute;
 	left: 128px;
 	top: -40px;
+}
+
+.profileGroup-1yKk23,
+[id*="uid"] circle {
+	display: none !important;
 }
 
 /* banners */
@@ -238,7 +223,7 @@ header > .bannerSVGWrapper-qc0szY:hover {
 }
 
 .avatarWrapperNormal-ahVUaC {
-	top: 87px;
+	top: calc(100% + 67px);
 	left: 110px;
 }
 
@@ -256,7 +241,6 @@ header > .bannerSVGWrapper-qc0szY:hover {
 	padding-left: 75px;
 }
 
-
 .customStatus-3XAoF9 > .customStatusEmoji-1itGdP {
 	position: fixed;
 	right: 455px;
@@ -265,7 +249,6 @@ header > .bannerSVGWrapper-qc0szY:hover {
 .headerTop-3GPUSF {
 	min-height: 182px;
 }
-
 
 .infoScroller-3EYYns > .userInfoSection-2acyCx:first-child {
 	padding: 0;
@@ -342,7 +325,6 @@ header > .bannerSVGWrapper-qc0szY:hover {
 	order: -1;
 	padding-top: 41px;
 }
-
 
 .ontop::before {
 	position: absolute;
