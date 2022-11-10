@@ -2,7 +2,7 @@
  * @name Extra stuff
  * @description Some extra small stuff
  * @author Level 4
- * @version 2.0.0
+ * @version 2.0.4
  * @authorId 278543574059057154
  * @invite 
  * @donate 
@@ -10,7 +10,6 @@
  * @website 
  * @source
  */
-
 
 /*
 For testing
@@ -230,6 +229,7 @@ a[href="https://support.discord.com"] {
     max-width: 144px !important;
 }
 
+/*<editor-fold desc="badges">*/
 /* ~~~~		 		Badges next to name							~~~~ */
 
 /* Gil badge */
@@ -432,3 +432,4 @@ a[href="https://support.discord.com"] {
     background: url() center/100% no-repeat;
 }
 */
+/*</editor-fold>*/
