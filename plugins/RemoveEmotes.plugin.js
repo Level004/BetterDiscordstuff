@@ -45,7 +45,7 @@ function checkMessagesForEmotes() {
                     const userID = selectedMessage.querySelector('div');
                     const checkNextID = selectedMessage.nextElementSibling.querySelector('div');
                     if (userID !== null && checkNextID !== null) {
-                        if (userID.getAttribute('data-author-id') === checkNextID.getAttribute('data-author-id') && userID.getAttribute('class').includes('groupStart')) {
+                        if (userID.getAttribute('data-author-id') === checkNextID.getAttribute('data-author-id') && userID.getAttribute('class').includes('groupStart') && !checkNextID.querySelector(`[src*="size=96&"][alt*=${CSS.escape(blackList)}]`)) {
                             selectedMessage.style.display = 'list-item';
                         }
                     }
