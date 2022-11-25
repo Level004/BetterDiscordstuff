@@ -203,7 +203,11 @@ https://cdn.discordapp.com/attachments/778713288099889154/781818967173627944/chi
 /* Channel tabs plugin CSS */
 #channelTabs-container {
     position: absolute;
-    left: 665px;
+    width: 100%;
+}
+
+.channelTabs-tabContainer {
+    float: right;
 }
 
 .channelTabs-tabNav,
