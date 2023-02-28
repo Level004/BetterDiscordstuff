@@ -20,7 +20,8 @@ https://cdn.discordapp.com/attachments/778713288099889154/781818967173627944/chi
 /* ~~~~		 			CSS						~~~~ */
 
 :root {
-    --background-primary: transparent !important
+    --background-primary: transparent !important;
+    --badge-padding: 10px 10px 5px 10px;
 }
 
 /*Transparent patch*/
@@ -167,7 +168,7 @@ https://cdn.discordapp.com/attachments/778713288099889154/781818967173627944/chi
 }
 
 /* puts me on top */
-.members-3WRCEx.thin-31rlnD.scrollerBase-_bVAAt.fade-1R6FHN > div {
+.members-3WRCEx.thin-RnSY0a.scrollerBase-1Pkza4.fade-27X6bG > div {
     display: flex;
     flex-direction: column;
 }
@@ -187,7 +188,7 @@ https://cdn.discordapp.com/attachments/778713288099889154/781818967173627944/chi
     top: 0;
     display: block;
     content: "Guilliano — 1";
-    font-family: ABC Ginto Normal;
+    font-family: var(--font-primary);
     font-weight: 500;
     font-size: 12px;
     letter-spacing: 0.24px;
@@ -231,6 +232,10 @@ a[href="https://support.discord.com"] {
 .search-39IXmY,
 .search-39IXmY div {
     max-width: 144px !important;
+}
+
+.contents-2MsGLg > .avatarDecoration-34OC0G {
+    display: none;
 }
 
 /*<editor-fold desc="badges">*/
@@ -278,6 +283,7 @@ a[href="https://support.discord.com"] {
 [aria-label=""] > div > .content-1U25dZ > .nameAndDecorators-3ERwy2 > .name-3Vmqxm .overflow-1wOqNV::after {
     content: " ";
     background: url(https://cdn.discordapp.com/attachments/778713288099889154/842718108861857812/Soniapx.png) center/100% no-repeat;
+    padding: var(--badge-padding) !important;
 }
 
 /* Ginger badge */
@@ -334,6 +340,7 @@ a[href="https://support.discord.com"] {
 [aria-label=""] > div > .content-1U25dZ > .nameAndDecorators-3ERwy2 > .name-3Vmqxm .overflow-1wOqNV::after {
     content: " ";
     background: url(https://cdn.discordapp.com/attachments/778713288099889154/842725225215819776/Chisapx.png) center/100% no-repeat;
+    padding: var(--badge-padding) !important;
 }
 
 /* Trap badge */
@@ -345,7 +352,7 @@ a[href="https://support.discord.com"] {
 [aria-label=""] > div > .content-1U25dZ > .nameAndDecorators-3ERwy2 > .name-3Vmqxm .overflow-1wOqNV::after {
     content: " ";
     background: url(https://cdn.discordapp.com/attachments/778713288099889154/842725206194651154/Hyopx.png) center/100% no-repeat;
-    padding: 0 20px 0 10px !important;
+    padding: 10px 20px 5px 10px !important;
 }
 
 /* Ezui badge */
@@ -415,7 +422,8 @@ a[href="https://support.discord.com"] {
 [style*="312537082918731778"] + .usernameFont-2oJxoI::after,
 [aria-label=""] > div > .content-1U25dZ > .nameAndDecorators-3ERwy2 > .name-3Vmqxm .overflow-1wOqNV::after {
     content: " ";
-    background: url(https://cdn.discordapp.com/attachments/778713288099889154/782271342392770600/Kaede_Akamatsu_Bonus_Mode_Pixel_Icon_1.png) center/100% no-repeat;
+    background: url(https://cdn.discordapp.com/attachments/778713288099889154/782271342392770600/Kaede_Akamatsu_Bonus_Mode_Pixel_Icon_1.png) center/90% no-repeat;
+    padding: var(--badge-padding) !important;
 }
 
 .repliedMessage-3Z6XBG > .username-h_Y3Us::after {
