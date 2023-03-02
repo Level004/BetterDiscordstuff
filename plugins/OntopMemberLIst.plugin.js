@@ -11,7 +11,9 @@ const membersList = root.querySelector('.content-2a4AW9[role="list"]');
 function putOntop() {
 	const members = root.querySelectorAll(".member-2gU6Ar.container-1oeRFJ.clickable-28SzVr");
 	for (const member of members) {
-		if (member.querySelector('img[alt="chihirospin"]')) {
+		const id = "314467927799627776";
+		const currentId = member.querySelector('.avatarStack-3Bjmsl > img');
+		if (currentId.getAttribute('src').includes(id)){
 			member.classList.add('ontop');
 		}
 	}
