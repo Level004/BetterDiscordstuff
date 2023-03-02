@@ -2,16 +2,17 @@
  * @name Remove Emotes
  * @author Level 4
  * @description removes emotes from anywhere!
- * @version 1.0.3
+ * @version 1.0.4
  */
 
 const defaultSettings = {
-    "blackList": ["thisguy", "unko"]
+    "blackList": ["thisguy", "unko", "CatStare"]
 };
 
 const chatBox = document.querySelector('[data-list-id="chat-messages"]');
 const loadedData = BdApi.loadData("RemoveEmotes", "settings");
-let blackLisedEmotes = Object.entries(BdApi.loadData("RemoveEmotes", "settings"))[0][1];
+let blackLisedEmotes = ["thisguy", "unko", "CatStare"];
+// let blackLisedEmotes = Object.entries(BdApi.loadData("RemoveEmotes", "settings"))[0][1];
 
 function checkMessagesForEmotes() {
     const root = document.getElementById('app-mount');
@@ -45,7 +46,7 @@ function checkMessagesForEmotes() {
                     const userID = selectedMessage.querySelector('div');
                     const checkNextID = selectedMessage.nextElementSibling.querySelector('div');
                     if (userID !== null && checkNextID !== null) {
-                        if (userID.getAttribute('data-author-id') === checkNextID.getAttribute('data-author-id') && userID.getAttribute('class').includes('groupStart') && !checkNextID.querySelector(`[src*="size=96&"][alt*=${CSS.escape(blackList)}]`)) {
+                        if (userID.querySelector('img.avatar-2e8lTP') === checkNextID.querySelector('img.avatar-2e8lTP') && userID.getAttribute('class').includes('groupStart') && !checkNextID.querySelector(`[src*="size=96&"][alt*=${CSS.escape(blackList)}]`)) {
                             selectedMessage.style.display = 'list-item';
                         }
                     }
@@ -74,7 +75,7 @@ module.exports = class Plugin {
         }
     }
 
-    observer(chatBox) {
+    observer() {
         checkMessagesForEmotes();
     }
 

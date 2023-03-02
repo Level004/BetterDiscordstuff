@@ -167,6 +167,10 @@ https://cdn.discordapp.com/attachments/778713288099889154/781818967173627944/chi
     display: none !important;
 }
 
+[aria-label="Servers sidebar"] [dir="ltr"]::-webkit-scrollbar {
+    display: none;
+}
+
 /* puts me on top */
 .members-3WRCEx.thin-RnSY0a.scrollerBase-1Pkza4.fade-27X6bG > div {
     display: flex;
@@ -204,7 +208,8 @@ https://cdn.discordapp.com/attachments/778713288099889154/781818967173627944/chi
 /* Channel tabs plugin CSS */
 #channelTabs-container {
     position: absolute;
-    width: 100%;
+    max-width: 50%;
+    right: 0;
 }
 
 .channelTabs-tabContainer {
@@ -236,6 +241,10 @@ a[href="https://support.discord.com"] {
 
 .contents-2MsGLg > .avatarDecoration-34OC0G {
     display: none;
+}
+
+#popout_2797, #popout_2795 {
+    right: 449px !important;
 }
 
 /*<editor-fold desc="badges">*/

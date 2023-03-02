@@ -5,7 +5,7 @@
  * @version 1.0.0
  */
 
-const usersToBlock = ['312537082918731778','431102267077296138'];
+const usersToBlock = ['312537082918731778'];
 const chatBox = document.querySelector('[data-list-id="chat-messages"]');
 
 function blockUser() {
@@ -14,14 +14,8 @@ function blockUser() {
     for (const message of allMessages) {
         for (const user of usersToBlock) {
             const currentUserId = message.querySelector(`.avatar-2e8lTP[src*=${CSS.escape(user)}]`);
-            const hasId = message.querySelector('img.avatar-2e8lTP')
-            console.log(hasId);
-            if (currentUserId) {
-                message.classList.add('blocked');
-            }
-
-            if (message.previousElementSibling.classList.contains('blocked') && !hasId){
-                console.log('hi');
+            const hasId = message.querySelector('img.avatar-2e8lTP');
+            if (currentUserId || message.previousElementSibling.classList.contains('blocked') && !hasId) {
                 message.classList.add('blocked');
             }
         }
