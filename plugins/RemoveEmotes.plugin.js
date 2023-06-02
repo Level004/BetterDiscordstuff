@@ -11,13 +11,13 @@ const defaultSettings = {
 
 const chatBox = document.querySelector('[data-list-id="chat-messages"]');
 const loadedData = BdApi.loadData("RemoveEmotes", "settings");
-let blackLisedEmotes = ["thisguy", "unko", "CatStare"];
+let blackLisedEmotes = ["thisguy", "unko", "CatStare", "lynnThumbsUp"];
 // let blackLisedEmotes = Object.entries(BdApi.loadData("RemoveEmotes", "settings"))[0][1];
 
 function checkMessagesForEmotes() {
     const root = document.getElementById('app-mount');
     const allMessages = root.querySelectorAll(".messageListItem-ZZ7v6g");
-    const reactionSelect = root.querySelectorAll(".reactionInner-YJjOtT");
+    const reactionSelect = root.querySelectorAll(".reactionInner-YJjOtT:not(.reaction-3vwAF2.reactionInner-YJjOtT.reactionMe-1PwQAc)");
     for (const blackList of blackLisedEmotes) {
         for (const selectedMessage of allMessages) {
             for (const reaction of reactionSelect) {
@@ -26,7 +26,7 @@ function checkMessagesForEmotes() {
                     reaction.closest('.reaction-3vwAF2').style.display = "none";
                     reaction.closest('.reaction-3vwAF2').setAttribute("data-removed", "removed");
                     if (reactionCount !== null) {
-                        if (reactionCount.childElementCount === reactionCount.querySelectorAll(`[data-removed="removed"]`).length + 1) {
+                        if (reactionCount.childElementCount === reactionCount.querySelectorAll(`[data-removed="removed"]`).length + 3) {
                             reactionCount.style.display = "none";
                             selectedMessage.querySelector('.container-2sjPya').style.padding = "0px";
                         } else {
@@ -39,9 +39,7 @@ function checkMessagesForEmotes() {
 
             if (selectedMessage.querySelector(`[src*="size=96&"][alt*=${CSS.escape(blackList)}]`)) {
                 selectedMessage.style.display = 'none';
-                if (!selectedMessage.getAttribute('style').includes('list-item')) {
-                    selectedMessage.style.display = 'none';
-                }
+
                 if (selectedMessage.getAttribute('style')) {
                     const userID = selectedMessage.querySelector('div');
                     const checkNextID = selectedMessage.nextElementSibling.querySelector('div');
