@@ -12,12 +12,13 @@ const defaultSettings = {
 const chatBox = document.querySelector('[data-list-id="chat-messages"]');
 const loadedData = BdApi.loadData("RemoveEmotes", "settings");
 let blackLisedEmotes = ["thisguy", "unko", "CatStare", "lynnThumbsUp"];
+
 // let blackLisedEmotes = Object.entries(BdApi.loadData("RemoveEmotes", "settings"))[0][1];
 
 function checkMessagesForEmotes() {
     const root = document.getElementById('app-mount');
     const allMessages = root.querySelectorAll(".messageListItem-ZZ7v6g");
-    const reactionSelect = root.querySelectorAll(".reactionInner-YJjOtT:not(.reaction-3vwAF2.reactionInner-YJjOtT.reactionMe-1PwQAc)");
+    const reactionSelect = root.querySelectorAll(".reactionInner-YJjOtT:not(.reaction-3vwAF2.reactionInner-YJjOtT.reactionMe-1PwQAc):not(.reaction-3vwAF2.reactionInner-YJjOtT)");
     for (const blackList of blackLisedEmotes) {
         for (const selectedMessage of allMessages) {
             for (const reaction of reactionSelect) {
