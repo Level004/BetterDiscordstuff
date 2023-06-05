@@ -2,7 +2,7 @@
  * @name Put me ontop
  * @author Level 4
  * @description put me ontop the members list
- * @version 1.0.2
+ * @version 1.1.0
  */
 
 const root = document.getElementById('app-mount');
