@@ -182,6 +182,10 @@ https://cdn.discordapp.com/attachments/778713288099889154/781818967173627944/chi
     max-height: 16px;
 }
 
+div.content-yjf30S[aria-label="Members"] {
+    min-height: 139% !important;
+}
+
 .ontop {
     order: -1;
     padding-top: 41px;
