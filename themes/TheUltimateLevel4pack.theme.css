@@ -63,11 +63,11 @@
     --vfont: var(--font, var(--dfont));
     --vtextshadow: var(--textshadow, var(--dtextshadow));
 
-    --vbackground: var(--background, var(--dbackground));
+    --background: var(--vbackground, var(--dbackground));
     --vbackgroundsize: var(--backgroundsize, var(--dbackgroundsize));
     --vbackgroundblur: var(--backgroundblur, var(--dblur));
 
-    --vpopout: var(--popout, var(--vbackground));
+    --vpopout: var(--popout, var(--background));
     --vpopoutsize: var(--popoutsize, var(--vbackgroundsize));
     --vpopoutblur: var(--popoutblur, var(--vbackgroundblur));
 
@@ -96,7 +96,7 @@
     /* font used in most places														*/
     --textshadow: transparent;
     /* default: transparent			(textshadow for text ontop of accentcolor nodes, ONLY accepts a color, no px)	*/
-    --background: url(https://cdn.discordapp.com/attachments/334077784953716736/772392061630021652/unknown.png);
+    --vbackground: url(https://cdn.discordapp.com/attachments/334077784953716736/772392061630021652/unknown.png);
     /* general background image						*/
     --backgroundsize: cover;
     /* default: cover				(sizefit of general background - values: [cover/contain/auto])					*/
@@ -2253,7 +2253,7 @@ body:before {
     right: 0;
     bottom: 0;
     position: fixed;
-    background: var(--vbackground) center/var(--vbackgroundsize);
+    background: var(--background) center/var(--vbackgroundsize);
     filter: blur(var(--vbackgroundblur));
 }
 
@@ -2455,7 +2455,7 @@ body:before {
 }
 
 .bar-2eAyLE:not(.mention-3XBnnZ):before {
-    background: var(--vbackground) center/var(--vbackgroundsize);
+    background: var(--background) center/var(--vbackgroundsize);
     filter: blur(var(--vbackgroundblur));
     background-attachment: fixed;
 }
@@ -3007,7 +3007,7 @@ body:before {
 }
 
 .jumpToPresentBar-9P20AM:before {
-    background: var(--vbackground) center/var(--vbackgroundsize);
+    background: var(--background) center/var(--vbackgroundsize);
     filter: blur(var(--vbackgroundblur));
     background-attachment: fixed;
 }
@@ -3508,7 +3508,7 @@ body:before {
 }
 
 #app-mount .form-3gdLxP:before {
-    background: var(--vbackground) center/var(--vbackgroundsize);
+    background: var(--background) center/var(--vbackgroundsize);
     filter: blur(var(--vbackgroundblur));
     background-attachment: fixed;
 }
@@ -4485,7 +4485,7 @@ body:before {
 }
 
 .tile-PuWjfs div.splashPlaceholder-2-N6vT:before {
-    background: var(--vbackground) center/var(--vbackgroundsize);
+    background: var(--background) center/var(--vbackgroundsize);
     filter: blur(var(--vbackgroundblur));
     background-attachment: fixed;
 }
@@ -4651,7 +4651,7 @@ body:before {
 }
 
 .header-2EadGG:before {
-    background: var(--vbackground) center/var(--vbackgroundsize);
+    background: var(--background) center/var(--vbackgroundsize);
     filter: blur(var(--vbackgroundblur));
     background-attachment: fixed;
 }
