@@ -4,7 +4,7 @@
  * @authorLink https://github.com/Level004
  * @description change theme per server. Only works with DevilBro's basic background theme
  * @source https://github.com/Level004/BetterDiscordstuff/blob/main/plugins/BackgroundPerServer.plugin.js
- * @version 1.0.0
+ * @version 1.0.1
  */
 
 const config = {
@@ -93,6 +93,7 @@ module.exports = !global.ZeresPluginLibrary ? dummy : (([Plugin, Api]) => {
         let loadedData = PluginUtilities.loadSettings(config.info.name);
         let serverBackgrounds = loadedData.content.serverbackgrounds.split(',,');
         let parsedData = [];
+        let refreshSettings;
         let currentGuild = window.location.href;
 
         for (const data of serverBackgrounds) {
@@ -131,16 +132,27 @@ module.exports = !global.ZeresPluginLibrary ? dummy : (([Plugin, Api]) => {
                     );
                 }
                 BdApi.injectCSS("BackgroundPerServer", '');
+                refreshSettings = setInterval(function (){
+                    loadedData = PluginUtilities.loadSettings(config.info.name);
+                    serverBackgrounds = loadedData.content.serverbackgrounds.split(',,');
+                    parsedData = [];
+
+                    console.log('epicc');
+
+                    for (const data of serverBackgrounds) {
+                        parsedData.push(data.split(','));
+                    }
+                }, 5000);
             }
 
             onStop() {
                 BdApi.clearCSS("BackgroundPerServer");
+                clearInterval(refreshSettings);
             }
 
             observer(currentGuild) {
                 const selectStyle = document.getElementById('BackgroundPerServer');
                 applyBackground(selectStyle);
-                currentGuild = window.location.href;
             }
 
             getSettingsPanel() {
