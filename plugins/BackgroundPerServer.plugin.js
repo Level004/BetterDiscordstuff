@@ -18,7 +18,7 @@ const config = {
             }
         ],
         authorLink: "https://github.com/Level004",
-        version: "1.0.0",
+        version: "1.0.1",
         description: "change theme per server. Only works with DevilBro's basic background theme",
         github: "https://github.com/Level004/BetterDiscordstuff/blob/main/plugins/BackgroundPerServer.plugin.js",
         github_raw: "https://raw.githack.com/Level004/BetterDiscordstuff/main/plugins/BackgroundPerServer.plugin.js"
