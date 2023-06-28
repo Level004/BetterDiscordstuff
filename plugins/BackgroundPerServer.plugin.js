@@ -4,7 +4,7 @@
  * @authorLink https://github.com/Level004
  * @description change theme per server. Only works with DevilBro's basic background theme
  * @source https://github.com/Level004/BetterDiscordstuff/blob/main/plugins/BackgroundPerServer.plugin.js
- * @version 1.0.1
+ * @version 1.1.1
  */
 
 const config = {
@@ -18,19 +18,26 @@ const config = {
             }
         ],
         authorLink: "https://github.com/Level004",
-        version: "1.0.1",
+        version: "1.1.1",
         description: "change theme per server. Only works with DevilBro's basic background theme",
         github: "https://github.com/Level004/BetterDiscordstuff/blob/main/plugins/BackgroundPerServer.plugin.js",
         github_raw: "https://raw.githack.com/Level004/BetterDiscordstuff/main/plugins/BackgroundPerServer.plugin.js"
     },
     changelog: [
         {
+            title: "1.1.1",
+            type: "improved",
+            items: [
+                "now uses on switch instead of messing around with an observer"
+            ]
+        },
+        {
             title: "1.0.0",
             type: "improved",
             items: [
                 "release of plugin"
             ]
-        }
+        },
     ],
     defaultConfig: [
         {
@@ -111,7 +118,7 @@ module.exports = !global.ZeresPluginLibrary ? dummy : (([Plugin, Api]) => {
                     set = 1;
                 }
 
-                if (currentGuild.includes(serverId) && style.textContent.length === 0) {
+                if (currentGuild.includes(serverId) && style.textContent.length === 0 || currentGuild.includes(serverId) && !style.textContent.includes(background)) {
                     style.innerHTML = `:root { --background: url('${background}') !important; }`;
                 } else if (set !== 1 && style.textContent.length !== 0) {
                     style.innerHTML = '';
@@ -132,13 +139,13 @@ module.exports = !global.ZeresPluginLibrary ? dummy : (([Plugin, Api]) => {
                     );
                 }
                 BdApi.injectCSS("BackgroundPerServer", '');
+                const selectedStyle = document.getElementById('BackgroundPerServer');
+                applyBackground(selectedStyle);
+
                 refreshSettings = setInterval(function (){
                     loadedData = PluginUtilities.loadSettings(config.info.name);
                     serverBackgrounds = loadedData.content.serverbackgrounds.split(',,');
                     parsedData = [];
-
-                    console.log('epicc');
-
                     for (const data of serverBackgrounds) {
                         parsedData.push(data.split(','));
                     }
@@ -150,9 +157,9 @@ module.exports = !global.ZeresPluginLibrary ? dummy : (([Plugin, Api]) => {
                 clearInterval(refreshSettings);
             }
 
-            observer(currentGuild) {
-                const selectStyle = document.getElementById('BackgroundPerServer');
-                applyBackground(selectStyle);
+            onSwitch() {
+                const selectedStyle = document.getElementById('BackgroundPerServer');
+                applyBackground(selectedStyle);
             }
 
             getSettingsPanel() {
