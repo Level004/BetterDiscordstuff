@@ -22,12 +22,14 @@ function putOntop() {
 function removeEmptyRole() {
     const userOnTop = document.querySelector('div[class="member-2gU6Ar member-48YF_l container-1oeRFJ clickable-28SzVr ontop"]')
     const roleHeader = userOnTop.previousSibling;
-    if (document.querySelector('h3 + .ontop + h3')) {
-        roleHeader.style.display = "none";
-    } else if (document.querySelector('h3 + .ontop') && document.querySelector('h3.membersGroup-2eiWxl.container-q97qHp[style="display: none;"]')) {
-        roleHeader.style.display = "block";
-    } else {
-        document.querySelector('h3.membersGroup-2eiWxl.container-q97qHp[style="display: none;"]').style.display = "block";
+    if (roleHeader.querySelector('span.hiddenVisually-39QJvl')) {
+        if (document.querySelector('h3 + .ontop + h3')) {
+            roleHeader.style.display = "none";
+        } else if (document.querySelector('h3 + .ontop') && document.querySelector('h3.membersGroup-2eiWxl.container-q97qHp[style="display: none;"]')) {
+            roleHeader.style.display = "block";
+        } else {
+            document.querySelector('h3.membersGroup-2eiWxl.container-q97qHp[style="display: none;"]').style.display = "block";
+        }
     }
 }
 
