@@ -47,7 +47,15 @@ const config = {
                     note: "Put the emote names next to eachother with a comma so like this:   emote1,emote2,emote3",
                     value: "",
                     placeholder: "Emotes"
-                }
+                },
+                {
+                    type: "textbox",
+                    id: "useremotes",
+                    name: "",
+                    note: "Put the IDs of the users that you want to remove all emotes from. Sperate them with commas like with the emotes",
+                    value: "",
+                    placeholder: "User IDs"
+                },
             ]
         },
     ]
@@ -105,10 +113,31 @@ function checkMessagesForEmotes(emoteToBlock) {
                     const userID = selectedMessage.querySelector('div');
                     const checkNextID = selectedMessage.nextElementSibling.querySelector('div');
                     if (userID !== null && checkNextID !== null) {
-                        if (userID.querySelector('img.avatar-2e8lTP') === checkNextID.querySelector('img.avatar-2e8lTP') && userID.getAttribute('class').includes('groupStart') && !checkNextID.querySelector(`[src*="size=96&"][alt*=${CSS.escape(blackList)}]`)) {
+                        if (userID.querySelector('img.avatar-2e8lTP') !== checkNextID.querySelector('img.avatar-2e8lTP') && userID.getAttribute('class').includes('groupStart') && !checkNextID.querySelector(`[src*="size=96&"][alt*=${CSS.escape(blackList)}]`)) {
                             selectedMessage.style.display = 'list-item';
                         }
                     }
+                }
+            }
+        }
+    }
+}
+
+function removeEmotesFromUsers(users) {
+    const root = document.getElementById('app-mount');
+    const allMessages = root.querySelectorAll(".messageListItem-ZZ7v6g");
+    for (const message of allMessages) {
+        for (const user of users) {
+            const currentUserId = message.querySelector(`.avatar-2e8lTP[src*=${CSS.escape(user)}]`);
+            const hasId = message.querySelector('img.avatar-2e8lTP');
+            if (currentUserId || message.previousElementSibling.classList.contains('emoteBlock') && !hasId) {
+                message.classList.add('emoteBlock');
+            }
+
+            if (message.classList.contains('emoteBlock') && message.querySelector('[src*="size=96&"]')) {
+                message.style.display = 'none';
+                if (message.querySelector('div').getAttribute('class').includes('groupStart')){
+                    message.style.display = 'list-item';
                 }
             }
         }
@@ -134,6 +163,7 @@ module.exports = !global.ZeresPluginLibrary ? emoteRemover : (([Plugin, Api]) =>
         const {PluginUtilities} = Library;
         let loadedData = PluginUtilities.loadSettings(config.info.name);
         let blackLisedEmotes = loadedData.removedEmotes.emotes.split(',');
+        let blackListedUsers = loadedData.removedEmotes.useremotes.split(',');
 
         return class RemoveEmotes extends Plugin {
 
@@ -155,21 +185,26 @@ module.exports = !global.ZeresPluginLibrary ? emoteRemover : (([Plugin, Api]) =>
                     li[style$="list-item;"] > div {
                         min-height: 0 !important;
                         padding-bottom: 0!important;
+                    }
+                    li:not(li.emoteBlock) + .emoteBlock[style$="list-item;"],
+                    .emoteBlock .emojiContainer-2XKwXX{
+                        display: none !important;
                     }`);
                 const removeEmoteStyle = document.getElementById('Remove-Emotes');
                 for (const dissappearingEmote of blackLisedEmotes) {
                     let style = `[alt*=${CSS.escape(dissappearingEmote)}]{display: none;}`;
                     removeEmoteStyle.appendChild(document.createTextNode(style));
-                }
-            }
+                }}
 
             observer() {
                 const newData = PluginUtilities.loadSettings(config.info.name);
                 if (newData.removedEmotes.emotes !== loadedData.removedEmotes.emotes) {
                     loadedData = newData;
                     blackLisedEmotes = newData.removedEmotes.emotes.split(',');
+                    blackListedUsers = loadedData.removedEmotes.useremotes.split(',');
                 }
                 checkMessagesForEmotes(blackLisedEmotes);
+                removeEmotesFromUsers(blackListedUsers);
             }
 
             onStop() {
