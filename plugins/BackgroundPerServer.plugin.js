@@ -4,7 +4,7 @@
  * @authorLink https://github.com/Level004
  * @description change theme per server. Only works with DevilBro's basic background theme
  * @source https://github.com/Level004/BetterDiscordstuff/blob/main/plugins/BackgroundPerServer.plugin.js
- * @version 1.1.1
+ * @version 1.2.1
  */
 
 const config = {
@@ -18,7 +18,7 @@ const config = {
             }
         ],
         authorLink: "https://github.com/Level004",
-        version: "1.1.1",
+        version: "1.2.1",
         description: "change theme per server. Only works with DevilBro's basic background theme",
         github: "https://github.com/Level004/BetterDiscordstuff/blob/main/plugins/BackgroundPerServer.plugin.js",
         github_raw: "https://raw.githack.com/Level004/BetterDiscordstuff/main/plugins/BackgroundPerServer.plugin.js"
@@ -51,7 +51,7 @@ const config = {
                     type: "textbox",
                     id: "serverbackgrounds",
                     name: "",
-                    note: "put within [] first the server id and then the link to the background like this: SERVER_ID,LINK_TO_BACKGROUND then after add 2 commas and repeat for more servers",
+                    note: "first put the server id and then the link to the background like this: SERVER_ID,LINK_TO_BACKGROUND then after add 2 commas and repeat for more servers",
                     value: "",
                     placeholder: "SERVER_ID,LINK_TO_BACKGROUND"
                 },
@@ -92,24 +92,26 @@ class dummy {
     }
 }
 
-
 module.exports = !global.ZeresPluginLibrary ? dummy : (([Plugin, Api]) => {
     const plugin = (Plugin, Library) => {
 
         const {PluginUtilities} = Library;
-        let loadedData = PluginUtilities.loadSettings(config.info.name);
-        let serverBackgrounds = loadedData.content.serverbackgrounds.split(',,');
-        let parsedData = [];
-        let refreshSettings;
         let currentGuild = window.location.href;
 
-        for (const data of serverBackgrounds) {
-            parsedData.push(data.split(','));
-        }
-
         function applyBackground(style) {
-            let set = 0;
             currentGuild = window.location.href;
+            let set = 0;
+            const loadedData = PluginUtilities.loadSettings(config.info.name);
+            const parsedData = [];
+            if (Object.keys(loadedData.content).length > 0) {
+                const serverBackgrounds = loadedData.content.serverbackgrounds.split(',,');
+                for (const data of serverBackgrounds) {
+                    parsedData.push(data.split(','));
+                }
+            } else {
+                return;
+            }
+
             for (const entry of parsedData) {
                 const serverId = entry[0];
                 const background = entry[1];
@@ -129,32 +131,13 @@ module.exports = !global.ZeresPluginLibrary ? dummy : (([Plugin, Api]) => {
         return class BackgroundPerServer extends Plugin {
 
             onStart() {
-                if (this.settings.has_seen_settings !== undefined) {
-                    BdApi.showToast(`${config.info.name} plugins is running, you have to change the plugin settings to make it do something`,
-                        {
-                            type: "success",
-                            icon: true,
-                            timeout: 13000
-                        }
-                    );
-                }
                 BdApi.injectCSS("BackgroundPerServer", '');
                 const selectedStyle = document.getElementById('BackgroundPerServer');
                 applyBackground(selectedStyle);
-
-                refreshSettings = setInterval(function (){
-                    loadedData = PluginUtilities.loadSettings(config.info.name);
-                    serverBackgrounds = loadedData.content.serverbackgrounds.split(',,');
-                    parsedData = [];
-                    for (const data of serverBackgrounds) {
-                        parsedData.push(data.split(','));
-                    }
-                }, 5000);
             }
 
             onStop() {
                 BdApi.clearCSS("BackgroundPerServer");
-                clearInterval(refreshSettings);
             }
 
             onSwitch() {
@@ -163,7 +146,6 @@ module.exports = !global.ZeresPluginLibrary ? dummy : (([Plugin, Api]) => {
             }
 
             getSettingsPanel() {
-                BdApi.setData(config.info.name, 'has_seen_settings', true);
                 const panel = this.buildSettingsPanel();
                 return panel.getElement();
             }
