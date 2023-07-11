@@ -4,7 +4,7 @@
  * @authorLink https://github.com/Level004
  * @description removes emotes from anywhere!
  * @source https://github.com/Level004/BetterDiscordstuff/blob/main/plugins/RemoveEmotes.plugin.js
- * @version 1.3.4
+ * @version 1.3.5
  */
 
 const config = {
@@ -18,7 +18,7 @@ const config = {
             }
         ],
         authorLink: "https://github.com/Level004",
-        version: "1.3.4",
+        version: "1.3.5",
         description: "Removes emotes from anywhere!",
         github: "https://github.com/Level004/BetterDiscordstuff/blob/main/plugins/RemoveEmotes.plugin.js",
         github_raw: "https://raw.githack.com/Level004/BetterDiscordstuff/main/plugins/RemoveEmotes.plugin.js"
@@ -109,7 +109,7 @@ module.exports = !global.ZeresPluginLibrary ? emoteRemover : (([Plugin, Api]) =>
         function checkMessagesForEmotes() {
             const loadedData = PluginUtilities.loadSettings(config.info.name);
             let emoteToBlock;
-            if (Object.keys(loadedData.content).length > 0) {
+            if (Object.keys(loadedData).length > 0) {
                 emoteToBlock = loadedData.removedEmotes.emotes.split(',');
             } else {
                 return;
@@ -156,8 +156,8 @@ module.exports = !global.ZeresPluginLibrary ? emoteRemover : (([Plugin, Api]) =>
         function removeEmotesFromUsers() {
             const loadedData = PluginUtilities.loadSettings(config.info.name);
             let users;
-            if (Object.keys(loadedData.content).length > 0) {
-                users = loadedData.removedEmotes.emotes.split(',');
+            if (Object.keys(loadedData).length > 0) {
+                users = loadedData.removedEmotes.useremotes.split(',');
             } else {
                 return;
             }
@@ -187,7 +187,7 @@ module.exports = !global.ZeresPluginLibrary ? emoteRemover : (([Plugin, Api]) =>
         function addRemovedEmoteStyling(removeEmoteStyle) {
             const loadedData = PluginUtilities.loadSettings(config.info.name);
             let blackLisedEmotes;
-            if (Object.keys(loadedData.content).length > 0) {
+            if (Object.keys(loadedData).length > 0) {
                 blackLisedEmotes = loadedData.removedEmotes.emotes.split(',');
             } else {
                 return;
