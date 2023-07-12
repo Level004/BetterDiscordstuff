@@ -4,7 +4,7 @@
  * @authorLink https://github.com/Level004
  * @description removes emotes from anywhere!
  * @source https://github.com/Level004/BetterDiscordstuff/blob/main/plugins/RemoveEmotes.plugin.js
- * @version 1.3.5
+ * @version 1.3.6
  */
 
 const config = {
@@ -18,7 +18,7 @@ const config = {
             }
         ],
         authorLink: "https://github.com/Level004",
-        version: "1.3.5",
+        version: "1.3.6",
         description: "Removes emotes from anywhere!",
         github: "https://github.com/Level004/BetterDiscordstuff/blob/main/plugins/RemoveEmotes.plugin.js",
         github_raw: "https://raw.githack.com/Level004/BetterDiscordstuff/main/plugins/RemoveEmotes.plugin.js"
@@ -143,7 +143,7 @@ module.exports = !global.ZeresPluginLibrary ? emoteRemover : (([Plugin, Api]) =>
                             const userID = selectedMessage.querySelector('div');
                             const checkNextID = selectedMessage.nextElementSibling.querySelector('div');
                             if (userID !== null && checkNextID !== null) {
-                                if (userID.querySelector('img.avatar-2e8lTP') === checkNextID.querySelector('img.avatar-2e8lTP') && userID.getAttribute('class').includes('groupStart') && !checkNextID.querySelector(`[src*="size=96&"][alt*=${CSS.escape(blackList)}]`)) {
+                                if (selectedMessage.nextSibling.querySelector('img.avatar-2e8lTP') === null && userID.getAttribute('class').includes('groupStart') && !checkNextID.querySelector(`[src*="size=96&"][alt*=${CSS.escape(blackList)}]`)) {
                                     selectedMessage.style.display = 'list-item';
                                 }
                             }
@@ -212,7 +212,8 @@ module.exports = !global.ZeresPluginLibrary ? emoteRemover : (([Plugin, Api]) =>
                         padding-bottom: 0!important;
                     }
                     li:not(li.emoteBlock) + .emoteBlock[style$="list-item;"],
-                    .emoteBlock .emojiContainer-2XKwXX{
+                    .emoteBlock .emojiContainer-2XKwXX,
+                    li[style$="list-item;"] .buttonContainer-1502pf {
                         display: none !important;
                     }`);
                 const removeEmoteStyle = document.getElementById('Remove-Emotes');
