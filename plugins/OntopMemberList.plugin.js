@@ -4,7 +4,7 @@
  * @authorLink https://github.com/Level004
  * @description Puts spesific users on top of the members list with a special header
  * @source https://github.com/Level004/BetterDiscordstuff/blob/main/plugins/OntopMemberList.plugin.js
- * @version 2.1.0
+ * @version 2.1.1
  */
 
 const config = {
@@ -18,7 +18,7 @@ const config = {
             }
         ],
         authorLink: "https://github.com/Level004",
-        version: "2.1.0",
+        version: "2.1.1",
         description: "Puts spesific users on top of the members list with a special header might not work if you're too far down the members list",
         github: "https://github.com/Level004/BetterDiscordstuff/blob/main/plugins/OntopMemberList.plugin.js",
         github_raw: "https://raw.githack.com/Level004/BetterDiscordstuff/main/plugins/OntopMemberList.plugin.js"
@@ -147,7 +147,7 @@ module.exports = !global.ZeresPluginLibrary ? dummy : (([Plugin, Api]) => {
                 if (usersToPutOnTop.some(user => currentUser.querySelector(`.avatar-31d8He[src*=${CSS.escape(user)}]`))) {
                     if (topUser === 0) {
                         const firstUser = currentUser.querySelector('.avatar-31d8He').src;
-                        const regex = /\/(\d{18})\//;
+                        const regex = /\/(avatars\/(\d{18})|\d{18}\/avatars)\//;
                         const user = firstUser.match(regex);
                         let style = `
                         .members-3WRCEx.thin-RnSY0a.scrollerBase-1Pkza4.fade-27X6bG > div .member-2gU6Ar:has(img[src*='${(user[1])}']) { padding-top: 41px; }
