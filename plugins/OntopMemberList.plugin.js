@@ -172,8 +172,6 @@ module.exports = !global.ZeresPluginLibrary ? dummy : (([Plugin, Api]) => {
                 addHeader(headerStyle);
                 putUsersOntop(onTopStyle);
 
-                const targetElement = document.querySelector('.members-3WRCEx.thin-RnSY0a.scrollerBase-1Pkza4.fade-27X6bG > div');
-
                 membersListObserver = new MutationObserver((mutationsList, observer) => {
                     addHeader(headerStyle);
                     putUsersOntop(onTopStyle);
