@@ -184,8 +184,8 @@
 .lookLink-9FtZy-.colorBrand-3pXr91,
 .emptyStateSubtext-2njjqg a,
 .theme-dark .container-1ILvLB section a,
-.fakeLink-2FvUR7,
-.metadataContent-lalfZ3 a {
+.fakeLink-1wGafz,
+.metadataContent-lalfZ3 a{
     color: #00c50d;
 }
 
@@ -549,119 +549,111 @@ maybe remove .theme-dark .chat-2ZfjoI .message-2CShn3 .timestampCompact-29LLPQ,
 }
 
 
-.form-3gdLxP {
+.form-3qe0Ni {
     margin-top: 0;
     padding-right: 20px;
     padding-left: 20px;
 }
 
-.form-3gdLxP::before {
+.form-3qe0Ni::before {
     content: unset;
 }
 
-.form-3gdLxP .channelTextArea-1FufC0 {
+.form-3qe0Ni .channelTextArea-1deLlK {
     margin-bottom: 0;
     background-color: transparent;
     border-top: 2px solid #333333;
     border-radius: 0;
 }
 
-.form-3gdLxP .channelTextArea-1FufC0:focus-within {
+.form-3qe0Ni .channelTextArea-1deLlK:focus-within {
     border-top-color: var(--accent);
 }
 
-.form-3gdLxP .channelTextArea-1FufC0 .scrollableContainer-15eg7h {
+.form-3qe0Ni .channelTextArea-1deLlK .scrollableContainer-15eg7h {
     background-color: transparent;
     border-radius: 0;
 }
 
-.form-3gdLxP .channelTextArea-1FufC0 .attachWrapper-3slhXI {
+.form-3qe0Ni .channelTextArea-1deLlK .attachWrapper-3slhXI {
     border: 0;
 }
 
-.form-3gdLxP .channelTextArea-1FufC0 .attachWrapper-3slhXI button {
+.form-3qe0Ni .channelTextArea-1deLlK .attachWrapper-3slhXI button {
     width: 48px;
     height: 46px;
     padding: 0;
 }
 
-.form-3gdLxP .channelTextArea-1FufC0 .attachWrapper-3slhXI button::before {
-    content: "\E898";
-    color: #CCC;
-    font-family: "Segoe MDL2 Assets";
-    font-size: 20px;
-}
 
-.form-3gdLxP .channelTextArea-1FufC0 .attachWrapper-3slhXI button:hover {
+
+.form-3qe0Ni .channelTextArea-1deLlK .attachWrapper-3slhXI button:hover {
     background-color: #333333;
 }
 
-.form-3gdLxP .channelTextArea-1FufC0 .attachWrapper-3slhXI button .contents-18-Yxp {
+.form-3qe0Ni .channelTextArea-1deLlK .attachWrapper-3slhXI button .contents-18-Yxp {
     display: none;
 }
 
-.form-3gdLxP .channelTextArea-1FufC0 .textArea-2CLwUE {
+.form-3qe0Ni .channelTextArea-1deLlK .textArea-2CLwUE {
     min-height: 46px;
 }
 
-.form-3gdLxP .channelTextArea-1FufC0 .placeholder-1_mJY1 {
+.form-3qe0Ni .channelTextArea-1deLlK .placeholder-1_mJY1 {
     color: #CCC;
 }
 
-.form-3gdLxP .channelTextArea-1FufC0 .placeholder-1_mJY1,
-.form-3gdLxP .channelTextArea-1FufC0 .slateTextArea-27tjG0 {
+.form-3qe0Ni .channelTextArea-1deLlK .placeholder-1_mJY1,
+.form-3qe0Ni .channelTextArea-1deLlK .slateTextArea-27tjG0 {
     padding-left: 12px;
     padding-right: 12px;
 }
 
-.form-3gdLxP .channelTextArea-1FufC0 .markup-eYLPri {
+.form-3qe0Ni .channelTextArea-1deLlK .markup-eYLPri {
     color: #FFF;
 }
 
-.form-3gdLxP .channelTextArea-1FufC0 .wrapper-1ZcZW- {
+.form-3qe0Ni .channelTextArea-1deLlK .wrapper-1ZcZW- {
     background-color: transparent;
     color: var(--link);
 }
 
-.form-3gdLxP .channelTextArea-1FufC0 .wrapper-1ZcZW-:hover {
+.form-3qe0Ni .channelTextArea-1deLlK .wrapper-1ZcZW-:hover {
     text-decoration: underline;
 }
 
-.form-3gdLxP .channelTextArea-1FufC0 .buttons-uaqb-5 {
+.form-3qe0Ni .channelTextArea-1deLlK .buttons-uaqb-5 {
     margin-right: 0;
 }
 
-.form-3gdLxP .channelTextArea-1FufC0 .buttons-uaqb-5 button[aria-label="Send a gift"] {
+.form-3qe0Ni .channelTextArea-1deLlK .buttons-uaqb-5 button[aria-label="Send a gift"] {
     display: none;
 }
 
-.form-3gdLxP .channelTextArea-1FufC0 .buttons-uaqb-5 .emojiButton-3FRTuj {
+.form-3qe0Ni .channelTextArea-1deLlK .buttons-uaqb-5 .emojiButton-3FRTuj {
     width: 48px;
     height: 46px;
     margin: 0;
     padding: 0;
 }
 
-.form-3gdLxP .channelTextArea-1FufC0 .buttons-uaqb-5 .emojiButton-3FRTuj::before {
-    content: "\E76E";
-    color: #CCC;
-    font-family: "Segoe MDL2 Assets";
-    font-size: 20px;
+.container-q97qHp {
+    color: rgb(210, 210, 210) !important;
 }
 
-.form-3gdLxP .channelTextArea-1FufC0 .buttons-uaqb-5 .emojiButton-3FRTuj:hover {
+.form-3qe0Ni .channelTextArea-1deLlK .buttons-uaqb-5 .emojiButton-3FRTuj:hover {
     background-color: #333333;
 }
 
-.form-3gdLxP .channelTextArea-1FufC0 .buttons-uaqb-5 .emojiButton-3FRTuj:hover::before {
+.form-3qe0Ni .channelTextArea-1deLlK .buttons-uaqb-5 .emojiButton-3FRTuj:hover::before {
     color: #FFF;
 }
 
-.form-3gdLxP .channelTextArea-1FufC0 .buttons-uaqb-5 .emojiButton-3FRTuj .contents-18-Yxp {
+.form-3qe0Ni .channelTextArea-1deLlK .buttons-uaqb-5 .emojiButton-3FRTuj .contents-18-Yxp {
     display: none;
 }
 
-.form-3gdLxP .typing-2J1mQU {
+.form-3qe0Ni .typing-2J1mQU {
     height: 20px;
     right: 20px;
     bottom: 46px;
@@ -672,50 +664,50 @@ maybe remove .theme-dark .chat-2ZfjoI .message-2CShn3 .timestampCompact-29LLPQ,
     pointer-events: none;
 }
 
-.form-3gdLxP .typing-2J1mQU svg[class*="ellipsis-"] {
+.form-3qe0Ni .typing-2J1mQU svg[class*="ellipsis-"] {
     display: none;
 }
 
-.form-3gdLxP .typing-2J1mQU span[class^="text-"] strong {
+.form-3qe0Ni .typing-2J1mQU span[class^="text-"] strong {
     font-weight: normal;
 }
 
-.form-3gdLxP div[class^="scrollableContainer-"] ~ div[class^="autocomplete-"] {
+.form-3qe0Ni div[class^="scrollableContainer-"] ~ div[class^="autocomplete-"] {
     background-color: #191919;
     border-bottom: 1px solid #262626;
 }
 
 
 
-.form-3gdLxP div[class^="autocomplete-"] div[class^="contentTitle"] {
+.form-3qe0Ni div[class^="autocomplete-"] div[class^="contentTitle"] {
     color: #FFF;
     font-size: 15px;
     font-weight: 400;
     text-transform: none;
 }
 
-.form-3gdLxP div[class^="autocomplete-"] div[class^="contentTitle"] strong {
+.form-3qe0Ni div[class^="autocomplete-"] div[class^="contentTitle"] strong {
     font-weight: normal;
 }
 
-.form-3gdLxP div[class^="autocomplete-"] div[class^="contentTitle"] strong::before,
-.form-3gdLxP div[class^="autocomplete-"] div[class^="contentTitle"] strong::after {
+.form-3qe0Ni div[class^="autocomplete-"] div[class^="contentTitle"] strong::before,
+.form-3qe0Ni div[class^="autocomplete-"] div[class^="contentTitle"] strong::after {
     content: "'";
 }
 
-.form-3gdLxP div[class^="autocomplete-"] div[class*="selector-"] {
+.form-3qe0Ni div[class^="autocomplete-"] div[class*="selector-"] {
     border-radius: 0;
 }
 
-.form-3gdLxP div[class^="autocomplete-"] div[class^="selectorSelected"] {
+.form-3qe0Ni div[class^="autocomplete-"] div[class^="selectorSelected"] {
     background-color: var(--accent);
 }
 
-.form-3gdLxP div[class^="autocomplete-"] polygon {
+.form-3qe0Ni div[class^="autocomplete-"] polygon {
     fill: #FFF;
 }
 
-.form-3gdLxP div[class^="autocomplete-"] div[class^="description"] {
+.form-3qe0Ni div[class^="autocomplete-"] div[class^="description"] {
     color: #FFF;
 }
 
@@ -910,13 +902,17 @@ svg polyline[stroke="#7289da"] {
     background: none !important
 }
 
-.homeIcon-r0w4ny {
+[data-list-item-id="guildsnav___home"] {
     color: transparent !important;
     background: url(https://cdn.discordapp.com/attachments/334077784953716736/770714854096371712/Danganronpa_2_Island_Mode_Chiaki_Nanami_Pixel_Icon_3.gif) center no-repeat;
     background-size: 46px;
     z-index: 2;
     width: 56px;
     height: 56px;
+}
+
+[aria-label="Direct Messages"] > .childWrapper-1j_1ub {
+    display: none;
 }
 
 .theme-dark .da-friendsOnline {
@@ -3478,19 +3474,19 @@ body:before {
 
 /* ----		6.3.	TEXTAREA						---- */
 
-.form-3gdLxP {
+.form-3qe0Ni {
     /* textarea				form								*/
     position: relative;
-    padding-top: 10px;
+    padding-top: 5px;
 }
 
-.form-3gdLxP > *,
-.channelTextArea-1FufC0 {
+.form-3qe0Ni > *,
+.channelTextArea-1deLlK {
     z-index: 1;
 }
 
-#app-mount .form-3gdLxP:after,
-#app-mount .form-3gdLxP:before {
+#app-mount .form-3qe0Ni:after,
+#app-mount .form-3qe0Ni:before {
     display: flex;
     content: "";
     position: absolute;
@@ -3503,17 +3499,17 @@ body:before {
     pointer-events: none;
 }
 
-#app-mount .form-3gdLxP:after {
+#app-mount .form-3qe0Ni:after {
     background-color: rgba(var(--vtransparencycolor), var(--vtransparencyalpha));
 }
 
-#app-mount .form-3gdLxP:before {
+#app-mount .form-3qe0Ni:before {
     background: var(--vbackground) center/var(--vbackgroundsize);
     filter: blur(var(--vbackgroundblur));
     background-attachment: fixed;
 }
 
-.channelTextArea-1FufC0 {
+.channelTextArea-1deLlK {
     /* textarea				channeltextarea						*/
     background-color: transparent;
     border-top-color: rgba(var(--fontwhite1), 0.1);

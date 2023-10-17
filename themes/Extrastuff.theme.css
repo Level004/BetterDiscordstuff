@@ -25,7 +25,25 @@ https://cdn.discordapp.com/attachments/778713288099889154/781818967173627944/chi
 }
 
 /*Transparent patch*/
-.theme-dark, .inspector-DFKXwB, .inspector-2A2Chb, .children-1xdcWE, .background-3d_SjE, .fieldList-in8WkP, .children-1MGS9G, .iconVisibility-vptxma, .scroller-WSmht3, .accountProfileCard-lbN7n-, .uploadArea-2Nu_Vc, .threadSidebar-1o3BTy, .replyBar-1oi75v, .attachedBars-2BCP3l, .clipContainer-31nYlH, [class*="container"], .role-2TIOKu, .upload-vLbqu- {
+.theme-dark,
+.inspector-DFKXwB,
+.inspector-2A2Chb,
+.children-1xdcWE,
+.background-3d_SjE,
+.fieldList-in8WkP,
+.children-1MGS9G,
+.iconVisibility-vptxma,
+.scroller-WSmht3,
+.accountProfileCard-lbN7n-,
+.uploadArea-2Nu_Vc,
+.threadSidebar-1o3BTy,
+.replyBar-1oi75v,
+.attachedBars-2BCP3l,
+.clipContainer-31nYlH,
+[class*="container"],
+.role-2TIOKu,
+.upload-vLbqu-,
+.members-2y1nVj {
     background-color: transparent !important;
 }
 
@@ -103,7 +121,7 @@ https://cdn.discordapp.com/attachments/778713288099889154/781818967173627944/chi
 }
 
 /* Makes extra space for the Gif so that it doesn't overlap onto users */
-.membersWrap-3NUR2t {
+.membersWrap-3GwLFp {
     height: calc(100vh - 135px);
 }
 
@@ -115,7 +133,7 @@ https://cdn.discordapp.com/attachments/778713288099889154/781818967173627944/chi
 }
 
 /* Places this gif on the screen */
-.content-1jQy2l {
+.content-18rAwf {
     background-image: url("https://cdn.discordapp.com/attachments/778713288099889154/795956650916839470/Nagito_mining.gif"), url("https://cdn.discordapp.com/attachments/334077784953716736/808725225654321202/mukuroDR3.png");
     background-repeat: no-repeat;
     background-position: calc(100vw - 660px) calc(100vh - 220px), calc(100vw - 586px) -25px;
@@ -135,11 +153,11 @@ https://cdn.discordapp.com/attachments/778713288099889154/781818967173627944/chi
 }
 
 /* shows my favorite danganronpa character when you hover over the member list */
-.membersWrap-3NUR2t {
+.membersWrap-3GwLFp {
     transition: padding-left 0.5s;
 }
 
-.membersWrap-3NUR2t:hover {
+.membersWrap-3GwLFp:hover {
     background-image: url(https://cdn.discordapp.com/attachments/778713288099889154/822112614002720768/ChPX.png), url(https://cdn.discordapp.com/attachments/778713288099889154/822113565204414504/ChiPX.png), url(https://cdn.discordapp.com/attachments/778713288099889154/822114341540986930/HiPX.png),
     url(https://cdn.discordapp.com/attachments/778713288099889154/822115526973063208/KaPX.png),
     url(https://cdn.discordapp.com/attachments/778713288099889154/822115533478035456/ShPX.png),
@@ -171,44 +189,6 @@ https://cdn.discordapp.com/attachments/778713288099889154/781818967173627944/chi
     display: none;
 }
 
-/* puts me on top */
-.members-3WRCEx.thin-RnSY0a.scrollerBase-1Pkza4.fade-27X6bG > div {
-    display: flex;
-    flex-direction: column;
-}
-
-.membersGroup-2eiWxl {
-    box-sizing: content-box;
-    max-height: 16px;
-}
-
-div.content-yjf30S[aria-label="Members"] {
-    min-height: 139% !important;
-}
-
-.ontop {
-    order: -1;
-    padding-top: 41px;
-}
-
-.ontop::before {
-    position: absolute;
-    top: 0;
-    display: block;
-    content: "Guilliano — 1";
-    font-family: var(--font-primary);
-    font-weight: 500;
-    font-size: 12px;
-    letter-spacing: 0.24px;
-    line-height: 16px;
-    text-overflow: ellipsis;
-    text-transform: uppercase;
-    vertical-align: baseline;
-    white-space: nowrap;
-    color: rgb(210, 210, 210);
-    padding: 24px 0 0 6px;
-}
-
 /* Channel tabs plugin CSS */
 #channelTabs-container {
     position: absolute;
@@ -234,7 +214,7 @@ a[href="https://support.discord.com"] {
     background: hsl(0, 14%, 15%) !important;
 }
 
-.title-31SJ6t.container-ZMc96U.themed-Hp1KC_ > .children-3xh0VB {
+.title-5wgnIa.container-ZMc96U.themed-Hp1KC_ .children-3xh0VB {
     display: none;
 }
 
@@ -389,13 +369,9 @@ a[href="https://support.discord.com"] {
     padding: 0 !important;
     background: none;
     content: "";
-
 }
 
-/*
-[style*="e"] + .usernameFont-2oJxoI::afte  {
- content: " ";
-    background: url() center/100% no-repeat;
+.collapsedMember,
+.collapsedMember + div {
+    display: none;
 }
-*/
-/*</editor-fold>*/
