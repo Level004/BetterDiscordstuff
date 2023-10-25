@@ -4,7 +4,7 @@
  * @authorLink https://github.com/Level004
  * @description Puts spesific users on top of the members list with a special header
  * @source https://github.com/Level004/BetterDiscordstuff/blob/main/plugins/OntopMemberList.plugin.js
- * @version 2.1.1
+ * @version 2.2.1
  */
 
 const config = {
@@ -18,12 +18,19 @@ const config = {
             }
         ],
         authorLink: "https://github.com/Level004",
-        version: "2.1.1",
+        version: "2.2.1",
         description: "Puts spesific users on top of the members list with a special header might not work if you're too far down the members list",
         github: "https://github.com/Level004/BetterDiscordstuff/blob/main/plugins/OntopMemberList.plugin.js",
         github_raw: "https://raw.githack.com/Level004/BetterDiscordstuff/main/plugins/OntopMemberList.plugin.js"
     },
     changelog: [
+                {
+            title: "2.2.1",
+            type: "improved",
+            items: [
+                "Changed class names, thanks discord"
+            ]
+        },
         {
             title: "2.1.0",
             type: "improved",
@@ -113,9 +120,9 @@ module.exports = !global.ZeresPluginLibrary ? dummy : (([Plugin, Api]) => {
             headerStyle.innerHTML = '';
 
             let ammount = 0;
-            const listUsers = document.querySelectorAll("[class='member-2gU6Ar member-2iQhp7 container-1oeRFJ clickable-28SzVr']");
+            const listUsers = document.querySelectorAll("[class='member_aa4760 member_b44d5d container__4f20e clickable__17ccb']");
             for (const currentUser of listUsers) {
-                if (usersToPutOnTop.some(user => currentUser.querySelector(`.avatar-31d8He[src*=${CSS.escape(user)}]`))) {
+                if (usersToPutOnTop.some(user => currentUser.querySelector(`.avatar__991e2[src*=${CSS.escape(user)}]`))) {
                     ammount++;
                 }
             }
@@ -133,24 +140,24 @@ module.exports = !global.ZeresPluginLibrary ? dummy : (([Plugin, Api]) => {
             }
 
             ontopStyle.innerHTML = '';
-            const listUsers = document.querySelectorAll("[class='member-2gU6Ar member-2iQhp7 container-1oeRFJ clickable-28SzVr']");
+            const listUsers = document.querySelectorAll("[class='member_aa4760 member_b44d5d container__4f20e clickable__17ccb']");
             let topUser = 0;
 
             for (const user of usersToPutOnTop) {
                 if (!ontopStyle.textContent.includes(user)) {
-                    const style = `.members-2y1nVj.thin-RnSY0a.scrollerBase-1Pkza4.fade-27X6bG > div h3:has(+ .member-2gU6Ar img[src*='${(user)}']):has(+ div + h3) { display: none; } .members-2y1nVj.thin-RnSY0a.scrollerBase-1Pkza4.fade-27X6bG > div .member-2gU6Ar:not(.offline-22aM7E):has(img[src*='${(user)}']) { order: -1; }`
+                    const style = `.members__9f47b.thin_b1c063.scrollerBase_dc3aa9.fade_ba0fa0 > div h3:has(+ .member_aa4760 img[src*='${(user)}']):has(+ div + h3) { display: none; } .members__9f47b.thin_b1c063.scrollerBase_dc3aa9.fade_ba0fa0 > div .member_aa4760:not(.offline_c1fd80):has(img[src*='${(user)}']) { order: -1; }`
                     ontopStyle.appendChild(document.createTextNode(style));
                 }
             }
 
             for (const currentUser of listUsers) {
-                if (usersToPutOnTop.some(user => currentUser.querySelector(`.avatar-31d8He[src*=${CSS.escape(user)}]`))) {
+                if (usersToPutOnTop.some(user => currentUser.querySelector(`.avatar__991e2[src*=${CSS.escape(user)}]`))) {
                     if (topUser === 0) {
-                        const firstUser = currentUser.querySelector('.avatar-31d8He').src;
+                        const firstUser = currentUser.querySelector('.avatar__991e2').src;
                         const user = firstUser.match(/\/(avatars\/(\d{18,})|\d{18,}\/avatars)\//);
                         let style = `
-                        .members-2y1nVj.thin-RnSY0a.scrollerBase-1Pkza4.fade-27X6bG > div .member-2gU6Ar:has(img[src*='${(user[1])}']) { padding-top: 41px; }
-                        .members-2y1nVj.thin-RnSY0a.scrollerBase-1Pkza4.fade-27X6bG > div .member-2gU6Ar:has(img[src*='${(user[1])}'])::before { position: absolute; top: 0; display: block; content: var(--header-name, "user") " — " var(--header-count, "1") ; font-family: var(--font-primary); font-weight: 500; font-size: 12px; letter-spacing: 0.24px; line-height: 16px; text-overflow: ellipsis; text-transform: uppercase; vertical-align: baseline; white-space: nowrap; color: rgb(210, 210, 210); padding: 24px 0 0 6px; }`;
+                        .members__9f47b.thin_b1c063.scrollerBase_dc3aa9.fade_ba0fa0 > div .member_aa4760:has(img[src*='${(user[1])}']) { padding-top: 41px; }
+                        .members__9f47b.thin_b1c063.scrollerBase_dc3aa9.fade_ba0fa0 > div .member_aa4760:has(img[src*='${(user[1])}'])::before { position: absolute; top: 0; display: block; content: var(--header-name, "user") " — " var(--header-count, "1") ; font-family: var(--font-primary); font-weight: 500; font-size: 12px; letter-spacing: 0.24px; line-height: 16px; text-overflow: ellipsis; text-transform: uppercase; vertical-align: baseline; white-space: nowrap; color: rgb(210, 210, 210); padding: 24px 0 0 6px; }`;
                         ontopStyle.appendChild(document.createTextNode(style));
                         topUser = 1;
                     }
@@ -165,7 +172,7 @@ module.exports = !global.ZeresPluginLibrary ? dummy : (([Plugin, Api]) => {
             onStart() {
                 BdApi.injectCSS("OntopMemberList-header-root", '')
                 BdApi.injectCSS("OntopMemberList-order", '')
-                BdApi.injectCSS("OntopMemberList", '.members-2y1nVj.thin-RnSY0a.scrollerBase-1Pkza4.fade-27X6bG > div { display: flex; flex-direction: column; } .membersGroup-2YoqY- { box-sizing: content-box; max-height: 16px; } div.content-yjf30S[aria-label="Members"] { min-height: 139% !important; }');
+                BdApi.injectCSS("OntopMemberList", '.members__9f47b.thin_b1c063.scrollerBase_dc3aa9.fade_ba0fa0 > div { display: flex; flex-direction: column; } .membersGroup__85843 { box-sizing: content-box; max-height: 16px; } div.content__23cab[aria-label="Members"] { min-height: 139% !important; }');
                 const headerStyle = document.getElementById('OntopMemberList-header-root');
                 const onTopStyle = document.getElementById('OntopMemberList-order');
                 addHeader(headerStyle);
@@ -176,7 +183,7 @@ module.exports = !global.ZeresPluginLibrary ? dummy : (([Plugin, Api]) => {
                     putUsersOntop(onTopStyle);
                 });
 
-                membersListObserver.observe(document.querySelector(".members-2y1nVj.thin-RnSY0a.scrollerBase-1Pkza4.fade-27X6bG > div"), {attributes: false, childList: true, subtree: true});
+                membersListObserver.observe(document.querySelector(".members__9f47b.thin_b1c063.scrollerBase_dc3aa9.fade_ba0fa0 > div"), {attributes: false, childList: true, subtree: true});
             }
 
             onStop() {
@@ -197,7 +204,7 @@ module.exports = !global.ZeresPluginLibrary ? dummy : (([Plugin, Api]) => {
                     putUsersOntop(onTopStyle);
                 });
 
-                membersListObserver.observe(document.querySelector(".members-2y1nVj.thin-RnSY0a.scrollerBase-1Pkza4.fade-27X6bG > div"), {attributes: false, childList: true, subtree: true});
+                membersListObserver.observe(document.querySelector(".members__9f47b.thin_b1c063.scrollerBase_dc3aa9.fade_ba0fa0 > div"), {attributes: false, childList: true, subtree: true});
             }
 
             getSettingsPanel() {
