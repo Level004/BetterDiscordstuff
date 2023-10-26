@@ -172,7 +172,7 @@ module.exports = !global.ZeresPluginLibrary ? dummy : (([Plugin, Api]) => {
             onStart() {
                 BdApi.injectCSS("OntopMemberList-header-root", '')
                 BdApi.injectCSS("OntopMemberList-order", '')
-                BdApi.injectCSS("OntopMemberList", '.members__9f47b.thin_b1c063.scrollerBase_dc3aa9.fade_ba0fa0 > div { display: flex; flex-direction: column; } .membersGroup__85843 { box-sizing: content-box; max-height: 16px; } div.content__23cab[aria-label="Members"] { min-height: 139% !important; }');
+                BdApi.injectCSS("OntopMemberList", '.members__9f47b.thin_b1c063.scrollerBase_dc3aa9.fade_ba0fa0 > div { display: flex; flex-direction: column; } .membersGroup__85843 { box-sizing: content-box; max-height: 39px; } div.content__23cab[aria-label="Members"] { min-height: 139% !important; }');
                 const headerStyle = document.getElementById('OntopMemberList-header-root');
                 const onTopStyle = document.getElementById('OntopMemberList-order');
                 addHeader(headerStyle);
