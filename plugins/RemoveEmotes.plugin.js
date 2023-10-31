@@ -116,14 +116,14 @@ module.exports = !global.ZeresPluginLibrary ? emoteRemover : (([Plugin, Api]) =>
             }
             const root = document.getElementById('app-mount');
             const allMessages = root.querySelectorAll(".messageListItem__6a4fb");
-            const reactionSelect = root.querySelectorAll(".reactionInner__00d5f:not(.reaction_b90ab0.reactionInner__00d5f.reactionMe_bf6909):not(.reaction_b90ab0.reactionInner__00d5f)");
+            const reactionSelect = root.querySelectorAll(".reactionInner__4135b:not(.reaction_fef95b.reactionInner__4135b.reactionMe_bf6909):not(.reaction_fef95b.reactionInner__4135b)");
             for (const blackList of emoteToBlock) {
                 for (const selectedMessage of allMessages) {
                     for (const reaction of reactionSelect) {
                         if (reaction.getAttribute('aria-label').includes(blackList)) {
-                            const reactionCount = selectedMessage.querySelector('.reactions_fba1d8');
-                            reaction.closest('.reaction_b90ab0').style.display = "none";
-                            reaction.closest('.reaction_b90ab0').setAttribute("data-removed", "removed");
+                            const reactionCount = selectedMessage.querySelector('.reactions_b8dc93');
+                            reaction.closest('.reaction_fef95b').style.display = "none";
+                            reaction.closest('.reaction_fef95b').setAttribute("data-removed", "removed");
                             if (reactionCount !== null) {
                                 if (reactionCount.childElementCount === reactionCount.querySelectorAll(`[data-removed="removed"]`).length + 3) {
                                     reactionCount.style.display = "none";
