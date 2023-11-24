@@ -125,7 +125,7 @@ module.exports = !global.ZeresPluginLibrary ? emoteRemover : (([Plugin, Api]) =>
                             reaction.closest('.reaction_fef95b').style.display = "none";
                             reaction.closest('.reaction_fef95b').setAttribute("data-removed", "removed");
                             if (reactionCount !== null) {
-                                if (reactionCount.childElementCount === reactionCount.querySelectorAll(`[data-removed="removed"]`).length + 3) {
+                                if (reactionCount.childElementCount === reactionCount.querySelectorAll(`[data-removed="removed"]`).length + 2) {
                                     reactionCount.style.display = "none";
                                     selectedMessage.querySelector('.container_dbadf5').style.padding = "0px";
                                 } else {
