@@ -4,7 +4,7 @@
  * @authorLink https://github.com/Level004
  * @description removes emotes from anywhere!
  * @source https://github.com/Level004/BetterDiscordstuff/blob/main/plugins/RemoveEmotes.plugin.js
- * @version 1.4.6
+ * @version 1.4.7
  */
 
 const config = {
@@ -18,7 +18,7 @@ const config = {
             }
         ],
         authorLink: "https://github.com/Level004",
-        version: "1.4.6",
+        version: "1.4.7",
         description: "Removes emotes from anywhere!",
         github: "https://github.com/Level004/BetterDiscordstuff/blob/main/plugins/RemoveEmotes.plugin.js",
         github_raw: "https://raw.githack.com/Level004/BetterDiscordstuff/main/plugins/RemoveEmotes.plugin.js"
@@ -115,22 +115,22 @@ module.exports = !global.ZeresPluginLibrary ? emoteRemover : (([Plugin, Api]) =>
                 return;
             }
             const root = document.getElementById('app-mount');
-            const allMessages = root.querySelectorAll(".messageListItem__6a4fb");
-            const reactionSelect = root.querySelectorAll(".reactionInner__4135b:not(.reaction_fef95b.reactionInner__4135b.reactionMe_bf6909):not(.reaction_fef95b.reactionInner__4135b)");
+            const allMessages = root.querySelectorAll(".messageListItem__050f9");
+            const reactionSelect = root.querySelectorAll(".reactionInner_bd636d:not(.reaction__4a43f.reactionInner_bd636d.reactionMe__9fc5c):not(.reaction__4a43f.reactionInner_bd636d)");
             for (const blackList of emoteToBlock) {
                 for (const selectedMessage of allMessages) {
                     for (const reaction of reactionSelect) {
                         if (reaction.getAttribute('aria-label').includes(blackList)) {
-                            const reactionCount = selectedMessage.querySelector('.reactions_b8dc93');
-                            reaction.closest('.reaction_fef95b').style.display = "none";
-                            reaction.closest('.reaction_fef95b').setAttribute("data-removed", "removed");
+                            const reactionCount = selectedMessage.querySelector('.reactions_da5b2a');
+                            reaction.closest('.reaction__4a43f').style.display = "none";
+                            reaction.closest('.reaction__4a43f').setAttribute("data-removed", "removed");
                             if (reactionCount !== null) {
                                 if (reactionCount.childElementCount === reactionCount.querySelectorAll(`[data-removed="removed"]`).length + 2) {
                                     reactionCount.style.display = "none";
-                                    selectedMessage.querySelector('.container_dbadf5').style.padding = "0px";
+                                    selectedMessage.querySelector('.container__62863').style.padding = "0px";
                                 } else {
                                     reactionCount.style.display = "flex";
-                                    selectedMessage.querySelector('.container_dbadf5').style.paddingBottom = "4px";
+                                    selectedMessage.querySelector('.container__62863').style.paddingBottom = "4px";
                                 }
                             }
                         }
@@ -163,7 +163,7 @@ module.exports = !global.ZeresPluginLibrary ? emoteRemover : (([Plugin, Api]) =>
             }
 
             const root = document.getElementById('app-mount');
-            const allMessages = root.querySelectorAll(".messageListItem__6a4fb");
+            const allMessages = root.querySelectorAll(".messageListItem__050f9");
             if(users.some(user => document.querySelector(`.avatar__08316[src*=${CSS.escape(user)}]`))) {
                 for (const message of allMessages) {
                     for (const user of users) {
@@ -203,7 +203,7 @@ module.exports = !global.ZeresPluginLibrary ? emoteRemover : (([Plugin, Api]) =>
 
             onStart() {
                 BdApi.injectCSS("Remove-Emotes", `
-                    [style$="list-item;"] div div .markup_a7e664.messageContent__21e69{
+                    [style$="list-item;"] div div .markup_a7e664.messageContent_abea64{
                         display: none;
                     }
             
@@ -212,8 +212,8 @@ module.exports = !global.ZeresPluginLibrary ? emoteRemover : (([Plugin, Api]) =>
                         padding-bottom: 0!important;
                     }
                     li:not(li.emoteBlock) + .emoteBlock[style$="list-item;"],
-                    .emoteBlock .emojiContainer__4a804,
-                    li[style$="list-item;"] .buttonContainer_dd4b62 {
+                    .emoteBlock .emojiContainer__8da7f,
+                    li[style$="list-item;"] .buttonContainer__6de7e {
                         display: none !important;
                     }`);
                 const removeEmoteStyle = document.getElementById('Remove-Emotes');
