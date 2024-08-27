@@ -115,22 +115,22 @@ module.exports = !global.ZeresPluginLibrary ? emoteRemover : (([Plugin, Api]) =>
                 return;
             }
             const root = document.getElementById('app-mount');
-            const allMessages = root.querySelectorAll(".messageListItem__050f9");
-            const reactionSelect = root.querySelectorAll(".reactionInner_bd636d:not(.reaction__4a43f.reactionInner_bd636d.reactionMe__9fc5c):not(.reaction__4a43f.reactionInner_bd636d)");
+            const allMessages = root.querySelectorAll(".messageListItem_d5deea");
+            const reactionSelect = root.querySelectorAll(".reactionInner_ec6b19:not(.reaction_ec6b19.reactionInner_ec6b19.reactionMe_f61c73):not(.reaction_ec6b19.reactionInner_ec6b19)");
             for (const blackList of emoteToBlock) {
                 for (const selectedMessage of allMessages) {
                     for (const reaction of reactionSelect) {
                         if (reaction.getAttribute('aria-label').includes(blackList)) {
-                            const reactionCount = selectedMessage.querySelector('.reactions_da5b2a');
-                            reaction.closest('.reaction__4a43f').style.display = "none";
-                            reaction.closest('.reaction__4a43f').setAttribute("data-removed", "removed");
+                            const reactionCount = selectedMessage.querySelector('.reactions_ec6b19');
+                            reaction.closest('.reaction_ec6b19').style.display = "none";
+                            reaction.closest('.reaction_ec6b19').setAttribute("data-removed", "removed");
                             if (reactionCount !== null) {
                                 if (reactionCount.childElementCount === reactionCount.querySelectorAll(`[data-removed="removed"]`).length + 2) {
                                     reactionCount.style.display = "none";
-                                    selectedMessage.querySelector('.container__62863').style.padding = "0px";
+                                    selectedMessage.querySelector('.container_b558d0').style.padding = "0px";
                                 } else {
                                     reactionCount.style.display = "flex";
-                                    selectedMessage.querySelector('.container__62863').style.paddingBottom = "4px";
+                                    selectedMessage.querySelector('.container_b558d0').style.paddingBottom = "4px";
                                 }
                             }
                         }
@@ -143,7 +143,7 @@ module.exports = !global.ZeresPluginLibrary ? emoteRemover : (([Plugin, Api]) =>
                             const userID = selectedMessage.querySelector('div');
                             const checkNextID = selectedMessage.nextElementSibling.querySelector('div');
                             if (userID !== null && checkNextID !== null) {
-                                if (selectedMessage.nextSibling.querySelector('img.avatar__08316') === null && userID.getAttribute('class').includes('groupStart') && !checkNextID.querySelector(`[src*="size=96&"][alt*=${CSS.escape(blackList)}]`)) {
+                                if (selectedMessage.nextSibling.querySelector('img.avatar_f9f2ca') === null && userID.getAttribute('class').includes('groupStart') && !checkNextID.querySelector(`[src*="size=96&"][alt*=${CSS.escape(blackList)}]`)) {
                                     selectedMessage.style.display = 'list-item';
                                 }
                             }
@@ -163,12 +163,12 @@ module.exports = !global.ZeresPluginLibrary ? emoteRemover : (([Plugin, Api]) =>
             }
 
             const root = document.getElementById('app-mount');
-            const allMessages = root.querySelectorAll(".messageListItem__050f9");
-            if(users.some(user => document.querySelector(`.avatar__08316[src*=${CSS.escape(user)}]`))) {
+            const allMessages = root.querySelectorAll("..messageListItem_d5deea");
+            if(users.some(user => document.querySelector(`.avatar_f9f2ca[src*=${CSS.escape(user)}]`))) {
                 for (const message of allMessages) {
                     for (const user of users) {
-                        const currentUserId = message.querySelector(`.avatar__08316[src*=${CSS.escape(user)}]`);
-                        const hasId = message.querySelector('img.avatar__08316');
+                        const currentUserId = message.querySelector(`.avatar_f9f2ca[src*=${CSS.escape(user)}]`);
+                        const hasId = message.querySelector('img.avatar_f9f2ca');
                         if (currentUserId || message.previousElementSibling.classList.contains('emoteBlock') && !hasId) {
                             message.classList.add('emoteBlock');
                         }
@@ -203,7 +203,7 @@ module.exports = !global.ZeresPluginLibrary ? emoteRemover : (([Plugin, Api]) =>
 
             onStart() {
                 BdApi.injectCSS("Remove-Emotes", `
-                    [style$="list-item;"] div div .markup_a7e664.messageContent_abea64{
+                    [style$="list-item;"] div div .markup_f8f345.messageContent_f9f2ca{
                         display: none;
                     }
             
@@ -212,8 +212,8 @@ module.exports = !global.ZeresPluginLibrary ? emoteRemover : (([Plugin, Api]) =>
                         padding-bottom: 0!important;
                     }
                     li:not(li.emoteBlock) + .emoteBlock[style$="list-item;"],
-                    .emoteBlock .emojiContainer__8da7f,
-                    li[style$="list-item;"] .buttonContainer__6de7e {
+                    .emoteBlock .emojiContainer_bae8cb,
+                    li[style$="list-item;"] .buttonContainer_f9f2ca {
                         display: none !important;
                     }`);
                 const removeEmoteStyle = document.getElementById('Remove-Emotes');
