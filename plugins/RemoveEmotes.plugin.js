@@ -163,7 +163,7 @@ module.exports = !global.ZeresPluginLibrary ? emoteRemover : (([Plugin, Api]) =>
             }
 
             const root = document.getElementById('app-mount');
-            const allMessages = root.querySelectorAll("..messageListItem_d5deea");
+            const allMessages = root.querySelectorAll(".messageListItem_d5deea");
             if(users.some(user => document.querySelector(`.avatar_f9f2ca[src*=${CSS.escape(user)}]`))) {
                 for (const message of allMessages) {
                     for (const user of users) {
