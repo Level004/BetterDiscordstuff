@@ -18,39 +18,41 @@
     --background-primary: transparent !important;
     --background-tertiary: transparent !important;
     --badge-padding: 10px 10px 5px 10px;
-    --tempRight: 55px;
-    --tempTop: 21px;
 }
 
 /*Transparent patch*/
-.theme-dark,
-.inspector__80c84,
-.inspector__7b643,
-.children_aba8cb,
-.background__4e802,
-.fieldList__4e6dd,
-.children__563f2,
-.iconVisibility__2ecfa,
-.scroller__89969,
-.accountProfileCard__744d8,
-.uploadArea_c7493d,
+.inspector_aeaaeb,
+.inspector_c0e32c,
+.children__7bffb,
+.background__1fed1,
+.fieldList__1fed1,
+.children__2ea32,
+.iconVisibility_c69b6d,
+.scroller__99e7c,
+.accountProfileCard__1fed1,
+.uploadArea_dbca3c,
 .threadSidebar-1o3BTy,
-.replyBar_ed6afc,
-.attachedBars_c1606a,
-.clipContainer_ab9cf6,
+.replyBar__841c8,
+.stackedBars__74017,
+.clipContainer__841c8,
 [class*="container"],
-.role_d81130,
-.upload_c98ecb,
-.members__573eb,
-body, 
-.appMount_c99875,
-.sidebar_e031be
-{
+.role_dfa8b6,
+.upload_aa605f,
+.members_c8ffbb,
+body,
+.appMount__51fd7,
+.sidebar_c48ade,
+.expandedFolderBackground__48112 {
     background-color: transparent !important;
 }
 
+.visual-refresh .container_c8ffbb {
+    border: none;
+}
+
+
 /* Replace the discord watermark with 'chiaki gaming' */
-.wordmarkWindows_ffbc5e.wordmark__5b8c9:before,
+.wordmarkWindows__421ed.wordmark__421ed:before,
 [class*="word"]:before {
     content: "Chiaki Gaming";
     font-size: 14px;
@@ -60,53 +62,67 @@ body,
     color: pink;
 }
 
-[viewBox="0 0 24 24"] {
+.childWrapper__6e9f8.childWrapperNoHoverBg__6e9f8,
+.img__4bbc6.updated__4bbc6 {
+    display: none;
+}
+
+.container__4bbc6:has(> .img__4bbc6.updated__4bbc6),
+.nameplated__91a9d>div {
+    background: none !important;
+}
+
+.nameplated__91a9d>div>img[src*='nameplates'] {
+    display: none !important;
+}
+
+[viewBox="0 0 48 48"] {
     color: transparent;
 }
 
 /* Removes the invite users button so you don't accidently click it >:( */
 #user-context-invite-to-server,
-.timestamp_c79dd2.timestampInline__430cf.censoredStamp_fb2cYb
-{
+.timestamp_c19a55.timestampInline_c19a55.censoredStamp_fb2cYb {
     display: none;
 }
 
 /* Places the custom badge in the right place */
-#app-mount .wrapper_a62503 h3 .username__0b0e7::after,
-#app-mount .listRow-hutiT_ .avatar__8986c + div .username__7d629::after,
-#app-mount .nameTag__1d385:not(.listName-3w10cx) .username__7d629::after,
-.usernameFont__4c086::after {
-    padding: 0 10px 0 10px !important;
+#app-mount .wrapper_c19a55 h3 .username_c19a55::after,
+#app-mount .listRow-hutiT_ .avatar__0a06e+div .username__05e81::after,
+#app-mount .nameTag__05e81:not(.listName-3w10cx) .username__05e81::after,
+.usernameFont__07f91::after,
+.content__91a9d .username__5d473::after {
+    padding: 0 10px 0 10px;
     margin-left: 2px !important;
 }
 
-#app-mount .channel__0aef5 .overflow__993fa::after,
-#app-mount .member_aa4760 .roleColor-nA7BqX::after {
+#app-mount .channel__972a0 .overflow__82b15::after,
+#app-mount .member__5d473 .roleColor-nA7BqX::after {
     padding: 0 9px 0 9px;
     margin-left: 4px;
 }
 
-#app-mount .wrapper-1VLyxH + h1::after {
+#app-mount .wrapper-1VLyxH+h1::after {
     padding: 0 15px 0 15px;
     margin-right: 3px;
     margin-left: 1px;
 }
 
-#app-mount .listRow-hutiT_ .wrapper-1VLyxH + div .username__7d629::after {
+#app-mount .listRow-hutiT_ .wrapper-1VLyxH+div .username__05e81::after {
     padding: 0 8px 0 8px;
     margin-right: 4px;
 }
 
-.compact_eda3c8 .headerText_bd68ec,
-.cozy_f5c119 .headerText_bd68ec,
-.roleDot_f86e49 {
+.compact_c19a55 .headerText_c19a55,
+.cozy_c19a55 .headerText_c19a55,
+.roleDot_c19a55 {
     margin: 0;
 }
 
 /* Puts this image inside of the message bar */
-.textArea_a86690,
-.slateTextArea_b19976 .hljs-comment,
-.slateTextArea_b19976 .hljs-quote {
+.textArea__74017,
+.slateTextArea_ec4baf .hljs-comment,
+.slateTextArea_ec4baf .hljs-quote {
     background-image: url(https://i.imgur.com/7aMfqYf.png);
     background-repeat: no-repeat;
     position: relative;
@@ -115,30 +131,30 @@ body,
 }
 
 /* Makes it so it doesn't overlap the message bar with the gif from the members list while DMing */
-.textArea_a86690 > div >.placeholder_dec8c7 > .markup_a7e664 {
+.textArea__74017>div>.placeholder__1b31f>.markup__75297 {
     max-width: 470px !important;
 }
 
-.form_d8a4a1 {
+.form_f75fb0 {
     position: relative;
     bottom: 0;
-    max-width: calc(100vw - 568px);
+    max-width: calc(100vw - 498px);
 }
 
 /* Makes extra space for the Gif so that it doesn't overlap onto users */
-.membersWrap__5ca6b {
-    height: calc(100vh - 135px);
+.membersWrap_c8ffbb {
+    height: calc(100vh - 135px) !important;
 }
 
 /* Places this gif at the bottom right corner */
-.content__76dcf {
+.content_c48ade {
     background-image: url("https://i.imgur.com/gSZUQ0F.gif");
     background-repeat: no-repeat;
     background-position: right bottom;
 }
 
 /* Places this gif on the screen */
-.content__01e65 {
+.content_f75fb0 {
     background-image: url("https://i.imgur.com/QFtiY6D.gif"), url("https://i.imgur.com/6lm7i0t.png");
     background-repeat: no-repeat;
     background-position: calc(100vw - 660px) calc(100vh - 220px), calc(100vw - 586px) -25px;
@@ -153,17 +169,17 @@ body,
     display: none;
 }
 
-.roleIcon__92480.roleIcon_b6fe3d {
+.roleIcon__1e6f1.roleIcon_c19a55 {
     display: none;
 }
 
 /* makes stickers smaller */
-.assetWrapper__671e3 {
+.assetWrapper__31fc2 {
     height: 48px !important;
     width: 48px !important;
 }
 
-.emojiItemDisabled__843ea > * {
+.emojiItemDisabled__843ea>* {
     filter: grayscale(0%);
 }
 
@@ -200,211 +216,223 @@ a[href="https://support.discord.com"] {
     background: hsl(0, 14%, 15%) !important;
 }
 
-.title_d4ba1a.container__26baa.themed_b152d4 .children_cde9af {
+.title_f75fb0.container__9293f.themed__9293f .children__9293f {
     display: none;
 }
 
-.search__07df0,
-.search__07df0 div {
+.search__49676,
+.search__49676 div {
     max-width: 144px !important;
 }
 
-.contents_d3ae0d > .avatarDecoration__8a0c2 {
+.layerContainer_da8173>div[id^="popout_"]:has(> div[role="dialog"][tabindex="-1"]) {
+    right: 248px !important;
+}
+
+.layerContainer_da8173>div[id^="popout_"]:has(div[aria-label="Pinned Messages"]) .messagesPopoutWrap__45690 {
+    width: 1000px;
+}
+
+.contents_c19a55>.avatarDecoration_c19a55 {
     display: none;
 }
 
-.group-spacing-16 .groupStart__7b93c {
+.group-spacing-16 .groupStart__5126c {
     margin-top: 0.6rem;
 }
 
-/* .listItem__48528:has([data-dnd-name*="Avalon"]) {
-    z-index: 400;
-    position: fixed;
-    top: var(--tempTop);
-    right: 0;
+a.anchorUnderlineOnHover_edefb8 {
+    color: #00c50d !important;
 }
 
-.listItem__48528:has([data-dnd-name*="The Stray"]) {
-    z-index: 400;
-    position: fixed;
-    top: var(--tempTop);
-    right: calc(var(--tempRight) * 1) !important;
+.channelAppLauncher_e6e74f,
+.membersGroup_c8ffbb:has(.toggleExpandIcon__095fe) {
+    display: none;
 }
 
-.listItem__48528:has([data-dnd-name*="Level"]) {
-    z-index: 400;
-    position: fixed;
-    top: var(--tempTop);
-    right: calc(var(--tempRight) * 2) !important;
+.groupStart__5126c:has(.blockedSystemMessage__7a70a) {
+    display: none;    
 }
 
-.listItem__48528:has([data-dnd-name*="Paula"]) {
-    z-index: 400;
-    position: fixed;
-    top: var(--tempTop);
-    right: calc(var(--tempRight) * 3) !important;
+/*
+.content_c48ade {
+    translate: 0 -35px;
+    margin-bottom: -35px !important;
 }
 
-.listItem__48528:has([data-dnd-name*="Outer"]) {
-    z-index: 400;
-    position: fixed;
-    top: var(--tempTop);
-    right: calc(var(--tempRight) * 4) !important;
+.bar_c38106.theme-dark.theme-darker.images-dark {
+    display: none;
 }
+*/
 
-.listItem__48528:has([data-dnd-name*="Lynette"]) {
-    z-index: 400;
-    position: fixed;
-    top: var(--tempTop);
-    right: calc(var(--tempRight) * 5) !important;
-}
-
-.listItem__48528:has([data-dnd-name*="Arle"]) {
-    z-index: 400;
-    position: fixed;
-    top: var(--tempTop);
-    right: calc(var(--tempRight) * 6) !important;
-} */
-
-/*<editor-fold desc="badges">*/
 /* ~~~~		 		Badges next to name							~~~~ */
 
 /* Gil badge */
-[src*="314467927799627776"] + .header__6a14d > .headerText_bd68ec > span:first-child::after,
-[src*="314467927799627776"] + img + .header__6a14d > .headerText_bd68ec > span:first-child::after,
-[style*="314467927799627776"] + .usernameFont__4c086::after {
+[src*="314467927799627776"]+.header_c19a55>.headerText_c19a55>span:first-child::after,
+[src*="314467927799627776"]+img+.header_c19a55>.headerText_c19a55>span:first-child::after,
+[style*="314467927799627776"]+.usernameFont__07f91::after,
+.memberInner__5d473 .avatar__91a9d:has([src*="314467927799627776"])+.content__91a9d .username__5d473:after {
     content: " ";
     background: url(https://i.imgur.com/vacNLg4.png) center/110% no-repeat;
 }
 
-/* Mystic badge*/
-[src*="279216251597750272"] + .header__6a14d > .headerText_bd68ec > span:first-child::after,
-[src*="279216251597750272"] + img + .header__6a14d > .headerText_bd68ec > span:first-child::after,
-[style*="279216251597750272"] + .usernameFont__4c086::after {
+/* Mystic badge */
+[src*="279216251597750272"]+.header_c19a55>.headerText_c19a55>span:first-child::after,
+[src*="279216251597750272"]+img+.header_c19a55>.headerText_c19a55>span:first-child::after,
+[style*="279216251597750272"]+.usernameFont__07f91::after,
+.memberInner__5d473 .avatar__91a9d:has([src*="279216251597750272"])+.content__91a9d .username__5d473:after {
     content: " ";
     background: url(https://i.redd.it/y4fpd8f8zr321.gif) center/150% no-repeat;
 }
 
-
 /* Paula badge */
-[src*="YQaLRfj"] + .header__6a14d > .headerText_bd68ec > span:first-child::after,
-[src*="YQaLRfj"] + img + .header__6a14d > .headerText_bd68ec > span:first-child::after,
-[style*="YQaLRfj"] + .usernameFont__4c086::after {
+[src*="719850565797937194"]+.header_c19a55>.headerText_c19a55>span:first-child::after,
+[src*="719850565797937194"]+img+.header_c19a55>.headerText_c19a55>span:first-child::after,
+[style*="719850565797937194"]+.usernameFont__07f91::after,
+.memberInner__5d473 .avatar__91a9d:has([src*="719850565797937194"])+.content__91a9d .username__5d473:after {
     content: " ";
     background: url(https://i.imgur.com/lrBRhGn.png) center/100% no-repeat;
     padding: var(--badge-padding) !important;
 }
 
 /* Ginger badge */
-[src*="mH9Avvg"] + .header__6a14d > .headerText_bd68ec > span:first-child::after,
-[src*="mH9Avvg"] + img + .header__6a14d > .headerText_bd68ec > span:first-child::after,
-[style*="mH9Avvg"] + .usernameFont__4c086::after {
+[src*="103171637465071616"]+.header_c19a55>.headerText_c19a55>span:first-child::after,
+[src*="103171637465071616"]+img+.header_c19a55>.headerText_c19a55>span:first-child::after,
+[style*="103171637465071616"]+.usernameFont__07f91::after,
+.memberInner__5d473 .avatar__91a9d:has([src*="103171637465071616"])+.content__91a9d .username__5d473:after {
     content: " ";
     background: url(https://i.imgur.com/hBKMFj7.png) center/125% no-repeat;
 }
 
 /* Robert badge */
-[src*="jZjM3fu"] + .header__6a14d > .headerText_bd68ec > span:first-child::after,
-[src*="jZjM3fu"] + img + .header__6a14d > .headerText_bd68ec > span:first-child::after,
-[style*="jZjM3fu"] + .usernameFont__4c086::after {
+[src*="453491952151691264"]+.header_c19a55>.headerText_c19a55>span:first-child::after,
+[src*="453491952151691264"]+img+.header_c19a55>.headerText_c19a55>span:first-child::after,
+[style*="453491952151691264"]+.usernameFont__07f91::after,
+.memberInner__5d473 .avatar__91a9d:has([src*="453491952151691264"])+.content__91a9d .username__5d473:after {
     content: " ";
     background: url(https://i.imgur.com/QHW4GhK.png) center/120% no-repeat;
 }
 
 /* JH badge */
-[src*="zjPHADF"] + .header__6a14d > .headerText_bd68ec > span:first-child::after,
-[src*="zjPHADF"] + img + .header__6a14d > .headerText_bd68ec > span:first-child::after,
-[style*="zjPHADF"] + .usernameFont__4c086::after {
+[src*="217620833957445633"]+.header_c19a55>.headerText_c19a55>span:first-child::after,
+[src*="217620833957445633"]+img+.header_c19a55>.headerText_c19a55>span:first-child::after,
+[style*="217620833957445633"]+.usernameFont__07f91::after,
+.memberInner__5d473 .avatar__91a9d:has([src*="217620833957445633"])+.content__91a9d .username__5d473:after {
     content: " ";
     background: url(https://i.imgur.com/gDKC0rv.png) center/100% no-repeat;
 }
 
-/* karelia badge */
-[src*="aWnEUiN"] + .header__6a14d > .headerText_bd68ec > span:first-child::after,
-[src*="aWnEUiN"] + img + .header__6a14d > .headerText_bd68ec > span:first-child::after,
-[style*="aWnEUiN"] + .usernameFont__4c086::after {
+/* Karelia badge */
+[src*="361473823469600768"]+.header_c19a55>.headerText_c19a55>span:first-child::after,
+[src*="361473823469600768"]+img+.header_c19a55>.headerText_c19a55>span:first-child::after,
+[style*="361473823469600768"]+.usernameFont__07f91::after,
+.memberInner__5d473 .avatar__91a9d:has([src*="361473823469600768"])+.content__91a9d .username__5d473:after {
     content: " ";
     background: url(https://i.imgur.com/KJOYimM.png) center/100% no-repeat;
     padding: 0 16px 0 10px !important;
 }
 
 /* Spear badge */
-[src*="IvwgudB"] + .header__6a14d > .headerText_bd68ec > span:first-child::after,
-[src*="IvwgudB"] + img + .header__6a14d > .headerText_bd68ec > span:first-child::after,
-[style*="IvwgudB"] + .usernameFont__4c086::after {
+[src*="329780193780695040"]+.header_c19a55>.headerText_c19a55>span:first-child::after,
+[src*="329780193780695040"]+img+.header_c19a55>.headerText_c19a55>span:first-child::after,
+[style*="329780193780695040"]+.usernameFont__07f91::after,
+.memberInner__5d473 .avatar__91a9d:has([src*="329780193780695040"])+.content__91a9d .username__5d473:after {
     content: " ";
     background: url(https://i.imgur.com/vK4KTuo.png) center/100% no-repeat;
     padding: var(--badge-padding) !important;
 }
 
 /* Fasa badge */
-[src*="ETEVhLn"] + .header__6a14d > .headerText_bd68ec > span:first-child::after,
-[src*="ETEVhLn"] + img + .header__6a14d > .headerText_bd68ec > span:first-child::after,
-[style*="ETEVhLn"] + .usernameFont__4c086::after {
+[src*="131773903897886729"]+.header_c19a55>.headerText_c19a55>span:first-child::after,
+[src*="131773903897886729"]+img+.header_c19a55>.headerText_c19a55>span:first-child::after,
+[style*="131773903897886729"]+.usernameFont__07f91::after,
+.memberInner__5d473 .avatar__91a9d:has([src*="131773903897886729"])+.content__91a9d .username__5d473:after {
     content: " ";
     background: url(https://i.imgur.com/9rWHrFG.png) center/100% no-repeat;
     padding: 10px 20px 5px 10px !important;
 }
 
 /* Ezui badge */
-[src*="JCedECN"] + .header__6a14d > .headerText_bd68ec > span:first-child::after,
-[src*="JCedECN"] + img + .header__6a14d > .headerText_bd68ec > span:first-child::after,
-[style*="JCedECN"] + .usernameFont__4c086::after {
+[src*="132703246925037568"]+.header_c19a55>.headerText_c19a55>span:first-child::after,
+[src*="132703246925037568"]+img+.header_c19a55>.headerText_c19a55>span:first-child::after,
+[style*="132703246925037568"]+.usernameFont__07f91::after,
+.memberInner__5d473 .avatar__91a9d:has([src*="132703246925037568"])+.content__91a9d .username__5d473:after {
     content: " ";
     background: url(https://i.imgur.com/9w5EafJ.png) center/100% no-repeat;
 }
 
 /* Ogo badge */
-[src*="21Khn0m"] + .header__6a14d > .headerText_bd68ec > span:first-child::after,
-[src*="21Khn0m"] + img + .header__6a14d > .headerText_bd68ec > span:first-child::after,
-[style*="21Khn0m"] + .usernameFont__4c086::after {
+[src*="357156260682006530"]+.header_c19a55>.headerText_c19a55>span:first-child::after,
+[src*="357156260682006530"]+img+.header_c19a55>.headerText_c19a55>span:first-child::after,
+[style*="357156260682006530"]+.usernameFont__07f91::after,
+.memberInner__5d473 .avatar__91a9d:has([src*="357156260682006530"])+.content__91a9d .username__5d473:after {
     content: " ";
     background: url(https://i.imgur.com/oII3Kf4.png) center/70% no-repeat;
 }
 
 /* Link badge */
-[src*="179557903034744832"] + .header__6a14d > .headerText_bd68ec > span:first-child::after,
-[src*="179557903034744832"] + img + .header__6a14d > .headerText_bd68ec > span:first-child::after,
-[style*="179557903034744832"] + .usernameFont__4c086::after {
+[src*="179557903034744832"]+.header_c19a55>.headerText_c19a55>span:first-child::after,
+[src*="179557903034744832"]+img+.header_c19a55>.headerText_c19a55>span:first-child::after,
+[style*="179557903034744832"]+.usernameFont__07f91::after,
+.memberInner__5d473 .avatar__91a9d:has([src*="179557903034744832"])+.content__91a9d .username__5d473:after {
     content: " ";
     background: url(https://i.imgur.com/8aOX66A.png) center/100% no-repeat;
     padding: 0 20px 0 10px !important;
 }
 
-/* harinrin badge */
-[src*="WVaexyM"] + .header__6a14d > .headerText_bd68ec > span:first-child::after,
-[src*="WVaexyM"] + img + .header__6a14d > .headerText_bd68ec > span:first-child::after,
-[style*="WVaexyM"] + .usernameFont__4c086::after {
+/* Harinrin badge */
+[src*="WVaexyM"]+.header_c19a55>.headerText_c19a55>span:first-child::after,
+[src*="WVaexyM"]+img+.header_c19a55>.headerText_c19a55>span:first-child::after,
+[style*="WVaexyM"]+.usernameFont__07f91::after,
+.memberInner__5d473 .avatar__91a9d:has([src*="WVaexyM"])+.content__91a9d .username__5d473:after {
     content: " ";
     background: url(https://i.imgur.com/tcE2vQA.png) center/100% no-repeat;
+
 }
 
-/* joe badge */
-[src*="302411675829534721"] + .header__6a14d > .headerText_bd68ec > span:first-child::after,
-[src*="302411675829534721"] + img + .header__6a14d > .headerText_bd68ec > span:first-child::after,
-[style*="302411675829534721"] + .usernameFont__4c086::after {
+/* Joe badge */
+[src*="302411675829534721"]+.header_c19a55>.headerText_c19a55>span:first-child::after,
+[src*="302411675829534721"]+img+.header_c19a55>.headerText_c19a55>span:first-child::after,
+[style*="302411675829534721"]+.usernameFont__07f91::after,
+.memberInner__5d473 .avatar__91a9d:has([src*="302411675829534721"])+.content__91a9d .username__5d473:after {
     content: " ";
     background: url(https://i.imgur.com/tpnoUsn.png) center/110% no-repeat;
     padding: 0 20px 0 10px !important;
 }
 
-/* Jaina badge */
-[src*="1087038169691738263"] + .header__6a14d > .headerText_bd68ec > span:first-child::after,
-[src*="1087038169691738263"] + img + .header__6a14d > .headerText_bd68ec > span:first-child::after,
-[style*="1087038169691738263"] + .usernameFont__4c086::after {
+/* Helan badge */
+[src*="690117476658315280"]+.header_c19a55>.headerText_c19a55>span:first-child::after,
+[src*="690117476658315280"]+img+.header_c19a55>.headerText_c19a55>span:first-child::after,
+[style*="690117476658315280"]+.usernameFont__07f91::after,
+.memberInner__5d473 .avatar__91a9d:has([src*="690117476658315280"])+.content__91a9d .username__5d473:after {
     content: " ";
-    background: url(https://i.imgur.com/Fbtyrj7.png) center/90% no-repeat;
-    padding: var(--badge-padding) !important;
+    background: url(https://i.imgur.com/pshHRfE.png) center/130% no-repeat;
+    padding: 3px 9px 0 9px !important;
 }
 
-.repliedMessage__636d2 > .username__0b0e7::after {
+/* Kiana fan badge */
+[src*="722401641512566844"]+.header_c19a55>.headerText_c19a55>span:first-child::after,
+[src*="722401641512566844"]+img+.header_c19a55>.headerText_c19a55>span:first-child::after,
+[style*="722401641512566844"]+.usernameFont__07f91::after,
+.memberInner__5d473 .avatar__91a9d:has([src*="722401641512566844"])+.content__91a9d .username__5d473:after {
+    content: " ";
+    background: url(https://i.imgur.com/qIiFpSm.png) center/150% no-repeat;
+    padding: 9px 9px 0 9px !important;
+
+}
+
+/* Jaina badge */
+[src*="312537082918731778"]+.header_c19a55>.headerText_c19a55>span:first-child::after,
+[src*="312537082918731778"]+img+.header_c19a55>.headerText_c19a55>span:first-child::after,
+[style*="312537082918731778"]+.usernameFont__07f91::after,
+.memberInner__5d473 .avatar__91a9d:has([src*="312537082918731778"])+.content__91a9d .username__703b9:after {
+    content: " ";
+    background: url(https://i.imgur.com/Fbtyrj7.png) center/100% no-repeat;
+    padding: 9px 9px 0 9px !important;
+}
+
+.repliedMessage_c19a55>.username_c19a55::after {
     padding: 0 !important;
     background: none;
     content: "";
 }
-
-.collapsedMember,
-.collapsedMember + div {
-    display: none;
-}
-
